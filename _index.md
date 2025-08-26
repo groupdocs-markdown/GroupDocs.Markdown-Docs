@@ -1,7 +1,8 @@
 ---
 id: markdown
 url: markdown
-title: GroupDocs.Markdown Documentation
+title: "GroupDocs.Markdown Product Family Documentation"
+description: "Explore documentation for the GroupDocs.Markdown product family. Learn how to export documents to Markdown across supported platforms."
 geekdocSkip: true
 geekdocNav: false
 geekdocAlign: center
@@ -14,7 +15,7 @@ showFeedbackForm: false
     GroupDocs.Markdown simplifies document processing by converting PDF, Word, Excel and other formats providing seamless integrations with the gen AI ecosystem.
 </div>
 
-<h2 class="gdoc-product-title">Documentation</h2>
+<h2 class="gdoc-product-title">Available Platforms</h2>
 
 <div class="gdoc-platform-links">
     <ul>
