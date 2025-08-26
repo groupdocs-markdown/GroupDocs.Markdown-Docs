@@ -2,7 +2,7 @@
 id: markdown
 url: markdown
 title: "GroupDocs.Markdown Product Family Documentation"
-linkTitle: "GroupDocs.Markdown Documentation"
+linkTitle: "GroupDocs.Markdown"
 description: "Explore documentation for the GroupDocs.Markdown product family. Learn how to export documents to Markdown across supported platforms."
 geekdocSkip: true
 geekdocNav: false
