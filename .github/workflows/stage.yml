@@ -1,6 +1,6 @@
 # Build and publish documentation
 
-name: publish-qa
+name: publish-stage
 
 # Controls when the workflow will run
 on: 
