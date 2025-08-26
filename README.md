@@ -1,19 +1,22 @@
 # GroupDocs.Markdown Documentation
 
-This repository contains Markdown files that are used to generate GroupDocs.Markdown static documentation that can be found at <https://docs.groupdocs.com/markdown//>
+This repository contains Markdown files that are used to generate GroupDocs.Markdown static documentation that can be found at <https://docs.groupdocs.com/markdown/>
 
-## Prerequisites
+## About GroupDocs.Markdown
 
-* Install Hugo and related tools
+[GroupDocs.Markdown](https://products.groupdocs.com/markdown/) is a document processing SDK that enables you get your documents gen AI ready by exporting them to Markdown.
 
-    `npm install -g hugo-extended postcss postcss-cli autoprefixer`
+## Repository Purpose
 
-## Running
+The files in this repository are used to:
+- Build and maintain the official documentation.
+- Ensure documentation is always up-to-date with the latest product release.
+- Provide a consistent structure for automated builds and publication.
 
-* Navigate in the root folder
+## How to Use
 
-* Run `build_docs.bat` or commands that you can find in this file.
+This repository is not meant for direct use, as it contains source files for generating static content with Hugo.
 
-## Publishing
+## License
 
-Commit your changes or create pull request into `main` branch and GitHub actions will do the rest.
+This repository contains documentation source files and is licensed under the [MIT License](LICENSE).
