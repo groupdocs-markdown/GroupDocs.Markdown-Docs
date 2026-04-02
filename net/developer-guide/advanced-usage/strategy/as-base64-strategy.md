@@ -4,28 +4,46 @@ url: markdown/net/as-base64-strategy
 title: Save image as base64
 weight: 1
 description: "The listed articles below explain how to embeds images as Base64 strings directly in the Markdown."
-keywords: 
+keywords:
 productName: GroupDocs.Markdown for .NET
 hideChildren: False
 ---
 
-This example demonstrates how to embeds images as Base64 strings directly in the Markdown.
+## Embed images as Base64
 
-**AdvancedUsage.Strategy.AsBase64Strategy**
+By default, `ConvertOptions` uses `ExportImagesAsBase64Strategy`, which embeds images as Base64 data URIs directly in the Markdown output. This keeps the output self-contained in a single file with no external image dependencies.
 
+### Using static method
+
+{{< tabs "base64-static">}}
+{{< tab "C#" >}}
 ```csharp
-using (var converter = new MarkdownConverter("example.pdf"))
-{
-    var options = new DocumentConverterOptions
-    {
-        ImageExportStrategy = new ExportImagesAsBase64Strategy()
-    };
+using GroupDocs.Markdown;
 
-    converter.Convert("output.md", options);
-}
+// Default behavior -- images are embedded as Base64
+string markdown = MarkdownConverter.ToMarkdown("example.pdf");
+Console.WriteLine(markdown);
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-## More resources
-### GitHub examples
-You may easily run the code above and see the feature in action in our GitHub examples:
-*   [GroupDocs.Markdown for .NET examples](https://github.com/groupdocs-markdown/GroupDocs.Markdown-for-.NET)     
+### Specifying the strategy explicitly
+
+If you want to be explicit, set `ImageExportStrategy` to a new `ExportImagesAsBase64Strategy`:
+
+{{< tabs "base64-explicit">}}
+{{< tab "C#" >}}
+```csharp
+using GroupDocs.Markdown;
+
+var options = new ConvertOptions
+{
+    ImageExportStrategy = new ExportImagesAsBase64Strategy()
+};
+
+using var converter = new MarkdownConverter("example.pdf");
+ConvertResult result = converter.Convert(options);
+Console.WriteLine(result.Content);
+```
+{{< /tab >}}
+{{< /tabs >}}

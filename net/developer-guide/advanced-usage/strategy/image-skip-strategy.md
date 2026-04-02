@@ -4,28 +4,48 @@ url: markdown/net/image-skip-strategy
 title: Skip image
 weight: 3
 description: "The listed articles below explain how to skips saving images during document conversion."
-keywords: 
+keywords:
 productName: GroupDocs.Markdown for .NET
 hideChildren: False
 ---
 
-This example demonstrates how to skips saving images during document conversion.
+## Skip images during conversion
 
-**AdvancedUsage.Strategy.ImageSkipStrategy**
+Use `SkipImagesStrategy` when you want to convert a document to Markdown without exporting any images. Image references will be omitted from the output.
 
+### Using static method
+
+{{< tabs "skip-images-static">}}
+{{< tab "C#" >}}
 ```csharp
-using (var converter = new MarkdownConverter("example.pdf"))
+using GroupDocs.Markdown;
+
+var options = new ConvertOptions
 {
-    var options = new DocumentConverterOptions
-    {
-        ImageExportStrategy = new SkipImagesStrategy()
-    };
+    ImageExportStrategy = new SkipImagesStrategy()
+};
 
-    converter.Convert("output.md", options);
-}
+string markdown = MarkdownConverter.ToMarkdown("example.pdf", options);
+Console.WriteLine(markdown);
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-## More resources
-### GitHub examples
-You may easily run the code above and see the feature in action in our GitHub examples:
-*   [GroupDocs.Markdown for .NET examples](https://github.com/groupdocs-markdown/GroupDocs.Markdown-for-.NET)     
+### Using instance API
+
+{{< tabs "skip-images-instance">}}
+{{< tab "C#" >}}
+```csharp
+using GroupDocs.Markdown;
+
+var options = new ConvertOptions
+{
+    ImageExportStrategy = new SkipImagesStrategy()
+};
+
+using var converter = new MarkdownConverter("example.pdf");
+ConvertResult result = converter.Convert(options);
+Console.WriteLine(result.Content);
+```
+{{< /tab >}}
+{{< /tabs >}}

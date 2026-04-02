@@ -8,19 +8,44 @@ keywords: load a file from a stream
 productName: GroupDocs.Markdown for .NET
 hideChildren: False
 ---
-This example demonstrates how to load a file from a stream.
 
-**AdvancedUsage.Loading.LoadFromStream**
+## Load a document from a stream
 
+When the source document is not a file on disk (e.g., downloaded from a network, read from a database, or received as an upload), you can pass a `Stream` directly to the `MarkdownConverter` constructor.
+
+The stream is copied internally, so you may close it immediately after creating the converter.
+
+{{< tabs "load-stream-example">}}
+{{< tab "C#" >}}
 ```csharp
-using (Stream stream = File.Open("source.doc", FileMode.Open, FileAccess.ReadWrite))
-using (var converter = new MarkdownConverter(stream))
-{
-	// ...
-}
-```
+using System.IO;
+using GroupDocs.Markdown;
 
-## More resources
-### GitHub examples
-You may easily run the code above and see the feature in action in our GitHub examples:
-*   [GroupDocs.Markdown for .NET examples](https://github.com/groupdocs-markdown/GroupDocs.Markdown-for-.NET)    
+using Stream stream = File.OpenRead("source.docx");
+using var converter = new MarkdownConverter(stream);
+
+ConvertResult result = converter.Convert();
+Console.WriteLine(result.Content);
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+### Stream with LoadOptions
+
+If the stream does not have a file extension for automatic format detection, specify the format explicitly via `LoadOptions`:
+
+{{< tabs "load-stream-options">}}
+{{< tab "C#" >}}
+```csharp
+using System.IO;
+using GroupDocs.Markdown;
+
+using Stream stream = File.OpenRead("document");
+var loadOptions = new LoadOptions(FileFormat.Docx);
+
+using var converter = new MarkdownConverter(stream, loadOptions);
+ConvertResult result = converter.Convert();
+Console.WriteLine(result.Content);
+```
+{{< /tab >}}
+{{< /tabs >}}

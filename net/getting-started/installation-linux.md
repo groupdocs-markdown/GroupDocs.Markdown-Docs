@@ -4,90 +4,83 @@ url: markdown/net/installation-linux
 title: Install GroupDocs.Markdown for .NET on Linux
 linkTitle: Linux Installation
 weight: 5
-description: "Step-by-step guide to install and run GroupDocs.Markdown for .NET on Linux"
-keywords:
+description: "How to install and run GroupDocs.Markdown for .NET on Linux and in Docker containers."
+keywords: GroupDocs.Markdown, Linux, Docker, Ubuntu, Alpine, .NET
 productName: GroupDocs.Markdown for .NET
 hideChildren: False
 toc: True
 ---
 
-This article explains how to install and run **GroupDocs.Markdown for .NET** on a Linux-based system using .NET 6+. It also includes instructions for installing native dependencies that might be required when running in a headless environment.
+This article explains how to install and run **GroupDocs.Markdown for .NET** on Linux. GroupDocs.Markdown NuGet package references all required native libraries. 
 
 ## Prerequisites
 
-Ensure the following tools and packages are installed:
+Install the .NET SDK (6.0 or later) for your distribution. See [Install .NET on Linux](https://learn.microsoft.com/en-us/dotnet/core/install/linux) for instructions.
 
-- .NET 6.0 SDK or later: [Install .NET on Linux](https://learn.microsoft.com/en-us/dotnet/core/install/linux)
-- A Linux distribution such as Ubuntu, Debian, CentOS/RHEL, or Alpine
-- `libgdiplus`, `fontconfig`, and TrueType fonts
+## Install the Package
 
-## Installing Dependencies
+Create a new project or navigate to an existing one, then add the package:
 
-### Ubuntu / Debian
-
-Ensure the multiverse repository is enabled:
-
+{{< tabs "linux-install" >}}
+{{< tab "C#" >}}
 ```bash
-sudo add-apt-repository multiverse
-sudo apt update
-```
-
-Install the required packages:
-
-```bash
-sudo apt install -y libgdiplus fontconfig ttf-mscorefonts-installer
-```
-
-> `ttf-mscorefonts-installer` is in the multiverse repository and downloads Microsoft fonts.
-
-### CentOS / RHEL
-
-Enable EPEL repository and install required packages:
-
-```bash
-sudo yum install -y epel-release
-sudo yum install -y libgdiplus fontconfig cabextract
-```
-
-To install Microsoft TrueType fonts:
-
-```bash
-wget https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
-sudo yum install -y msttcore-fonts-installer-2.6-1.noarch.rpm
-```
-
-> Note: This method uses a third-party RPM for Microsoft fonts. You may need `--nogpgcheck` depending on your system configuration.
-
-### Alpine Linux
-
-Install minimal dependencies using `apk`:
-
-```bash
-apk add --no-cache libgdiplus fontconfig ttf-dejavu
-```
-
-> `ttf-dejavu` provides good font compatibility in Alpine.
-
-## Install GroupDocs.Markdown using .NET CLI
-
-In your project directory:
-
-```bash
+dotnet new console -n MarkdownDemo
+cd MarkdownDemo
 dotnet add package GroupDocs.Markdown
-dotnet restore
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-## Run Your Project
+## Run Your Application
 
-Build and run your project:
-
+{{< tabs "linux-run" >}}
+{{< tab "C#" >}}
 ```bash
 dotnet run
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-## Troubleshooting
+## Docker
 
-- If you encounter `System.DllNotFoundException`, check if `libgdiplus` is installed.
-- If fonts are missing or rendered incorrectly, verify fonts are present and accessible.
+GroupDocs.Markdown runs in Docker containers with no additional dependencies beyond the .NET runtime.
 
----
+### Example Dockerfile
+
+{{< tabs "docker-example" >}}
+{{< tab "C#" >}}
+```dockerfile
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /app
+COPY . .
+RUN dotnet publish -c Release -o /publish
+
+FROM mcr.microsoft.com/dotnet/runtime:8.0
+WORKDIR /app
+COPY --from=build /publish .
+ENTRYPOINT ["dotnet", "MarkdownDemo.dll"]
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+### Build and Run
+
+{{< tabs "docker-run" >}}
+{{< tab "C#" >}}
+```bash
+docker build -t markdown-demo .
+docker run --rm -v $(pwd)/files:/app/files markdown-demo
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Supported Distributions
+
+GroupDocs.Markdown for .NET works on any Linux distribution that supports .NET 6.0+, including:
+
+- Ubuntu 20.04+
+- Debian 11+
+- CentOS 8+, RHEL 8+
+- Fedora 36+
+- Alpine 3.16+
+- Amazon Linux 2023

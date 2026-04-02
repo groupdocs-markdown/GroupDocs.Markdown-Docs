@@ -8,4 +8,13 @@ keywords: GroupDocs.Markdown Advanced Features, GroupDocs.Markdown Customization
 productName: GroupDocs.Markdown for .NET
 hideChildren: False
 ---
-Learn about advanced [**GroupDocs.Markdown**](https://products.groupdocs.com/markdown/net) features including configuring custom caching, loading documents from different sources and customizing converted document output:
+Learn about advanced [**GroupDocs.Markdown**](https://products.groupdocs.com/markdown/net) features for fine-tuning the conversion process:
+
+* [Loading files]({{< ref "markdown/net/developer-guide/advanced-usage/loading/" >}}) -- load from disk or stream, explicitly specify format with `FileFormat`, and handle password-protected documents via `LoadOptions`.
+* [Image saving strategy]({{< ref "markdown/net/developer-guide/advanced-usage/strategy/" >}}) -- control how images are handled: embed as Base64, save to the file system with `ImagesRelativePath`, skip images entirely, or implement `IImageSavingHandler` for custom logic.
+* [Convert specific pages]({{< ref "markdown/net/developer-guide/advanced-usage/convert-specific-pages" >}}) -- select individual pages or worksheets to convert using the `PageNumbers` property.
+* [Markdown flavor]({{< ref "markdown/net/developer-guide/advanced-usage/markdown-flavor" >}}) -- choose between GitHub Flavored Markdown (GFM) and CommonMark output.
+* [YAML front matter]({{< ref "markdown/net/developer-guide/advanced-usage/front-matter" >}}) -- generate YAML metadata blocks from document properties for static site generators.
+* [Heading level offset]({{< ref "markdown/net/developer-guide/advanced-usage/heading-offset" >}}) -- shift all heading levels by a fixed offset when embedding content into a larger document.
+* [Spreadsheet options]({{< ref "markdown/net/developer-guide/advanced-usage/spreadsheet-options" >}}) -- control column and row truncation, sheet separators, and hidden worksheet inclusion.
+* [Error handling]({{< ref "markdown/net/developer-guide/advanced-usage/error-handling" >}}) -- catch specific exception types and inspect non-fatal conversion warnings.

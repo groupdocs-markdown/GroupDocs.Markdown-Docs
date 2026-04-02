@@ -14,7 +14,7 @@ toc: true
 
 This article describes how to run .NET file markdown API code examples.
 -->
-We offer multiple solutions on how you can run GroupDocs.Markdown examples, by building your own or using our back-end or front-end examples.
+We offer multiple solutions on how you can run GroupDocs.Markdown examples, by building your own or using our back-end or front-end examples.
 
 <!--Please choose one from the following list:-->
 
@@ -31,6 +31,8 @@ You can build a project from scratch using Visual Studio or [.NET CLI](https://d
 5. Add the GroupDocs.Markdown for .NET package by executing the `dotnet add package GroupDocs.Markdown` command.
 6. Edit `Program.cs` and add the following lines to the `Main` method:
   
+  {{< tabs "dotnet-cli-example" >}}
+  {{< tab "C#" >}}
   ```csharp
     using GroupDocs.Markdown;
 
@@ -39,9 +41,11 @@ You can build a project from scratch using Visual Studio or [.NET CLI](https://d
   
 	using (var converter = new MarkdownConverter(documentPath))
 	{
-		converter.Convert(CoutputPath);
+		converter.Convert(outputPath);
 	}
   ```
+  {{< /tab >}}
+  {{< /tabs >}}
   
 7. Replace the `documentPath` value with the actual path to the document you're going to convert.
 8. Run the project by executing the `dotnet run` command.
@@ -49,11 +53,13 @@ You can build a project from scratch using Visual Studio or [.NET CLI](https://d
 
 ### Build a project using Visual Studio
 
-1. Open Visual Studio and go to **File** -> **New** -> **Project**.
+1. Open Visual Studio and go to **File** -> **New** -> **Project**.
 2. Select the appropriate project type - Console App, ASP.NET Web Application etc.
-3. Install **GroupDocs.Markdown for .NET** from Nuget or the official GroupDocs website following this [guide]({{< ref "markdown/net/getting-started/installation.md" >}}).
+3. Install **GroupDocs.Markdown for .NET** from Nuget or the official GroupDocs website following this [guide]({{< ref "markdown/net/getting-started/installation.md" >}}).
 4. Add the following code to the `Main` method:
 
+  {{< tabs "visual-studio-example" >}}
+  {{< tab "C#" >}}
   ```csharp
     using GroupDocs.Markdown;
 
@@ -62,9 +68,11 @@ You can build a project from scratch using Visual Studio or [.NET CLI](https://d
   
 	using (var converter = new MarkdownConverter(documentPath))
 	{
-		converter.Convert(CoutputPath);
+		converter.Convert(outputPath);
 	}
   ```
+  {{< /tab >}}
+  {{< /tabs >}}
 
 5. Replace the `documentPath` value with the actual path to the document you're going to convert.
 6. Build and Run your project.

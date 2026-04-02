@@ -4,28 +4,55 @@ url: markdown/net/image-file-strategy
 title: Save image as file
 weight: 2
 description: "The listed articles below explain how to saves images to the file system during document conversion."
-keywords: 
+keywords:
 productName: GroupDocs.Markdown for .NET
 hideChildren: False
 ---
 
-This example demonstrates how to saves images to the file system during document conversion.
+## Save images to the file system
 
-**AdvancedUsage.Strategy.ImageFileStrategy**
+Use `ExportImagesToFileSystemStrategy` to save images as separate files during conversion. The Markdown output will contain image references pointing to the exported files.
 
+### Basic usage
+
+{{< tabs "image-file-basic">}}
+{{< tab "C#" >}}
 ```csharp
-using (var converter = new MarkdownConverter("example.pdf"))
+using GroupDocs.Markdown;
+
+var options = new ConvertOptions
 {
-    var options = new DocumentConverterOptions
-    {
-        ImageExportStrategy = new ExportImagesToFileSystemStrategy("D:\\Images\\")
-    };
+    ImageExportStrategy = new ExportImagesToFileSystemStrategy("output/images")
+};
 
-    converter.Convert("output.md", options);
-}
+MarkdownConverter.ToFile("example.pdf", "output/document.md", options);
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-## More resources
-### GitHub examples
-You may easily run the code above and see the feature in action in our GitHub examples:
-*   [GroupDocs.Markdown for .NET examples](https://github.com/groupdocs-markdown/GroupDocs.Markdown-for-.NET)     
+### Using ImagesRelativePath
+
+By default, image references in the Markdown use the full `ImagesFolder` path. Set `ImagesRelativePath` to produce portable, relative image links:
+
+{{< tabs "image-file-relative">}}
+{{< tab "C#" >}}
+```csharp
+using GroupDocs.Markdown;
+
+var strategy = new ExportImagesToFileSystemStrategy("output/images")
+{
+    ImagesRelativePath = "images"
+};
+
+var options = new ConvertOptions
+{
+    ImageExportStrategy = strategy
+};
+
+MarkdownConverter.ToFile("example.pdf", "output/document.md", options);
+
+// Markdown output contains: ![](images/img-001.png)
+// Image file saved to:     output/images/img-001.png
+```
+{{< /tab >}}
+{{< /tabs >}}

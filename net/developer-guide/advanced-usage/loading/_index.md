@@ -8,6 +8,6 @@ keywords:
 productName: GroupDocs.Markdown for .NET
 hideChildren: False
 ---
-GroupDocs.Markdown allows you to load password-protected documents and load files from different sources.
+GroupDocs.Markdown allows you to customize how documents are loaded before conversion. Use [LoadOptions](https://reference.groupdocs.com/markdown/net/groupdocs.markdown.options.load) to set a password for protected documents or explicitly specify the file format with the `FileFormat` enum (e.g., `FileFormat.Spreadsheet`, `FileFormat.Pdf`) to skip automatic format detection.
 
 For more details please refer to the following guides:

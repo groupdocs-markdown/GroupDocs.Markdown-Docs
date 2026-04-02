@@ -8,24 +8,63 @@ keywords: Convert page, Convert pages, Convert specific pages
 productName: GroupDocs.Markdown for .NET
 hideChildren: False
 ---
-[**GroupDocs.Markdown**](https://products.groupdocs.com/markdown/net) also provides the feature to convert selected page number.
 
-To convert specific pages, follow these steps:
+## Convert specific pages
 
-1.   Create an instance of [MarkdownConverter](https://reference.groupdocs.com/markdown/net/groupdocs.markdown/markdownconverter) class and pass source document path as a constructor parameter.
-2.   Instantiate the appropriate [DocumentConverterOptions](https://reference.groupdocs.com/markdown/net/groupdocs.markdown/documentconverteroptions/) class.
-3.   Set the [PageNumbers](https://reference.groupdocs.com/markdown/net/groupdocs.markdown/documentconverteroptions/pagenumbers/) property of the [DocumentConverterOptions](https://reference.groupdocs.com/markdown/net/groupdocs.markdown/documentconverteroptions/) instance to the list of desired page number to be converted.
-4.   Call the [Convert](https://reference.groupdocs.com/markdown/net/groupdocs.markdown/markdownconverter/convert/) method of [MarkdownConverter](https://reference.groupdocs.com/markdown/net/groupdocs.markdown/markdownconverter) class instance and pass the filename of the converted document and the instance of [DocumentConverterOptions](https://reference.groupdocs.com/markdown/net/groupdocs.markdown/documentconverteroptions/) from the previous steps.
+Use the `PageNumbers` property of `ConvertOptions` to convert only selected pages (or worksheets) from the source document. Page numbering starts from 1.
 
-The following code snippet shows how to convert first and third pages from the source document:
+### Using static method
 
+{{< tabs "specific-pages-static">}}
+{{< tab "C#" >}}
 ```csharp
-using (var converter = new MarkdownConverter("sample.docx"))
+using GroupDocs.Markdown;
+
+var options = new ConvertOptions
 {
-    var options = new DocumentConverterOptions
-    {
-        PageNumbers = new []{ 1, 3 }
-    };
-    converter.Convert("output.md", options);
-}
+    PageNumbers = new[] { 1, 3 }
+};
+
+// Convert only pages 1 and 3
+string markdown = MarkdownConverter.ToMarkdown("sample.docx", options);
+Console.WriteLine(markdown);
 ```
+{{< /tab >}}
+{{< /tabs >}}
+
+### Using instance API
+
+{{< tabs "specific-pages-instance">}}
+{{< tab "C#" >}}
+```csharp
+using GroupDocs.Markdown;
+
+using var converter = new MarkdownConverter("sample.docx");
+
+var options = new ConvertOptions
+{
+    PageNumbers = new[] { 1, 3 }
+};
+
+ConvertResult result = converter.Convert(options);
+Console.WriteLine(result.Content);
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+### Save specific pages to a file
+
+{{< tabs "specific-pages-file">}}
+{{< tab "C#" >}}
+```csharp
+using GroupDocs.Markdown;
+
+var options = new ConvertOptions
+{
+    PageNumbers = new[] { 2, 4, 5 }
+};
+
+MarkdownConverter.ToFile("report.pdf", "partial-report.md", options);
+```
+{{< /tab >}}
+{{< /tabs >}}

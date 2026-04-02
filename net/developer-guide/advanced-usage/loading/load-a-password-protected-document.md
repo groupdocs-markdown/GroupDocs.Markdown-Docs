@@ -8,24 +8,64 @@ keywords: load a password-protected document
 productName: GroupDocs.Markdown for .NET
 hideChildren: False
 ---
-This example demonstrates how to load a password-protected document.
 
-**AdvancedUsage.Loading.LoadPasswordProtectedDocument**
+## Load a password-protected document
 
+To open a password-protected document, create a `LoadOptions` instance with the file format and set the `Password` property.
+
+{{< tabs "load-password-static">}}
+{{< tab "C#" >}}
 ```csharp
-// Specify the password
-var loadOptions = new LoadOptions
+using GroupDocs.Markdown;
+
+var loadOptions = new LoadOptions(FileFormat.Docx)
 {
-	Password = "123"
+    Password = "secret"
 };
 
-using (var converter = new MarkdownConverter("source.xls", loadOptions))
+// Static one-liner
+string markdown = MarkdownConverter.ToMarkdown("protected.docx", loadOptions);
+Console.WriteLine(markdown);
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+### Using instance API
+
+{{< tabs "load-password-instance">}}
+{{< tab "C#" >}}
+```csharp
+using GroupDocs.Markdown;
+
+var loadOptions = new LoadOptions(FileFormat.Xlsx)
 {
-	// ...
+    Password = "secret"
+};
+
+using var converter = new MarkdownConverter("protected.xlsx", loadOptions);
+ConvertResult result = converter.Convert();
+Console.WriteLine(result.Content);
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+### Handling incorrect passwords
+
+If the password is missing or incorrect, a `DocumentProtectedException` is thrown. You can catch it to display a user-friendly message:
+
+{{< tabs "load-password-exception">}}
+{{< tab "C#" >}}
+```csharp
+using GroupDocs.Markdown;
+
+try
+{
+    string markdown = MarkdownConverter.ToMarkdown("protected.docx");
+}
+catch (DocumentProtectedException ex)
+{
+    Console.WriteLine($"Cannot open document: {ex.Message}");
 }
 ```
-
-## More resources
-### GitHub examples
-You may easily run the code above and see the feature in action in our GitHub examples:
-*   [GroupDocs.Markdown for .NET examples](https://github.com/groupdocs-markdown/GroupDocs.Markdown-for-.NET)    
+{{< /tab >}}
+{{< /tabs >}}
