@@ -1,0 +1,5 @@
+Format:    Docx
+Pages:     18
+Title:     
+Author:    
+Encrypted: False

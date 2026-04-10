@@ -1,0 +1,26 @@
+---
+author: "Brianna Thielen"
+format: Docx
+pages: 1
+---
+
+[queryEmployees]
+
+Employee Information for Employee [EmployeeID]: [FirstName] [LastName]
+
+
+## Employee Information
+
+
+| **Job Title** | **[Title]** |
+| --- | --- |
+| **Hire Date** | [HireDate] |
+| **Address** | [Address] |
+| **City** | [City] |
+| **Home Phone** | [HomePhone] |
+| **Extension** | [Extension] |
+| **Birth Date** | [BirthDate] |
+| **Reports To** | [ReportsTo] |
+
+
+## Sales Timeline
