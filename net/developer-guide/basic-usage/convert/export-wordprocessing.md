@@ -9,8 +9,6 @@ productName: GroupDocs.Markdown for .NET
 hideChildren: False
 ---
 
-## Convert Word Documents to Markdown
-
 Use GroupDocs.Markdown to convert DOCX and other Word documents to clean Markdown.
 
 ### Using static method
@@ -23,14 +21,26 @@ The simplest way to convert a Word file:
 using GroupDocs.Markdown;
 
 // Set license (optional)
-License.Set("GroupDocs.Markdown.lic");
+if (File.Exists("GroupDocs.Markdown.lic")) License.Set("GroupDocs.Markdown.lic");
 
 // Convert DOCX to Markdown string
-string markdown = MarkdownConverter.ToMarkdown("report.docx");
+string markdown = MarkdownConverter.ToMarkdown("business-plan.docx");
 
 // Or save directly to a file
-MarkdownConverter.ToFile("report.docx", "report.md");
+MarkdownConverter.ToFile("business-plan.docx", "export-word-static.md");
 ```
+{{< /tab >}}
+{{< tab "business-plan.docx" >}}  
+{{< tab-text >}}
+`business-plan.docx` is a sample file used in this example. Click [here](/markdown/net/_sample_files/developer-guide/basic-usage/convert/business-plan.docx) to download it.
+{{< /tab-text >}}
+{{< /tab >}}
+{{< tab "export-word-static.md" >}}  
+```text
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O
+[TRUNCATED]
+```
+[Download full output](/markdown/net/_output_files/developer-guide/basic-usage/convert/export-wordprocessing/ExportWordStatic/export-word-static.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -43,9 +53,9 @@ For more control, use the instance API:
 ```csharp
 using GroupDocs.Markdown;
 
-License.Set("GroupDocs.Markdown.lic");
+if (File.Exists("GroupDocs.Markdown.lic")) License.Set("GroupDocs.Markdown.lic");
 
-using var converter = new MarkdownConverter("report.docx");
+using var converter = new MarkdownConverter("business-plan.docx");
 var options = new ConvertOptions
 {
     ImageExportStrategy = new ExportImagesToFileSystemStrategy("images")
@@ -55,9 +65,22 @@ var options = new ConvertOptions
     HeadingLevelOffset = 1
 };
 
-ConvertResult result = converter.Convert(options);
-Console.WriteLine(result.Content);
+converter.Convert("export-word-instance.md", options);
 ```
+{{< /tab >}}
+{{< tab "business-plan.docx" >}}  
+{{< tab-text >}}
+`business-plan.docx` is a sample file used in this example. Click [here](/markdown/net/_sample_files/developer-guide/basic-usage/convert/business-plan.docx) to download it.
+{{< /tab-text >}}
+{{< /tab >}}
+{{< tab "export-word-instance.zip" >}}  
+```text
+export-word-instance.md (5 KB)
+images/img-001.png (4 KB)
+images/img-002.jpg (41 KB)
+images/img-003.png (14 KB)
+```
+[Download full output](/markdown/net/_output_files/developer-guide/basic-usage/convert/export-wordprocessing/ExportWordInstance/export-word-instance.zip)
 {{< /tab >}}
 {{< /tabs >}}
 

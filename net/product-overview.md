@@ -38,7 +38,12 @@ Designed for AI/ML workflows, static site generators, and document processing pi
 using GroupDocs.Markdown;
 
 // One-liner
-string md = MarkdownConverter.ToMarkdown("report.docx");
+string md = MarkdownConverter.ToMarkdown("business-plan.docx");
+// # Quarterly Report
+//
+// ## Executive Summary
+//
+// This report covers the key initiatives...
 
 // With options
 var options = new ConvertOptions
@@ -47,8 +52,27 @@ var options = new ConvertOptions
     IncludeFrontMatter = true,
     HeadingLevelOffset = 1
 };
-MarkdownConverter.ToFile("report.docx", "report.md", options);
+MarkdownConverter.ToFile("business-plan.docx", "quick-example.md", options);
 ```
+{{< /tab >}}
+{{< tab "business-plan.docx" >}}
+{{< tab-text >}}
+`business-plan.docx` is a sample file used in this example. Click [here](/markdown/net/_sample_files/business-plan.docx) to download it.
+{{< /tab-text >}}
+{{< /tab >}}
+{{< tab "quick-example.md" >}}  
+```text
+---
+title: "Meridian Outdoor Co. — Business Plan"
+author: "Meridian Outdoor Co."
+format: Docx
+pages: 5
+---
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6
+[TRUNCATED]
+```
+[Download full output](/markdown/net/_output_files/product-overview/QuickExample/quick-example.md)
 {{< /tab >}}
 {{< /tabs >}}
 

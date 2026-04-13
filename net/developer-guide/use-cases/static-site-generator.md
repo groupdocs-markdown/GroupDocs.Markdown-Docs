@@ -10,8 +10,6 @@ hideChildren: False
 toc: True
 ---
 
-## Generate content for static sites
-
 Static site generators like Jekyll, Hugo, and Docusaurus expect Markdown files with YAML front matter. GroupDocs.Markdown can automatically generate front matter from document metadata.
 
 ### Convert with front matter and relative images
@@ -45,6 +43,20 @@ MarkdownConverter.ToFile("annual-report.docx", "content/posts/annual-report.md",
 // ...
 ```
 {{< /tab >}}
+{{< tab "annual-report.docx" >}}  
+{{< tab-text >}}
+`annual-report.docx` is a sample file used in this example. Click [here](/markdown/net/_sample_files/developer-guide/use-cases/annual-report.docx) to download it.
+{{< /tab-text >}}
+{{< /tab >}}
+{{< tab "ssg.zip" >}}  
+```text
+content/posts/annual-report.md (5 KB)
+content/posts/images/img-001.png (4 KB)
+content/posts/images/img-002.png (14 KB)
+content/posts/images/img-003.png (15 KB)
+```
+[Download full output](/markdown/net/_output_files/developer-guide/use-cases/static-site-generator/SsgExample/ssg.zip)
+{{< /tab >}}
 {{< /tabs >}}
 
 ### Batch-convert a folder for Hugo
@@ -54,7 +66,7 @@ MarkdownConverter.ToFile("annual-report.docx", "content/posts/annual-report.md",
 ```csharp
 using GroupDocs.Markdown;
 
-string inputDir = "source-documents";
+string inputDir = "documents";
 string outputDir = "content/docs";
 
 var options = new ConvertOptions
@@ -85,5 +97,12 @@ foreach (string file in Directory.GetFiles(inputDir))
     }
 }
 ```
+{{< /tab >}}
+{{< tab "ssg-batch-hugo.zip" >}}  
+```text
+content/docs/business-plan.md (7 KB)
+content/docs/cost-analysis.md (9 KB)
+```
+[Download full output](/markdown/net/_output_files/developer-guide/use-cases/static-site-generator/SsgBatchHugo/ssg-batch-hugo.zip)
 {{< /tab >}}
 {{< /tabs >}}

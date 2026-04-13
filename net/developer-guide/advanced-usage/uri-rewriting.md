@@ -10,8 +10,6 @@ hideChildren: False
 toc: True
 ---
 
-## URI rewriting
-
 Use `UriExportStrategy` with `CustomUriExportStrategy` and `IUriSavingHandler` to rewrite resource URIs in the Markdown output. This is useful when images are served from a CDN or a different path than where they're saved.
 
 {{< alert style="info" >}}
@@ -42,10 +40,24 @@ var options = new ConvertOptions
     UriExportStrategy = new CustomUriExportStrategy(new CdnUriHandler())
 };
 
-MarkdownConverter.ToFile("report.docx", "output/report.md", options);
+MarkdownConverter.ToFile("business-plan.docx", "output/report.md", options);
 // Images saved locally to output/images/
 // Markdown references: ![](https://cdn.example.com/assets/img-001.png)
 ```
+{{< /tab >}}
+{{< tab "business-plan.docx" >}}  
+{{< tab-text >}}
+`business-plan.docx` is a sample file used in this example. Click [here](/markdown/net/_sample_files/developer-guide/advanced-usage/business-plan.docx) to download it.
+{{< /tab-text >}}
+{{< /tab >}}
+{{< tab "uri-cdn.zip" >}}  
+```text
+output/images/img-001.png (4 KB)
+output/images/img-002.jpg (41 KB)
+output/images/img-003.png (14 KB)
+output/report.md (5 KB)
+```
+[Download full output](/markdown/net/_output_files/developer-guide/advanced-usage/uri-rewriting/UriCdn/uri-cdn.zip)
 {{< /tab >}}
 {{< /tabs >}}
 

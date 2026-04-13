@@ -9,8 +9,6 @@ productName: GroupDocs.Markdown for .NET
 hideChildren: False
 ---
 
-## Save images to the file system
-
 Use `ExportImagesToFileSystemStrategy` to save images as separate files during conversion. The Markdown output will contain image references pointing to the exported files.
 
 ### Basic usage
@@ -25,8 +23,22 @@ var options = new ConvertOptions
     ImageExportStrategy = new ExportImagesToFileSystemStrategy("output/images")
 };
 
-MarkdownConverter.ToFile("example.pdf", "output/document.md", options);
+MarkdownConverter.ToFile("business-plan.pdf", "output/document.md", options);
 ```
+{{< /tab >}}
+{{< tab "business-plan.pdf" >}}  
+{{< tab-text >}}
+`business-plan.pdf` is a sample file used in this example. Click [here](/markdown/net/_sample_files/developer-guide/advanced-usage/strategy/business-plan.pdf) to download it.
+{{< /tab-text >}}
+{{< /tab >}}
+{{< tab "image-file-basic.zip" >}}  
+```text
+output/document.md (7 KB)
+output/images/img-001.png (3 KB)
+output/images/img-002.jpg (73 KB)
+output/images/img-003.jpg (76 KB)
+```
+[Download full output](/markdown/net/_output_files/developer-guide/advanced-usage/strategy/image-file-strategy/ImageFileBasic/image-file-basic.zip)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -49,10 +61,24 @@ var options = new ConvertOptions
     ImageExportStrategy = strategy
 };
 
-MarkdownConverter.ToFile("example.pdf", "output/document.md", options);
+MarkdownConverter.ToFile("business-plan.pdf", "output/document.md", options);
 
 // Markdown output contains: ![](images/img-001.png)
 // Image file saved to:     output/images/img-001.png
 ```
+{{< /tab >}}
+{{< tab "business-plan.pdf" >}}  
+{{< tab-text >}}
+`business-plan.pdf` is a sample file used in this example. Click [here](/markdown/net/_sample_files/developer-guide/advanced-usage/strategy/business-plan.pdf) to download it.
+{{< /tab-text >}}
+{{< /tab >}}
+{{< tab "image-file-relative.zip" >}}  
+```text
+output/document.md (7 KB)
+output/images/img-001.png (3 KB)
+output/images/img-002.jpg (73 KB)
+output/images/img-003.jpg (76 KB)
+```
+[Download full output](/markdown/net/_output_files/developer-guide/advanced-usage/strategy/image-file-strategy/ImageFileRelative/image-file-relative.zip)
 {{< /tab >}}
 {{< /tabs >}}

@@ -20,15 +20,19 @@ fullWidth: true
 
 **GroupDocs.Markdown for .NET** converts documents from 20+ formats into clean, structured Markdown. Built for AI/LLM pipelines, static site generators, and document processing workflows.
 
-### Convert in one line
+### Quick example
 
-{{< tabs "convert-in-one-line" >}}
-{{< tab "C#" >}}
 ```csharp
-string md = MarkdownConverter.ToMarkdown("document.docx");
+// Import namespace
+using GroupDocs.Markdown;
+
+// Convert document to Markdown
+string md = MarkdownConverter.ToMarkdown("business-plan.docx");
+
+// # Quarterly Report
+// ## Executive Summary
+// This report covers the key initiatives...
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Why GroupDocs.Markdown?
 

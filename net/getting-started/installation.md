@@ -21,37 +21,25 @@ This topic describes how to add the **GroupDocs.Markdown** library to your .NET 
 
 Open a terminal in your project folder and run:
 
-{{< tabs "dotnet-cli-install" >}}
-{{< tab "C#" >}}
 ```bash
 dotnet add package GroupDocs.Markdown
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Using Package Manager Console
 
 In Visual Studio, open **Tools** > **NuGet Package Manager** > **Package Manager Console** and run:
 
-{{< tabs "pm-console-install" >}}
-{{< tab "C#" >}}
 ```powershell
 Install-Package GroupDocs.Markdown
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Using PackageReference
 
 Add directly to your `.csproj` file:
 
-{{< tabs "package-reference" >}}
-{{< tab "C#" >}}
 ```xml
 <PackageReference Include="GroupDocs.Markdown" Version="26.3" />
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Runtime Packages
 
@@ -66,13 +54,9 @@ The NuGet package includes assemblies for four target frameworks:
 
 In most cases, install only the main `GroupDocs.Markdown` package. NuGet will resolve the correct runtime package automatically. You can also install a specific runtime package directly if needed:
 
-{{< tabs "runtime-package" >}}
-{{< tab "C#" >}}
 ```bash
 dotnet add package GroupDocs.Markdown.Net80
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Download from the Official Website
 
@@ -94,15 +78,6 @@ using GroupDocs.Markdown;
 // List all supported formats
 foreach (FileFormat format in MarkdownConverter.GetSupportedFormats())
     Console.WriteLine(format);
-```
-{{< /tab >}}
-{{< tab "VB.NET" >}}
-```vbnet
-Imports GroupDocs.Markdown
-
-For Each format As FileFormat In MarkdownConverter.GetSupportedFormats()
-    Console.WriteLine(format)
-Next
 ```
 {{< /tab >}}
 {{< /tabs >}}

@@ -59,7 +59,7 @@ The `License.Set()` static method is the simplest way to apply a license. You do
 {{< tab "C#" >}}
 ```csharp
 // Set the license using the static method
-License.Set("GroupDocs.Markdown.lic");
+if (File.Exists("GroupDocs.Markdown.lic")) License.Set("GroupDocs.Markdown.lic");
 ```
 {{< /tab >}}
 {{< /tabs >}}

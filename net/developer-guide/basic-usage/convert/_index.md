@@ -20,8 +20,16 @@ Call `MarkdownConverter.ToMarkdown()` to get a Markdown string, or `MarkdownConv
 {{< tabs "static-methods" >}}
 {{< tab "C#" >}}
 ```csharp
-string md = MarkdownConverter.ToMarkdown("report.docx");
-MarkdownConverter.ToFile("report.docx", "report.md");
+using GroupDocs.Markdown;
+
+string md = MarkdownConverter.ToMarkdown("business-plan.docx");
+// # Quarterly Report
+//
+// ## Executive Summary
+//
+// This report covers the key initiatives...
+
+MarkdownConverter.ToFile("business-plan.docx", "static-methods.md");
 ```
 {{< /tab >}}
 {{< /tabs >}}
@@ -33,9 +41,10 @@ Create a [MarkdownConverter](https://reference.groupdocs.com/markdown/net/groupd
 {{< tabs "instance-api" >}}
 {{< tab "C#" >}}
 ```csharp
-using var converter = new MarkdownConverter("report.docx");
-ConvertResult result = converter.Convert(new ConvertOptions { HeadingLevelOffset = 1 });
-Console.WriteLine(result.Content);
+using GroupDocs.Markdown;
+
+using var converter = new MarkdownConverter("business-plan.docx");
+converter.Convert("instance-api.md", new ConvertOptions { HeadingLevelOffset = 1 });
 ```
 {{< /tab >}}
 {{< /tabs >}}

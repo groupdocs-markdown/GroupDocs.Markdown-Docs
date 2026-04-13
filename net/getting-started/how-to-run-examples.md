@@ -36,8 +36,8 @@ You can build a project from scratch using Visual Studio or [.NET CLI](https://d
   ```csharp
     using GroupDocs.Markdown;
 
-    string documentPath = @"C:\sample.docx"; // NOTE: Put here actual path for your document
-    string outputPath = @"C:\output\converted.md";
+    string documentPath = "business-plan.docx";
+    string outputPath = "converted.md";
   
 	using (var converter = new MarkdownConverter(documentPath))
 	{
@@ -45,7 +45,19 @@ You can build a project from scratch using Visual Studio or [.NET CLI](https://d
 	}
   ```
   {{< /tab >}}
-  {{< /tabs >}}
+  {{< tab "business-plan.docx" >}}
+  {{< tab-text >}}
+  `business-plan.docx` is a sample file used in this example. Click [here](/markdown/net/_sample_files/business-plan.docx) to download it.
+  {{< /tab-text >}}
+  {{< /tab >}}
+{{< tab "converted.md" >}}  
+```text
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O
+[TRUNCATED]
+```
+[Download full output](/markdown/net/_output_files/getting-started/how-to-run-examples/DotnetCliExample/converted.md)
+{{< /tab >}}
+{{< /tabs >}}
   
 7. Replace the `documentPath` value with the actual path to the document you're going to convert.
 8. Run the project by executing the `dotnet run` command.
@@ -63,8 +75,8 @@ You can build a project from scratch using Visual Studio or [.NET CLI](https://d
   ```csharp
     using GroupDocs.Markdown;
 
-    string documentPath = @"C:\sample.docx"; // NOTE: Put here actual path for your document
-    string outputPath = @"C:\output\converted.md";
+    string documentPath = "business-plan.docx";
+    string outputPath = "converted.md";
   
 	using (var converter = new MarkdownConverter(documentPath))
 	{
@@ -72,7 +84,19 @@ You can build a project from scratch using Visual Studio or [.NET CLI](https://d
 	}
   ```
   {{< /tab >}}
-  {{< /tabs >}}
+  {{< tab "business-plan.docx" >}}
+  {{< tab-text >}}
+  `business-plan.docx` is a sample file used in this example. Click [here](/markdown/net/_sample_files/business-plan.docx) to download it.
+  {{< /tab-text >}}
+  {{< /tab >}}
+{{< tab "converted.md" >}}  
+```text
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O
+[TRUNCATED]
+```
+[Download full output](/markdown/net/_output_files/getting-started/how-to-run-examples/VisualStudioExample/converted.md)
+{{< /tab >}}
+{{< /tabs >}}
 
 5. Replace the `documentPath` value with the actual path to the document you're going to convert.
 6. Build and Run your project.

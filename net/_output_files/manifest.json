@@ -1,0 +1,474 @@
+{
+  "async-static": {
+    "type": "file",
+    "file": "report.md",
+    "path": "developer-guide/advanced-usage/async-api/AsyncStatic/report.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "AsyncStatic"
+  },
+  "async-instance": {
+    "type": "file",
+    "file": "async-instance.md",
+    "path": "developer-guide/advanced-usage/async-api/AsyncInstance/async-instance.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "AsyncInstance"
+  },
+  "async-cancellation": {
+    "type": "file",
+    "file": "async-cancellation.md",
+    "path": "developer-guide/advanced-usage/async-api/AsyncCancellation/async-cancellation.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAIAAADHHcVbAAAAA3NCSVQICAjb4U/gAAAMWElEQVR4nO3dUWzV130H8L+nSnsgxYTa5kbEnhJgJpJ98aQseTAxUaoiW1RDSiseykoCNE9boyoIZEWLVImosoZSpeve0Ighax4iDRRpky02oWKbh2aVCralhGBANSAu4Lq5NJ60tz0c8t/lf6/h2jjg/M/nIz8c7v/v3z345atz/v9zTkNpaiwBgFj92aPuAAA8SoIQgKgJQgCiJggBiNo3Mv/+53/9r4tXbi6u1t/v/Pa6tjXzXV1cZTXVVFNNNdVc2poZ2SCcmr4xfv7KQr8y+NPc/97j6uIqq6mmmmqqqebS1szIBuH6tjUNDQ0Xp2988T8LqAIAX1NLOSIEgK+dhsyC+p/87FdpEP7dzm+va613jjVJkvVtax5b8efzXb04fWNBY1U11VRTTTXVXJ\n[TRUNCATED]",
+    "function": "AsyncCancellation"
+  },
+  "specific-pages-static": {
+    "type": "file",
+    "file": "specific-pages-static.md",
+    "path": "developer-guide/advanced-usage/convert-specific-pages/SpecificPagesStatic/specific-pages-static.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "SpecificPagesStatic"
+  },
+  "specific-pages-instance": {
+    "type": "file",
+    "file": "specific-pages-instance.md",
+    "path": "developer-guide/advanced-usage/convert-specific-pages/SpecificPagesInstance/specific-pages-instance.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "SpecificPagesInstance"
+  },
+  "specific-pages-file": {
+    "type": "file",
+    "file": "specific-pages-file.md",
+    "path": "developer-guide/advanced-usage/convert-specific-pages/SpecificPagesFile/specific-pages-file.md",
+    "preview": "**Table of Contents**\n\nMeridian Outdoor Co. — Business Plan .........................................................................................1FY2026 Strategic Plan.................................................................................................................1Table of Contents.............................................................................................................................2\n\n1. Executive Summary..................................................\n[TRUNCATED]",
+    "function": "SpecificPagesFile"
+  },
+  "error-handling-example": {
+    "type": "file",
+    "file": "error-handling-example.md",
+    "path": "developer-guide/advanced-usage/error-handling/ErrorHandlingExample/error-handling-example.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "ErrorHandlingExample"
+  },
+  "warnings-example": {
+    "type": "file",
+    "file": "warnings-example.md",
+    "path": "developer-guide/advanced-usage/error-handling/WarningsExample/warnings-example.md",
+    "preview": "## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |\n| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |\n| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |\n| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |\n| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |\n| R&D | $180,000.00 | $230,000.00 | $310,000.00 |\n[TRUNCATED]",
+    "function": "WarningsExample"
+  },
+  "front-matter-example": {
+    "type": "file",
+    "file": "front-matter-example.md",
+    "path": "developer-guide/advanced-usage/front-matter/FrontMatterExample/front-matter-example.md",
+    "preview": "---\ntitle: \"Meridian Outdoor Co. — Business Plan\"\nauthor: \"Meridian Outdoor Co.\"\nformat: Docx\npages: 5\n---\n\n![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6\n[TRUNCATED]",
+    "function": "FrontMatterExample"
+  },
+  "front-matter-combined": {
+    "type": "file",
+    "file": "front-matter-combined.md",
+    "path": "developer-guide/advanced-usage/front-matter/FrontMatterCombined/front-matter-combined.md",
+    "preview": "---\ntitle: \"Meridian Outdoor Co. — Annual Report 2025\"\nauthor: \"Elena Márquez, CFO\"\nformat: Docx\npages: 6\n---\n\n![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1Ld\n[TRUNCATED]",
+    "function": "FrontMatterCombined"
+  },
+  "heading-offset-example": {
+    "type": "file",
+    "file": "heading-offset-example.md",
+    "path": "developer-guide/advanced-usage/heading-offset/HeadingOffsetExample/heading-offset-example.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "HeadingOffsetExample"
+  },
+  "load-specific-format": {
+    "type": "file",
+    "file": "load-specific-format.md",
+    "path": "developer-guide/advanced-usage/loading/load-a-file-of-a-specific-format/LoadSpecificFormat/load-specific-format.md",
+    "preview": "## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |\n| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |\n| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |\n| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |\n| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |\n| R&D | $180,000.00 | $230,000.00 | $310,000.00 |\n[TRUNCATED]",
+    "function": "LoadSpecificFormat"
+  },
+  "load-supported-formats": {
+    "type": "text",
+    "file": "load-supported-formats.txt",
+    "path": "developer-guide/advanced-usage/loading/load-a-file-of-a-specific-format/LoadSupportedFormats/load-supported-formats.txt",
+    "preview": "Doc\nDocx\nDocm\nDot\nDotx\nDotm\nRtf\nOdt\nOtt\nXlsx\n[TRUNCATED]",
+    "function": "LoadSupportedFormats"
+  },
+  "load-password-static": {
+    "type": "file",
+    "file": "load-password-static.md",
+    "path": "developer-guide/advanced-usage/loading/load-a-password-protected-document/LoadPasswordStatic/load-password-static.md",
+    "preview": "**Confidential Memo**\n\nFrom: Meridian Outdoor Co. — Strategy Team\n\nDate: 2026-01-15\n\nSubject: FY2026 M&A Targets\n\n\n\n[TRUNCATED]",
+    "function": "LoadPasswordStatic"
+  },
+  "load-password-instance": {
+    "type": "file",
+    "file": "load-password-instance.md",
+    "path": "developer-guide/advanced-usage/loading/load-a-password-protected-document/LoadPasswordInstance/load-password-instance.md",
+    "preview": "## Expenses\n\n| Date | Vendor | Category | Amount |\n| --- | --- | --- | --- |\n| 2026-01-02 | Pacific Freight | Shipping | $2,450.00 |\n| 2026-01-05 | Cedar Packaging | Materials | $1,320.50 |\n| 2026-01-08 | Highline Textiles | Materials | $8,940.00 |\n| 2026-01-12 | Portland Electric | Utilities | $680.25 |\n| 2026-01-14 | Backcountry Co-op | Events | $1,200.00 |\n| 2026-01-17 | Ridge Media | Marketing | $5,400.00 |\n[TRUNCATED]",
+    "function": "LoadPasswordInstance"
+  },
+  "load-password-exception": {
+    "type": "text",
+    "file": "load-password-exception.txt",
+    "path": "developer-guide/advanced-usage/loading/load-a-password-protected-document/LoadPasswordException/load-password-exception.txt",
+    "preview": "Cannot open document: The document password is incorrect.",
+    "function": "LoadPasswordException"
+  },
+  "load-disk-static": {
+    "type": "file",
+    "file": "load-disk-static.md",
+    "path": "developer-guide/advanced-usage/loading/load-from-a-local-disk/LoadDiskStatic/load-disk-static.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "LoadDiskStatic"
+  },
+  "load-disk-instance": {
+    "type": "file",
+    "file": "load-disk-instance.md",
+    "path": "developer-guide/advanced-usage/loading/load-from-a-local-disk/LoadDiskInstance/load-disk-instance.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "LoadDiskInstance"
+  },
+  "load-stream-example": {
+    "type": "file",
+    "file": "load-stream-example.md",
+    "path": "developer-guide/advanced-usage/loading/load-from-a-stream/LoadStreamExample/load-stream-example.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "LoadStreamExample"
+  },
+  "load-stream-options": {
+    "type": "file",
+    "file": "load-stream-options.md",
+    "path": "developer-guide/advanced-usage/loading/load-from-a-stream/LoadStreamOptions/load-stream-options.md",
+    "preview": "| HOME BASED |  |  |\n| --- | --- | --- |\n|  |  |  |\n| PROFESSIONAL SERVICES |  |  |\n|  | Business Plan |  |\n\n\n\n|  | TABLE OF CONTENTS\u0013 TOC \\o \"1-3\" \\h \\z \\u \u0014\u0013 HYPERLINK \\l \"_Toc9437451\" \u0014Introduction\t\u0013 PAGEREF _Toc9437451 \\h \u00143\u0015\u0015 \u0013 HYPERLINK \\l \"_Toc9437452\" \u00141.\tExecutive Summary\t\u0013 PAGEREF _Toc9437452 \\h \u00145\u0015\u0015 \u0013 HYPERLINK \\l \"_Toc9437453\" \u00142.\tCompany Overview\t\u0013 PAGEREF _Toc9437453 \\h \u00146\u0015\u0015 \u0013 HYPERLINK \\l \"_Toc9437454\" \u00143.\tBusiness Description\t\u0013 PAGEREF _Toc9437454 \\h \u00147\u0015\u0015 \u0013 HYPERLINK \\l \"_Toc9437\n[TRUNCATED]",
+    "function": "LoadStreamOptions"
+  },
+  "flavor-gfm": {
+    "type": "file",
+    "file": "flavor-gfm.md",
+    "path": "developer-guide/advanced-usage/markdown-flavor/FlavorGfm/flavor-gfm.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "FlavorGfm"
+  },
+  "flavor-commonmark": {
+    "type": "file",
+    "file": "flavor-commonmark.md",
+    "path": "developer-guide/advanced-usage/markdown-flavor/FlavorCommonmark/flavor-commonmark.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "FlavorCommonmark"
+  },
+  "spreadsheet-truncation": {
+    "type": "file",
+    "file": "spreadsheet-truncation.md",
+    "path": "developer-guide/advanced-usage/spreadsheet-options/SpreadsheetTruncation/spreadsheet-truncation.md",
+    "preview": "## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |\n| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |\n| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |\n| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |\n| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |\n| R&D | $180,000.00 | $230,000.00 | $310,000.00 |\n[TRUNCATED]",
+    "function": "SpreadsheetTruncation"
+  },
+  "spreadsheet-sheets": {
+    "type": "file",
+    "file": "spreadsheet-sheets.md",
+    "path": "developer-guide/advanced-usage/spreadsheet-options/SpreadsheetSheets/spreadsheet-sheets.md",
+    "preview": "## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |\n| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |\n| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |\n| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |\n| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |\n| R&D | $180,000.00 | $230,000.00 | $310,000.00 |\n[TRUNCATED]",
+    "function": "SpreadsheetSheets"
+  },
+  "base64-static": {
+    "type": "file",
+    "file": "base64-static.md",
+    "path": "developer-guide/advanced-usage/strategy/as-base64-strategy/Base64Static/base64-static.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAIAAADHHcVbAAAAA3NCSVQICAjb4U/gAAAMWElEQVR4nO3dUWzV130H8L+nSnsgxYTa5kbEnhJgJpJ98aQseTAxUaoiW1RDSiseykoCNE9boyoIZEWLVImosoZSpeve0Ighax4iDRRpky02oWKbh2aVCralhGBANSAu4Lq5NJ60tz0c8t/lf6/h2jjg/M/nIz8c7v/v3z345atz/v9zTkNpaiwBgFj92aPuAAA8SoIQgKgJQgCiJggBiNo3Mv/+53/9r4tXbi6u1t/v/Pa6tjXzXV1cZTXVVFNNNdVc2poZ2SCcmr4xfv7KQr8y+NPc/97j6uIqq6mmmmqqqebS1szIBuH6tjUNDQ0Xp2988T8LqAIAX1NLOSIEgK+dhsyC+p/87FdpEP7dzm+va613jjVJkvVtax5b8efzXb04fWNBY1U11VRTTTXVXJ\n[TRUNCATED]",
+    "function": "Base64Static"
+  },
+  "base64-explicit": {
+    "type": "file",
+    "file": "base64-explicit.md",
+    "path": "developer-guide/advanced-usage/strategy/as-base64-strategy/Base64Explicit/base64-explicit.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAIAAADHHcVbAAAAA3NCSVQICAjb4U/gAAAMWElEQVR4nO3dUWzV130H8L+nSnsgxYTa5kbEnhJgJpJ98aQseTAxUaoiW1RDSiseykoCNE9boyoIZEWLVImosoZSpeve0Ighax4iDRRpky02oWKbh2aVCralhGBANSAu4Lq5NJ60tz0c8t/lf6/h2jjg/M/nIz8c7v/v3z345atz/v9zTkNpaiwBgFj92aPuAAA8SoIQgKgJQgCiJggBiNo3Mv/+53/9r4tXbi6u1t/v/Pa6tjXzXV1cZTXVVFNNNdVc2poZ2SCcmr4xfv7KQr8y+NPc/97j6uIqq6mmmmqqqebS1szIBuH6tjUNDQ0Xp2988T8LqAIAX1NLOSIEgK+dhsyC+p/87FdpEP7dzm+va613jjVJkvVtax5b8efzXb04fWNBY1U11VRTTTXVXJ\n[TRUNCATED]",
+    "function": "Base64Explicit"
+  },
+  "custom-strategy-rename": {
+    "type": "zip",
+    "file": "custom-strategy-rename.zip",
+    "path": "developer-guide/advanced-usage/strategy/custom-strategy/CustomStrategyRename/custom-strategy-rename.zip",
+    "contents": [
+      "output\\document.md",
+      "output\\images\\img_0_img-001.png",
+      "output\\images\\img_1_img-002.jpg",
+      "output\\images\\img_2_img-003.png"
+    ],
+    "preview": "output/document.md (5 KB)\noutput/images/img_0_img-001.png (4 KB)\noutput/images/img_1_img-002.jpg (41 KB)\noutput/images/img_2_img-003.png (14 KB)",
+    "function": "CustomStrategyRename"
+  },
+  "custom-strategy-replace": {
+    "type": "zip",
+    "file": "custom-strategy-replace.zip",
+    "path": "developer-guide/advanced-usage/strategy/custom-strategy/CustomStrategyReplace/custom-strategy-replace.zip",
+    "contents": [
+      "output\\document.md",
+      "output\\images\\placeholder.png"
+    ],
+    "preview": "output/document.md (5 KB)\noutput/images/placeholder.png (14 KB)",
+    "function": "CustomStrategyReplace"
+  },
+  "image-file-basic": {
+    "type": "zip",
+    "file": "image-file-basic.zip",
+    "path": "developer-guide/advanced-usage/strategy/image-file-strategy/ImageFileBasic/image-file-basic.zip",
+    "contents": [
+      "output\\document.md",
+      "output\\images\\img-001.png",
+      "output\\images\\img-002.jpg",
+      "output\\images\\img-003.jpg"
+    ],
+    "preview": "output/document.md (7 KB)\noutput/images/img-001.png (3 KB)\noutput/images/img-002.jpg (73 KB)\noutput/images/img-003.jpg (76 KB)",
+    "function": "ImageFileBasic"
+  },
+  "image-file-relative": {
+    "type": "zip",
+    "file": "image-file-relative.zip",
+    "path": "developer-guide/advanced-usage/strategy/image-file-strategy/ImageFileRelative/image-file-relative.zip",
+    "contents": [
+      "output\\document.md",
+      "output\\images\\img-001.png",
+      "output\\images\\img-002.jpg",
+      "output\\images\\img-003.jpg"
+    ],
+    "preview": "output/document.md (7 KB)\noutput/images/img-001.png (3 KB)\noutput/images/img-002.jpg (73 KB)\noutput/images/img-003.jpg (76 KB)",
+    "function": "ImageFileRelative"
+  },
+  "skip-images-static": {
+    "type": "file",
+    "file": "skip-images-static.md",
+    "path": "developer-guide/advanced-usage/strategy/image-skip-strategy/SkipImagesStatic/skip-images-static.md",
+    "preview": "**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\f**Table of Contents**\n\nMeridian Outdoor Co. — Business Plan .........................................................................................1FY2026 Strategic Plan.................................................................................................................1Table of Contents.............................................................................................................................2\n\n1. E\n[TRUNCATED]",
+    "function": "SkipImagesStatic"
+  },
+  "skip-images-instance": {
+    "type": "file",
+    "file": "skip-images-instance.md",
+    "path": "developer-guide/advanced-usage/strategy/image-skip-strategy/SkipImagesInstance/skip-images-instance.md",
+    "preview": "**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\f**Table of Contents**\n\nMeridian Outdoor Co. — Business Plan .........................................................................................1FY2026 Strategic Plan.................................................................................................................1Table of Contents.............................................................................................................................2\n\n1. E\n[TRUNCATED]",
+    "function": "SkipImagesInstance"
+  },
+  "uri-cdn": {
+    "type": "zip",
+    "file": "uri-cdn.zip",
+    "path": "developer-guide/advanced-usage/uri-rewriting/UriCdn/uri-cdn.zip",
+    "contents": [
+      "output\\images\\img-001.png",
+      "output\\images\\img-002.jpg",
+      "output\\images\\img-003.png",
+      "output\\report.md"
+    ],
+    "preview": "output/images/img-001.png (4 KB)\noutput/images/img-002.jpg (41 KB)\noutput/images/img-003.png (14 KB)\noutput/report.md (5 KB)",
+    "function": "UriCdn"
+  },
+  "export-ebook-static": {
+    "type": "file",
+    "file": "export-ebook-static.md",
+    "path": "developer-guide/basic-usage/convert/export-ebook/ExportEbookStatic/export-ebook-static.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQsAAABQCAYAAAAOa1DSAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAEHlJREFUeJzt3XlwG9d9wPHvLhYncRIA71sUKUqULFqHbR2xlUqx3dxOk0kzzbR2/2hnOnU7STr9r800f6SdTv9Ims60406OiXPUrq1YdeLEhyzLsiRKIi1SFy/xvm+QAHED/QMSKIgADSUZ05J+n7+0j2/3Pexb/bD78N4+ZbLvVBIhhPgAGkAymSQWSxCLx3PnVECv6dB0unRSPJ4gEo3l3EVVVYwGLb2dSCSJxuIkEonsRSgKek2HTqem02LxONFo7nrpdCoG/a1lJG6UkT0GKoqCXq9Dp66WEY3FicVyl6HpVPS3lBFPJIhG4yST2ctQVQW9pqGqCpDf+dU0HXrtTs6tgkGvoSirZURjceLx7OdW2k/a77dpv4\n[TRUNCATED]",
+    "function": "ExportEbookStatic"
+  },
+  "export-ebook-instance": {
+    "type": "zip",
+    "file": "export-ebook-instance.zip",
+    "path": "developer-guide/basic-usage/convert/export-ebook/ExportEbookInstance/export-ebook-instance.zip",
+    "contents": [
+      "export-ebook-instance.md",
+      "images\\img-001.png",
+      "images\\img-002.jpg",
+      "images\\img-003.png"
+    ],
+    "preview": "export-ebook-instance.md (5 KB)\nimages/img-001.png (4 KB)\nimages/img-002.jpg (35 KB)\nimages/img-003.png (13 KB)",
+    "function": "ExportEbookInstance"
+  },
+  "export-pdf-static": {
+    "type": "file",
+    "file": "export-pdf-static.md",
+    "path": "developer-guide/basic-usage/convert/export-pdf/ExportPdfStatic/export-pdf-static.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAIAAADHHcVbAAAAA3NCSVQICAjb4U/gAAAMWElEQVR4nO3dUWzV130H8L+nSnsgxYTa5kbEnhJgJpJ98aQseTAxUaoiW1RDSiseykoCNE9boyoIZEWLVImosoZSpeve0Ighax4iDRRpky02oWKbh2aVCralhGBANSAu4Lq5NJ60tz0c8t/lf6/h2jjg/M/nIz8c7v/v3z345atz/v9zTkNpaiwBgFj92aPuAAA8SoIQgKgJQgCiJggBiNo3Mv/+53/9r4tXbi6u1t/v/Pa6tjXzXV1cZTXVVFNNNdVc2poZ2SCcmr4xfv7KQr8y+NPc/97j6uIqq6mmmmqqqebS1szIBuH6tjUNDQ0Xp2988T8LqAIAX1NLOSIEgK+dhsyC+p/87FdpEP7dzm+va613jjVJkvVtax5b8efzXb04fWNBY1U11VRTTTXVXJ\n[TRUNCATED]",
+    "function": "ExportPdfStatic"
+  },
+  "export-pdf-instance": {
+    "type": "zip",
+    "file": "export-pdf-instance.zip",
+    "path": "developer-guide/basic-usage/convert/export-pdf/ExportPdfInstance/export-pdf-instance.zip",
+    "contents": [
+      "export-pdf-instance.md",
+      "images\\img-001.png",
+      "images\\img-002.jpg",
+      "images\\img-003.jpg"
+    ],
+    "preview": "export-pdf-instance.md (7 KB)\nimages/img-001.png (3 KB)\nimages/img-002.jpg (73 KB)\nimages/img-003.jpg (76 KB)",
+    "function": "ExportPdfInstance"
+  },
+  "export-spreadsheet-static": {
+    "type": "file",
+    "file": "export-spreadsheet-static.md",
+    "path": "developer-guide/basic-usage/convert/export-spreadsheet/ExportSpreadsheetStatic/export-spreadsheet-static.md",
+    "preview": "## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |\n| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |\n| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |\n| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |\n| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |\n| R&D | $180,000.00 | $230,000.00 | $310,000.00 |\n[TRUNCATED]",
+    "function": "ExportSpreadsheetStatic"
+  },
+  "export-spreadsheet-instance": {
+    "type": "file",
+    "file": "export-spreadsheet-instance.md",
+    "path": "developer-guide/basic-usage/convert/export-spreadsheet/ExportSpreadsheetInstance/export-spreadsheet-instance.md",
+    "preview": "## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |\n| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |\n| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |\n| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |\n| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |\n| R&D | $180,000.00 | $230,000.00 | $310,000.00 |\n[TRUNCATED]",
+    "function": "ExportSpreadsheetInstance"
+  },
+  "export-text-static": {
+    "type": "file",
+    "file": "export-text-static.md",
+    "path": "developer-guide/basic-usage/convert/export-text/ExportTextStatic/export-text-static.md",
+    "preview": "Attention-based neural architecture that underpins most modern large language models.\n\n2017\n\nAttention Is All You Need\n\n\nLanguage modeling\n\nMachine translation\n[TRUNCATED]",
+    "function": "ExportTextStatic"
+  },
+  "export-text-instance": {
+    "type": "file",
+    "file": "export-text-instance.md",
+    "path": "developer-guide/basic-usage/convert/export-text/ExportTextInstance/export-text-instance.md",
+    "preview": "Attention-based neural architecture that underpins most modern large language models.\n\n2017\n\nAttention Is All You Need\n\n\nLanguage modeling\n\nMachine translation\n[TRUNCATED]",
+    "function": "ExportTextInstance"
+  },
+  "export-word-static": {
+    "type": "file",
+    "file": "export-word-static.md",
+    "path": "developer-guide/basic-usage/convert/export-wordprocessing/ExportWordStatic/export-word-static.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "ExportWordStatic"
+  },
+  "export-word-instance": {
+    "type": "zip",
+    "file": "export-word-instance.zip",
+    "path": "developer-guide/basic-usage/convert/export-wordprocessing/ExportWordInstance/export-word-instance.zip",
+    "contents": [
+      "export-word-instance.md",
+      "images\\img-001.png",
+      "images\\img-002.jpg",
+      "images\\img-003.png"
+    ],
+    "preview": "export-word-instance.md (5 KB)\nimages/img-001.png (4 KB)\nimages/img-002.jpg (41 KB)\nimages/img-003.png (14 KB)",
+    "function": "ExportWordInstance"
+  },
+  "get-info-static": {
+    "type": "text",
+    "file": "get-info-static.txt",
+    "path": "developer-guide/basic-usage/get-document-info/GetInfoStatic/get-info-static.txt",
+    "preview": "Format:    Docx\nPages:     5\nTitle:     Meridian Outdoor Co. - Business Plan\nAuthor:    Meridian Outdoor Co.\nEncrypted: False",
+    "function": "GetInfoStatic"
+  },
+  "get-info-instance": {
+    "type": "text",
+    "file": "get-info-instance.txt",
+    "path": "developer-guide/basic-usage/get-document-info/GetInfoInstance/get-info-instance.txt",
+    "preview": "Format:    Xlsx\nPages:     4\nTitle:     \nAuthor:    \nEncrypted: False",
+    "function": "GetInfoInstance"
+  },
+  "batch-basic": {
+    "type": "zip",
+    "file": "batch-basic.zip",
+    "path": "developer-guide/use-cases/batch-convert/BatchBasic/batch-basic.zip",
+    "contents": [
+      "output\\business-plan.md",
+      "output\\cost-analysis.md"
+    ],
+    "preview": "output/business-plan.md (210 KB)\noutput/cost-analysis.md (9 KB)",
+    "function": "BatchBasic"
+  },
+  "batch-async": {
+    "type": "zip",
+    "file": "batch-async.zip",
+    "path": "developer-guide/use-cases/batch-convert/BatchAsync/batch-async.zip",
+    "contents": [
+      "output\\business-plan.md",
+      "output\\cost-analysis.md"
+    ],
+    "preview": "output/business-plan.md (7 KB)\noutput/cost-analysis.md (9 KB)",
+    "function": "BatchAsync"
+  },
+  "rag-basic": {
+    "type": "text",
+    "file": "rag-basic.txt",
+    "path": "developer-guide/use-cases/convert-for-rag/RagBasic/rag-basic.txt",
+    "preview": "Chunk (7889 chars): \n\n**Professional Services**\n\nA catalog of engagements offered by Meridian Ou...",
+    "function": "RagBasic"
+  },
+  "rag-batch": {
+    "type": "zip",
+    "file": "rag-batch.zip",
+    "path": "developer-guide/use-cases/convert-for-rag/RagBatch/rag-batch.zip",
+    "contents": [
+      "documents\\business-plan.md"
+    ],
+    "preview": "documents/business-plan.md (7 KB)",
+    "function": "RagBatch"
+  },
+  "ssg-example": {
+    "type": "zip",
+    "file": "ssg.zip",
+    "path": "developer-guide/use-cases/static-site-generator/SsgExample/ssg.zip",
+    "contents": [
+      "content\\posts\\annual-report.md",
+      "content\\posts\\images\\img-001.png",
+      "content\\posts\\images\\img-002.png",
+      "content\\posts\\images\\img-003.png"
+    ],
+    "preview": "content/posts/annual-report.md (5 KB)\ncontent/posts/images/img-001.png (4 KB)\ncontent/posts/images/img-002.png (14 KB)\ncontent/posts/images/img-003.png (15 KB)",
+    "function": "SsgExample"
+  },
+  "ssg-batch-hugo": {
+    "type": "zip",
+    "file": "ssg-batch-hugo.zip",
+    "path": "developer-guide/use-cases/static-site-generator/SsgBatchHugo/ssg-batch-hugo.zip",
+    "contents": [
+      "content\\docs\\business-plan.md",
+      "content\\docs\\cost-analysis.md"
+    ],
+    "preview": "content/docs/business-plan.md (7 KB)\ncontent/docs/cost-analysis.md (9 KB)",
+    "function": "SsgBatchHugo"
+  },
+  "dotnet-cli-example": {
+    "type": "file",
+    "file": "converted.md",
+    "path": "getting-started/how-to-run-examples/DotnetCliExample/converted.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "DotnetCliExample"
+  },
+  "visual-studio-example": {
+    "type": "file",
+    "file": "converted.md",
+    "path": "getting-started/how-to-run-examples/VisualStudioExample/converted.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "VisualStudioExample"
+  },
+  "qs-word-to-md": {
+    "type": "file",
+    "file": "qs-word-to-md.md",
+    "path": "getting-started/quick-start-guide/QsWordToMd/qs-word-to-md.md",
+    "preview": "![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O\n[TRUNCATED]",
+    "function": "QsWordToMd"
+  },
+  "qs-pdf-with-images": {
+    "type": "zip",
+    "file": "qs-pdf-with-images.zip",
+    "path": "getting-started/quick-start-guide/QsPdfWithImages/qs-pdf-with-images.zip",
+    "contents": [
+      "output\\images\\img-001.png",
+      "output\\images\\img-002.jpg",
+      "output\\images\\img-003.jpg",
+      "output\\report.md"
+    ],
+    "preview": "output/images/img-001.png (3 KB)\noutput/images/img-002.jpg (73 KB)\noutput/images/img-003.jpg (76 KB)\noutput/report.md (7 KB)",
+    "function": "QsPdfWithImages"
+  },
+  "qs-excel-options": {
+    "type": "file",
+    "file": "qs-excel-options.md",
+    "path": "getting-started/quick-start-guide/QsExcelOptions/qs-excel-options.md",
+    "preview": "---\nformat: Xlsx\npages: 4\n---\n\n\n## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n[TRUNCATED]",
+    "function": "QsExcelOptions"
+  },
+  "quick-example": {
+    "type": "file",
+    "file": "quick-example.md",
+    "path": "product-overview/QuickExample/quick-example.md",
+    "preview": "---\ntitle: \"Meridian Outdoor Co. — Business Plan\"\nauthor: \"Meridian Outdoor Co.\"\nformat: Docx\npages: 5\n---\n\n![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6\n[TRUNCATED]",
+    "function": "QuickExample"
+  }
+}

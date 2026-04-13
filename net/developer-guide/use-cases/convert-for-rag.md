@@ -10,8 +10,6 @@ hideChildren: False
 toc: True
 ---
 
-## Convert documents for RAG pipelines
-
 Retrieval-augmented generation (RAG) systems need documents in a clean, structured text format for chunking and embedding. Markdown is ideal — it preserves document structure (headings, lists, tables) while being easy to parse.
 
 {{< mermaid class="text-center" >}}
@@ -39,7 +37,7 @@ var options = new ConvertOptions
     Flavor = MarkdownFlavor.CommonMark
 };
 
-string markdown = MarkdownConverter.ToMarkdown("knowledge-base.pdf", options);
+string markdown = MarkdownConverter.ToMarkdown("professional-services.pdf", options);
 
 // Split into chunks by headings
 string[] chunks = markdown.Split(
@@ -52,6 +50,21 @@ foreach (string chunk in chunks)
     Console.WriteLine($"Chunk ({chunk.Length} chars): {chunk.Substring(0, Math.Min(80, chunk.Length))}...");
 }
 ```
+{{< /tab >}}
+{{< tab "professional-services.pdf" >}}  
+{{< tab-text >}}
+`professional-services.pdf` is a sample file used in this example. Click [here](/markdown/net/_sample_files/developer-guide/use-cases/professional-services.pdf) to download it.
+{{< /tab-text >}}
+{{< /tab >}}
+{{< tab "rag-basic.txt" >}}  
+```text
+Chunk (7889 chars): 
+
+**Professional Services**
+
+A catalog of engagements offered by Meridian Ou...
+```
+[Download full output](/markdown/net/_output_files/developer-guide/use-cases/convert-for-rag/RagBasic/rag-basic.txt)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -84,5 +97,11 @@ foreach (string file in files)
     }
 }
 ```
+{{< /tab >}}
+{{< tab "rag-batch.zip" >}}  
+```text
+documents/business-plan.md (7 KB)
+```
+[Download full output](/markdown/net/_output_files/developer-guide/use-cases/convert-for-rag/RagBatch/rag-batch.zip)
 {{< /tab >}}
 {{< /tabs >}}

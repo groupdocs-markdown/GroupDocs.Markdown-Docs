@@ -24,26 +24,18 @@ Convert from 20+ document formats including Word (DOCX, DOC, RTF), Excel (XLSX, 
 
 One-liner conversions that throw on failure — no result-checking ceremony:
 
-{{< tabs "static-convenience-methods" >}}
-{{< tab "C#" >}}
 ```csharp
-string md = MarkdownConverter.ToMarkdown("document.docx");
-MarkdownConverter.ToFile("document.docx", "output.md");
+string md = MarkdownConverter.ToMarkdown("business-plan.docx");
+MarkdownConverter.ToFile("business-plan.docx", "output.md");
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Markdown Flavor Control
 
 Target GitHub Flavored Markdown (pipe tables, strikethrough) or strict CommonMark:
 
-{{< tabs "markdown-flavor-control" >}}
-{{< tab "C#" >}}
 ```csharp
 var options = new ConvertOptions { Flavor = MarkdownFlavor.GitHub };
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Flexible Image Handling
 
@@ -57,26 +49,18 @@ Choose how images are processed during conversion:
 
 Extract document metadata into YAML front matter for static site generators (Jekyll, Hugo, Docusaurus):
 
-{{< tabs "yaml-front-matter" >}}
-{{< tab "C#" >}}
 ```csharp
 var options = new ConvertOptions { IncludeFrontMatter = true };
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Heading Level Offset
 
 Shift all heading levels when embedding converted content inside a larger document:
 
-{{< tabs "heading-level-offset" >}}
-{{< tab "C#" >}}
 ```csharp
 var options = new ConvertOptions { HeadingLevelOffset = 2 };
 // # Title → ### Title
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Spreadsheet Options
 
@@ -89,40 +73,28 @@ Control how Excel and CSV tables are rendered:
 
 Retrieve document metadata (format, page count, title, author) without performing a full conversion:
 
-{{< tabs "document-inspection" >}}
-{{< tab "C#" >}}
 ```csharp
-DocumentInfo info = MarkdownConverter.GetInfo("report.docx");
+DocumentInfo info = MarkdownConverter.GetInfo("business-plan.docx");
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Page Selection
 
 Convert specific pages or worksheets instead of the full document:
 
-{{< tabs "page-selection" >}}
-{{< tab "C#" >}}
 ```csharp
 var options = new ConvertOptions { PageNumbers = new[] { 1, 3, 5 } };
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Relative Image Paths
 
 Control how image file paths appear in the Markdown output:
 
-{{< tabs "relative-image-paths" >}}
-{{< tab "C#" >}}
 ```csharp
 var strategy = new ExportImagesToFileSystemStrategy("output/images")
 {
     ImagesRelativePath = "images"
 };
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Image Replacement
 
@@ -132,13 +104,9 @@ Replace images in the source document with different images during conversion us
 
 All static and instance methods have async counterparts with true async file I/O:
 
-{{< tabs "async-api" >}}
-{{< tab "C#" >}}
 ```csharp
-string md = await MarkdownConverter.ToMarkdownAsync("document.docx");
+string md = await MarkdownConverter.ToMarkdownAsync("business-plan.docx");
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Proper Error Handling
 
@@ -155,13 +123,9 @@ Non-fatal issues are reported via `ConvertResult.Warnings` — for example, when
 
 Load encrypted documents by providing a password via `LoadOptions`:
 
-{{< tabs "password-protected-documents" >}}
-{{< tab "C#" >}}
 ```csharp
 var loadOptions = new LoadOptions(FileFormat.Docx) { Password = "secret" };
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Cross-Platform Support
 

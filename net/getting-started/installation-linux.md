@@ -21,25 +21,17 @@ Install the .NET SDK (6.0 or later) for your distribution. See [Install .NET on 
 
 Create a new project or navigate to an existing one, then add the package:
 
-{{< tabs "linux-install" >}}
-{{< tab "C#" >}}
 ```bash
 dotnet new console -n MarkdownDemo
 cd MarkdownDemo
 dotnet add package GroupDocs.Markdown
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Run Your Application
 
-{{< tabs "linux-run" >}}
-{{< tab "C#" >}}
 ```bash
 dotnet run
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Docker
 
@@ -47,8 +39,6 @@ GroupDocs.Markdown runs in Docker containers with no additional dependencies bey
 
 ### Example Dockerfile
 
-{{< tabs "docker-example" >}}
-{{< tab "C#" >}}
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
@@ -60,19 +50,13 @@ WORKDIR /app
 COPY --from=build /publish .
 ENTRYPOINT ["dotnet", "MarkdownDemo.dll"]
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Build and Run
 
-{{< tabs "docker-run" >}}
-{{< tab "C#" >}}
 ```bash
 docker build -t markdown-demo .
 docker run --rm -v $(pwd)/files:/app/files markdown-demo
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Supported Distributions
 

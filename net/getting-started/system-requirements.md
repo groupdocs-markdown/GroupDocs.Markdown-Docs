@@ -53,11 +53,3 @@ GroupDocs.Markdown for .NET can be used in any development environment that targ
 *   Microsoft Visual Studio 2022 and later
 *   Microsoft Visual Studio Code with C# Dev Kit
 *   JetBrains Rider 2024.1 and later
-
-## Package Manager
-
-GroupDocs.Markdown for .NET is distributed via [NuGet](https://www.nuget.org/packages/GroupDocs.Markdown):
-
-```bash
-dotnet add package GroupDocs.Markdown
-```

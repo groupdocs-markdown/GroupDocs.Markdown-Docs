@@ -9,8 +9,6 @@ productName: GroupDocs.Markdown for .NET
 hideChildren: False
 ---
 
-## Skip images during conversion
-
 Use `SkipImagesStrategy` when you want to convert a document to Markdown without exporting any images. Image references will be omitted from the output.
 
 ### Using static method
@@ -25,9 +23,28 @@ var options = new ConvertOptions
     ImageExportStrategy = new SkipImagesStrategy()
 };
 
-string markdown = MarkdownConverter.ToMarkdown("example.pdf", options);
-Console.WriteLine(markdown);
+MarkdownConverter.ToFile("business-plan.pdf", "skip-images-static.md", options);
 ```
+{{< /tab >}}
+{{< tab "business-plan.pdf" >}}  
+{{< tab-text >}}
+`business-plan.pdf` is a sample file used in this example. Click [here](/markdown/net/_sample_files/developer-guide/advanced-usage/strategy/business-plan.pdf) to download it.
+{{< /tab-text >}}
+{{< /tab >}}
+{{< tab "skip-images-static.md" >}}  
+```text
+**Meridian Outdoor Co. — Business Plan**
+
+FY2026 Strategic Plan
+
+**Table of Contents**
+
+Meridian Outdoor Co. — Business Plan .........................................................................................1FY2026 Strategic Plan.................................................................................................................1Table of Contents.............................................................................................................................2
+
+1. E
+[TRUNCATED]
+```
+[Download full output](/markdown/net/_output_files/developer-guide/advanced-usage/strategy/image-skip-strategy/SkipImagesStatic/skip-images-static.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -43,9 +60,28 @@ var options = new ConvertOptions
     ImageExportStrategy = new SkipImagesStrategy()
 };
 
-using var converter = new MarkdownConverter("example.pdf");
-ConvertResult result = converter.Convert(options);
-Console.WriteLine(result.Content);
+using var converter = new MarkdownConverter("business-plan.pdf");
+converter.Convert("skip-images-instance.md", options);
 ```
+{{< /tab >}}
+{{< tab "business-plan.pdf" >}}  
+{{< tab-text >}}
+`business-plan.pdf` is a sample file used in this example. Click [here](/markdown/net/_sample_files/developer-guide/advanced-usage/strategy/business-plan.pdf) to download it.
+{{< /tab-text >}}
+{{< /tab >}}
+{{< tab "skip-images-instance.md" >}}  
+```text
+**Meridian Outdoor Co. — Business Plan**
+
+FY2026 Strategic Plan
+
+**Table of Contents**
+
+Meridian Outdoor Co. — Business Plan .........................................................................................1FY2026 Strategic Plan.................................................................................................................1Table of Contents.............................................................................................................................2
+
+1. E
+[TRUNCATED]
+```
+[Download full output](/markdown/net/_output_files/developer-guide/advanced-usage/strategy/image-skip-strategy/SkipImagesInstance/skip-images-instance.md)
 {{< /tab >}}
 {{< /tabs >}}

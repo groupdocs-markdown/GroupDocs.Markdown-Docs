@@ -9,8 +9,6 @@ productName: GroupDocs.Markdown for .NET
 hideChildren: False
 ---
 
-## Custom image saving strategy
-
 Use `CustomImagesStrategy` with the `IImageSavingHandler` interface for full control over how each image is saved during conversion. You can rename files, redirect output to a custom stream, or replace image content entirely.
 
 ### Rename images with IImageSavingHandler
@@ -41,8 +39,22 @@ var options = new ConvertOptions
     ImageExportStrategy = new CustomImagesStrategy("output/images", handler)
 };
 
-MarkdownConverter.ToFile("document.docx", "output/document.md", options);
+MarkdownConverter.ToFile("business-plan.docx", "output/document.md", options);
 ```
+{{< /tab >}}
+{{< tab "business-plan.docx" >}}  
+{{< tab-text >}}
+`business-plan.docx` is a sample file used in this example. Click [here](/markdown/net/_sample_files/developer-guide/advanced-usage/strategy/business-plan.docx) to download it.
+{{< /tab-text >}}
+{{< /tab >}}
+{{< tab "custom-strategy-rename.zip" >}}  
+```text
+output/document.md (5 KB)
+output/images/img_0_img-001.png (4 KB)
+output/images/img_1_img-002.jpg (41 KB)
+output/images/img_2_img-003.png (14 KB)
+```
+[Download full output](/markdown/net/_output_files/developer-guide/advanced-usage/strategy/custom-strategy/CustomStrategyRename/custom-strategy-rename.zip)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -73,7 +85,19 @@ var options = new ConvertOptions
     ImageExportStrategy = new CustomImagesStrategy("output/images", handler)
 };
 
-MarkdownConverter.ToFile("document.docx", "output/document.md", options);
+MarkdownConverter.ToFile("business-plan.docx", "output/document.md", options);
 ```
+{{< /tab >}}
+{{< tab "business-plan.docx" >}}  
+{{< tab-text >}}
+`business-plan.docx` is a sample file used in this example. Click [here](/markdown/net/_sample_files/developer-guide/advanced-usage/strategy/business-plan.docx) to download it.
+{{< /tab-text >}}
+{{< /tab >}}
+{{< tab "custom-strategy-replace.zip" >}}  
+```text
+output/document.md (5 KB)
+output/images/placeholder.png (14 KB)
+```
+[Download full output](/markdown/net/_output_files/developer-guide/advanced-usage/strategy/custom-strategy/CustomStrategyReplace/custom-strategy-replace.zip)
 {{< /tab >}}
 {{< /tabs >}}

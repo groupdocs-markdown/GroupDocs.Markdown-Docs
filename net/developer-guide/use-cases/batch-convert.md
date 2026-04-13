@@ -10,8 +10,6 @@ hideChildren: False
 toc: True
 ---
 
-## Batch-convert a folder
-
 Convert all supported documents in a directory to Markdown files.
 
 ### Basic batch conversion
@@ -21,8 +19,8 @@ Convert all supported documents in a directory to Markdown files.
 ```csharp
 using GroupDocs.Markdown;
 
-string inputDir = @"C:\Documents";
-string outputDir = @"C:\Markdown";
+string inputDir = "documents";
+string outputDir = "output";
 
 Directory.CreateDirectory(outputDir);
 
@@ -59,6 +57,13 @@ foreach (string file in Directory.GetFiles(inputDir))
 Console.WriteLine($"Done: {converted} converted, {skipped} skipped");
 ```
 {{< /tab >}}
+{{< tab "batch-basic.zip" >}}  
+```text
+output/business-plan.md (210 KB)
+output/cost-analysis.md (9 KB)
+```
+[Download full output](/markdown/net/_output_files/developer-guide/use-cases/batch-convert/BatchBasic/batch-basic.zip)
+{{< /tab >}}
 {{< /tabs >}}
 
 ### Async batch conversion
@@ -68,8 +73,8 @@ Console.WriteLine($"Done: {converted} converted, {skipped} skipped");
 ```csharp
 using GroupDocs.Markdown;
 
-string inputDir = @"C:\Documents";
-string outputDir = @"C:\Markdown";
+string inputDir = "documents";
+string outputDir = "output";
 
 Directory.CreateDirectory(outputDir);
 
@@ -102,5 +107,12 @@ var tasks = files.Select(async file =>
 
 await Task.WhenAll(tasks);
 ```
+{{< /tab >}}
+{{< tab "batch-async.zip" >}}  
+```text
+output/business-plan.md (7 KB)
+output/cost-analysis.md (9 KB)
+```
+[Download full output](/markdown/net/_output_files/developer-guide/use-cases/batch-convert/BatchAsync/batch-async.zip)
 {{< /tab >}}
 {{< /tabs >}}
