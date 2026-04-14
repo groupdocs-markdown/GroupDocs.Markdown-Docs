@@ -1,5 +1,5 @@
 Format:    Docx
-Pages:     18
-Title:     
-Author:    
+Pages:     5
+Title:     Meridian Outdoor Co. — Business Plan
+Author:    Meridian Outdoor Co.
 Encrypted: False

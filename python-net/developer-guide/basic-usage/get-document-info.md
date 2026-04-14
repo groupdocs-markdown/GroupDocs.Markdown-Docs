@@ -25,12 +25,13 @@ def get_info_static():
     # Step 1: Get document info without performing a full conversion
     info = MarkdownConverter.get_info("business-plan.docx")
 
-    # Step 2: Print the metadata fields
-    print(f"Format:    {info.file_format}")     # Docx
-    print(f"Pages:     {info.page_count}")      # 42
-    print(f"Title:     {info.title}")            # "Q3 Report"
-    print(f"Author:    {info.author}")           # "Jane Doe"
-    print(f"Encrypted: {info.is_encrypted}")     # False
+    # Step 2: Write the metadata fields to a text file
+    with open("get-info-static.txt", "w", encoding="utf-8") as f:
+        f.write(f"Format:    {info.file_format}\n")     # Docx
+        f.write(f"Pages:     {info.page_count}\n")      # 42
+        f.write(f"Title:     {info.title}\n")           # "Q3 Report"
+        f.write(f"Author:    {info.author}\n")          # "Jane Doe"
+        f.write(f"Encrypted: {info.is_encrypted}\n")    # False
 
 if __name__ == "__main__":
     get_info_static()
@@ -44,19 +45,9 @@ if __name__ == "__main__":
 {{< tab "get-info-static.txt" >}}  
 ```text
 Format:    Docx
-Pages:     18
-Title:     
-Author:    
-Encrypted: False
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/get-document-info/get_info_static/get-info-static.txt)
-{{< /tab >}}
-{{< tab "get-info-static.txt" >}}  
-```text
-Format:    Docx
-Pages:     18
-Title:     
-Author:    
+Pages:     5
+Title:     Meridian Outdoor Co. — Business Plan
+Author:    Meridian Outdoor Co.
 Encrypted: False
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/get-document-info/get_info_static/get-info-static.txt)
@@ -78,11 +69,13 @@ def get_info_instance():
         # Step 2: Retrieve document metadata
         info = converter.get_document_info()
 
-        print(f"Format:     {info.file_format}")
-        print(f"Pages:      {info.page_count}")
-        print(f"Title:      {info.title}")
-        print(f"Author:     {info.author}")
-        print(f"Encrypted:  {info.is_encrypted}")
+        # Step 3: Write the metadata fields to a text file
+        with open("get-info-instance.txt", "w", encoding="utf-8") as f:
+            f.write(f"Format:    {info.file_format}\n")
+            f.write(f"Pages:     {info.page_count}\n")
+            f.write(f"Title:     {info.title}\n")
+            f.write(f"Author:    {info.author}\n")
+            f.write(f"Encrypted: {info.is_encrypted}\n")
 
 if __name__ == "__main__":
     get_info_instance()
@@ -95,27 +88,11 @@ if __name__ == "__main__":
 {{< /tab >}}
 {{< tab "get-info-instance.txt" >}}  
 ```text
-## Cost data and chart
-
-|  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  | Cost Analysis |  |  |  |  |  |
-|  |  | PARETO CHART |  |  |  |  |  |
-|  |  | COST ANALYSIS |  |  |  |  | COST CENTER |
-|  |  | Cost center | Annual cost  | Percent of total | Cumulative percent |  |  |
-|  |  | Parts and materials | $1,325,000.00  | 31.17% | 31.17% |  |  |
-|  |  | Manufacturing equipment | $900,500.00  | 21.19% | 52.36% |  |  |
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/get-document-info/get_info_instance/get-info-instance.txt)
-{{< /tab >}}
-{{< tab "get-info-instance.txt" >}}  
-```text
-Format:     Xlsx
-Pages:      1
-Title:      Cost Analysis
-Author:     GroupDocs
-Encrypted:  False
+Format:    Xlsx
+Pages:     4
+Title:     
+Author:    
+Encrypted: False
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/get-document-info/get_info_instance/get-info-instance.txt)
 {{< /tab >}}

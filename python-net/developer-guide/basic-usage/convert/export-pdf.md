@@ -28,11 +28,8 @@ def export_pdf_to_markdown():
     if os.path.exists("GroupDocs.Markdown.lic"):
         License.set_("GroupDocs.Markdown.lic")
 
-    # Step 2: Convert PDF to a Markdown string in one call
-    markdown = MarkdownConverter.to_markdown("business-plan.pdf")
-
-    # Step 3: Or save the conversion result directly to a file
-    MarkdownConverter.to_file("business-plan.pdf", "export-pdf.md")
+    # Step 2: Convert the PDF directly to a Markdown file
+    MarkdownConverter.to_file("business-plan.pdf", "export-pdf-static.md")
 
 if __name__ == "__main__":
     export_pdf_to_markdown()
@@ -43,19 +40,12 @@ if __name__ == "__main__":
 `business-plan.pdf` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/basic-usage/convert/business-plan.pdf) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "export-pdf.txt" >}}  
+{{< tab "export-pdf-static.md" >}}  
 ```text
-![](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAHyAqYDASIAAhEBAxEB/8QAHQAAAgMBAQEBAQAAAAAAAAAABQYABAcIAwEJAv/EAGoQAAACBAoGBwMHBQkNBQYFBQEDAAQFERMhMUFRYXGBofAGFJGxweEHFSMkMzTRQ0TxAhYlNVJUghJFVWR0JjZCU2NldYSiCBciMkZWYmaFkpSy4naGlbTCc5akpcXSN7XE1eZyprbG1P/EABwBAAMAAwEBAQAAAAAAAAAAAAAEBQEDBgIHCP/EAD8RAAIAA
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-pdf/export_pdf_to_markdown/export-pdf.txt)
-{{< /tab >}}
-{{< tab "export-pdf.txt" >}}  
-```text
-![](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAHyAqYDASIAAhEBAxEB/8QAHQAAAgMBAQEBAQAAAAAAAAAABQYABAcIAwEJAv/EAGoQAAACBAoGBwMHBQkNBQYFBQEDAAQFERMhMUFRYXGBofAGFJGxweEHFSMkMzTRQ0TxAhYlNVJUghJFVWR0JjZCU2NldYSiCBciMkZWYmaFkpSy4naGlbTCc5akpcXSN7XE1eZyprbG1P/EABwBAAMAAwEBAQAAAAAAAAAAAAAEBQEDBgIHCP/EAD8RAAIAA
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAIAAADHHcVbAAAAA3NCSVQICAjb4U/gAAAMWElEQVR4nO3dUWzV130H8L+nSnsgxYTa5kbEnhJgJpJ98aQseTAxUaoiW1RDSiseykoCNE9boyoIZEWLVImosoZSpeve0Ighax4iDRRpky02oWKbh2aVCralhGBANSAu4Lq5NJ60tz0c8t/lf6/h2jjg/M/nIz8c7v/v3z345atz/v9zTkNpaiwBgFj92aPuAAA8SoIQgKgJQgCiJggBiNo3Mv/+53/9r4tXbi6u1t/v/Pa6tjXzXV1cZTXVVFNNNdVc2poZ2SCcmr4xfv7KQr8y+NPc/97j6uIqq6mmmmqqqebS1szIBuH6tjUNDQ0Xp2988T8LqAIAX1NLOSIEgK+dhsyC+p/87FdpEP7dzm+va613jjVJkvVtax5b8efzXb04fWNBY1U11VRTTTXVXJ
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-pdf/export_pdf_to_markdown/export-pdf.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-pdf/export_pdf_to_markdown/export-pdf-static.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -87,10 +77,8 @@ def export_pdf_with_options():
         options.image_export_strategy = strategy
         options.heading_level_offset = 1  # shift all headings down one level
 
-        # Step 
-
         # Step 5: Convert and save the Markdown output
-        converter.convert("export-pdf-options.md", convert_options=options)
+        converter.convert("export-pdf-instance.md", convert_options=options)
 
 if __name__ == "__main__":
     export_pdf_with_options()
@@ -103,23 +91,10 @@ if __name__ == "__main__":
 {{< /tab >}}
 {{< tab "export-pdf-options.zip" >}}  
 ```text
-export-pdf-options.txt (34 KB)
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-pdf/export_pdf_with_options/export-pdf-options.zip)
-{{< /tab >}}
-{{< tab "export-pdf-options.zip" >}}  
-```text
-export-pdf-options.txt (33 KB)
-images/img-001.jpg (60 KB)
-images/img-002.png (470 bytes)
-images/img-003.png (2 KB)
-images/img-004.jpg (56 KB)
-images/img-005.png (330 bytes)
-images/img-006.png (438 bytes)
-images/img-007.png (438 bytes)
-images/img-008.png (438 bytes)
-images/img-009.png (438 bytes)
-[TRUNCATED] (35 files total)
+export-pdf-instance.md (7 KB)
+images/img-001.png (3 KB)
+images/img-002.jpg (73 KB)
+images/img-003.jpg (76 KB)
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-pdf/export_pdf_with_options/export-pdf-options.zip)
 {{< /tab >}}

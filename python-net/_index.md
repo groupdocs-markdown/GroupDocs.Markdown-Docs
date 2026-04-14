@@ -53,10 +53,12 @@ md = MarkdownConverter.to_markdown("business-plan.docx")
 <hr></hr>
 <ul>
     <li><a href='{{< ref "markdown/python-net/getting-started/quick-start-guide" >}}'>Quick start guide</a></li>
+    <li><a href='{{< ref "markdown/python-net/getting-started/features-overview" >}}'>Features overview</a></li>
     <li><a href='{{< ref "markdown/python-net/getting-started/supported-document-formats" >}}'>Supported formats</a></li>
     <li><a href='{{< ref "markdown/python-net/getting-started/system-requirements" >}}'>System requirements</a></li>
     <li><a href='{{< ref "markdown/python-net/getting-started/installation" >}}'>Installation</a></li>
     <li><a href='{{< ref "markdown/python-net/getting-started/licensing-and-subscription" >}}'>Licensing</a></li>
+    <li><a href='{{< ref "markdown/python-net/getting-started/how-to-run-examples" >}}'>How to run examples</a></li>
 </ul>
 <--->
 <p><b>Developer Guide</b></p>
@@ -76,6 +78,7 @@ md = MarkdownConverter.to_markdown("business-plan.docx")
     <li><a href='{{< ref "markdown/python-net/developer-guide/advanced-usage/heading-offset" >}}'>Heading level offset</a></li>
     <li><a href='{{< ref "markdown/python-net/developer-guide/advanced-usage/strategy/" >}}'>Image strategies</a></li>
     <li><a href='{{< ref "markdown/python-net/developer-guide/advanced-usage/uri-rewriting" >}}'>URI rewriting</a></li>
+    <li><a href='{{< ref "markdown/python-net/developer-guide/advanced-usage/async-api" >}}'>Async API</a></li>
 </ul>
 <--->
 <p><b>Resources</b></p>

@@ -18,3 +18,4 @@ Learn about advanced [**GroupDocs.Markdown**](https://products.groupdocs.com/mar
 * [Heading level offset]({{< ref "markdown/python-net/developer-guide/advanced-usage/heading-offset" >}}) -- shift all heading levels by a fixed offset when embedding content into a larger document.
 * [Spreadsheet options]({{< ref "markdown/python-net/developer-guide/advanced-usage/spreadsheet-options" >}}) -- control column and row truncation, sheet separators, and hidden worksheet inclusion.
 * [Error handling]({{< ref "markdown/python-net/developer-guide/advanced-usage/error-handling" >}}) -- catch specific exception types and inspect non-fatal conversion warnings.
+* [Async API]({{< ref "markdown/python-net/developer-guide/advanced-usage/async-api" >}}) -- use `to_markdown_async`, `to_file_async`, and `convert_async` for non-blocking conversions in `asyncio` and ASGI frameworks.

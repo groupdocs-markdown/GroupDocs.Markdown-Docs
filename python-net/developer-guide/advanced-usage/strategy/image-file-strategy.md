@@ -41,33 +41,10 @@ if __name__ == "__main__":
 {{< /tab >}}
 {{< tab "image-file-basic.zip" >}}  
 ```text
-output/document.txt (34 KB)
-output/images/img-001.jpg (60 KB)
-output/images/img-002.png (470 bytes)
-output/images/img-003.png (2 KB)
-output/images/img-004.jpg (56 KB)
-output/images/img-005.png (330 bytes)
-output/images/img-006.png (438 bytes)
-output/images/img-007.png (438 bytes)
-output/images/img-008.png (438 bytes)
-output/images/img-009.png (438 bytes)
-... (35 files total)
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/image-file-strategy/image_file_basic/image-file-basic.zip)
-{{< /tab >}}
-{{< tab "image-file-basic.zip" >}}  
-```text
-output/document.txt (33 KB)
-output/images/img-001.jpg (60 KB)
-output/images/img-002.png (470 bytes)
-output/images/img-003.png (2 KB)
-output/images/img-004.jpg (56 KB)
-output/images/img-005.png (330 bytes)
-output/images/img-006.png (438 bytes)
-output/images/img-007.png (438 bytes)
-output/images/img-008.png (438 bytes)
-output/images/img-009.png (438 bytes)
-[TRUNCATED] (35 files total)
+output/document.md (7 KB)
+output/images/img-001.png (3 KB)
+output/images/img-002.jpg (73 KB)
+output/images/img-003.jpg (76 KB)
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/image-file-strategy/image_file_basic/image-file-basic.zip)
 {{< /tab >}}
@@ -112,33 +89,10 @@ if __name__ == "__main__":
 {{< /tab >}}
 {{< tab "image-file-relative.zip" >}}  
 ```text
-output/document.txt (34 KB)
-output/images/img-001.jpg (60 KB)
-output/images/img-002.png (470 bytes)
-output/images/img-003.png (2 KB)
-output/images/img-004.jpg (56 KB)
-output/images/img-005.png (330 bytes)
-output/images/img-006.png (438 bytes)
-output/images/img-007.png (438 bytes)
-output/images/img-008.png (438 bytes)
-output/images/img-009.png (438 bytes)
-... (35 files total)
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/image-file-strategy/image_file_relative/image-file-relative.zip)
-{{< /tab >}}
-{{< tab "image-file-relative.zip" >}}  
-```text
-output/document.txt (33 KB)
-output/images/img-001.jpg (60 KB)
-output/images/img-002.png (470 bytes)
-output/images/img-003.png (2 KB)
-output/images/img-004.jpg (56 KB)
-output/images/img-005.png (330 bytes)
-output/images/img-006.png (438 bytes)
-output/images/img-007.png (438 bytes)
-output/images/img-008.png (438 bytes)
-output/images/img-009.png (438 bytes)
-[TRUNCATED] (35 files total)
+output/document.md (7 KB)
+output/images/img-001.png (3 KB)
+output/images/img-002.jpg (73 KB)
+output/images/img-003.jpg (76 KB)
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/image-file-strategy/image_file_relative/image-file-relative.zip)
 {{< /tab >}}

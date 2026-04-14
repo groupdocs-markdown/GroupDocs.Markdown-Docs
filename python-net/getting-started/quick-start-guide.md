@@ -52,11 +52,8 @@ from groupdocs.markdown import MarkdownConverter
 def convert_word_to_markdown():
     """Convert a Word document to Markdown in one line of code."""
 
-    # Step 1: Convert a DOCX file to a Markdown string
-    markdown = MarkdownConverter.to_markdown("business-plan.docx")
-
-    # Step 2: Or save the result directly to a .md file
-    MarkdownConverter.to_file("business-plan.docx", "convert-word.md")
+    # Convert a DOCX file directly to a Markdown file on disk
+    MarkdownConverter.to_file("business-plan.docx", "quick-start-word.md")
 
 if __name__ == "__main__":
     convert_word_to_markdown()
@@ -67,27 +64,12 @@ if __name__ == "__main__":
 `business-plan.docx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/getting-started/business-plan.docx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "convert-word.txt" >}}  
+{{< tab "quick-start-word.md" >}}  
 ```text
-| HOME BASED |  |  |
-| --- | --- | --- |
-|  |  |  |
-| PROFESSIONAL SERVICES |  |  |
-|  | Business Plan |  |
-
-
-
-|  | TABLE OF CONTENTS TOC \o "1-3" \h \z \u  HYPERLINK \l "_Toc9437451" Introduction	 PAGEREF _Toc9437451 \h 3  HYPERLINK \l "_Toc9437452" 1.	Executive Summary	 PAGEREF _Toc9437452 \h 5  HYPERLINK \l "_Toc9437453" 2.	Company Overview	 PAGEREF _Toc9437453 \h 6  HYPERLINK \l "_Toc9437454" 3.	Business Description	 PAGEREF _Toc9437454 \h 7  HYPERLINK \l "_Toc9437
-...
-```
-[Download full output](/markdown/python-net/_output_files/getting-started/quick-start-guide/convert_word_to_markdown/convert-word.txt)
-{{< /tab >}}
-{{< tab "convert-word.txt" >}}  
-```text
-| ![Woman with laptop and business documents](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCAHyAqYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIW
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/getting-started/quick-start-guide/convert_word_to_markdown/convert-word.txt)
+[Download full output](/markdown/python-net/_output_files/getting-started/quick-start-guide/convert_word_to_markdown/quick-start-word.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -129,33 +111,10 @@ if __name__ == "__main__":
 {{< /tab >}}
 {{< tab "convert-pdf-with-images.zip" >}}  
 ```text
-output/images/img-001.jpg (60 KB)
-output/images/img-002.png (470 bytes)
-output/images/img-003.png (2 KB)
-output/images/img-004.jpg (56 KB)
-output/images/img-005.png (330 bytes)
-output/images/img-006.png (438 bytes)
-output/images/img-007.png (438 bytes)
-output/images/img-008.png (438 bytes)
-output/images/img-009.png (438 bytes)
-output/images/img-010.png (438 bytes)
-... (35 files total)
-```
-[Download full output](/markdown/python-net/_output_files/getting-started/quick-start-guide/convert_pdf_with_images/convert-pdf-with-images.zip)
-{{< /tab >}}
-{{< tab "convert-pdf-with-images.zip" >}}  
-```text
-output/images/img-001.jpg (60 KB)
-output/images/img-002.png (470 bytes)
-output/images/img-003.png (2 KB)
-output/images/img-004.jpg (56 KB)
-output/images/img-005.png (330 bytes)
-output/images/img-006.png (438 bytes)
-output/images/img-007.png (438 bytes)
-output/images/img-008.png (438 bytes)
-output/images/img-009.png (438 bytes)
-output/images/img-010.png (438 bytes)
-[TRUNCATED] (35 files total)
+output/images/img-001.png (3 KB)
+output/images/img-002.jpg (73 KB)
+output/images/img-003.jpg (76 KB)
+output/report.md (7 KB)
 ```
 [Download full output](/markdown/python-net/_output_files/getting-started/quick-start-guide/convert_pdf_with_images/convert-pdf-with-images.zip)
 {{< /tab >}}
@@ -182,16 +141,8 @@ def convert_excel_with_options():
 
     # Step 2: Open the spreadsheet with a context manager
     with MarkdownConverter("cost-analysis.xlsx") as converter:
-        # Step 3: Inspect document metadata before converting
-        info = converter.get_document_info()
-        print(f"Worksheets: {info.page_count}")
-
-        # Step 4: Convert using keyword argument for options
-        result = converter.convert("convert-excel-options.md", convert_options=options)
-
-        # Step 5: Check for non-fatal conversion warnings
-        for w in result.warnings:
-            print(f"Warning: {w}")
+        # Step 3: Convert and save the Markdown output
+        converter.convert("quick-start-excel.md", convert_options=options)
 
 if __name__ == "__main__":
     convert_excel_with_options()
@@ -202,37 +153,21 @@ if __name__ == "__main__":
 `cost-analysis.xlsx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/getting-started/cost-analysis.xlsx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "convert-excel-options.txt" >}}  
+{{< tab "quick-start-excel.md" >}}  
 ```text
 ---
-title: "Cost Analysis"
-author: "GroupDocs"
 format: Xlsx
-pages: 1
+pages: 4
 ---
 
 
-## Cost data and chart
+## Summary
 
-...
-```
-[Download full output](/markdown/python-net/_output_files/getting-started/quick-start-guide/convert_excel_with_options/convert-excel-options.txt)
-{{< /tab >}}
-{{< tab "convert-excel-options.txt" >}}  
-```text
----
-title: "Cost Analysis"
-author: "GroupDocs"
-format: Xlsx
-pages: 1
----
-
-
-## Cost data and chart
-
+| Category | FY2024 | FY2025 | FY2026 |
+| --- | --- | --- | --- |
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/getting-started/quick-start-guide/convert_excel_with_options/convert-excel-options.txt)
+[Download full output](/markdown/python-net/_output_files/getting-started/quick-start-guide/convert_excel_with_options/quick-start-excel.md)
 {{< /tab >}}
 {{< /tabs >}}
 

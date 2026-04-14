@@ -26,7 +26,7 @@ def load_from_stream():
         # Step 2: Create a converter from the stream
         with MarkdownConverter(stream) as converter:
             # Step 3: Convert and save the Markdown output
-            converter.convert("load-from-stream.md")
+            converter.convert("load-stream-basic.md")
 
 if __name__ == "__main__":
     load_from_stream()
@@ -37,27 +37,12 @@ if __name__ == "__main__":
 `business-plan.docx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/loading/business-plan.docx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "load-from-stream.txt" >}}  
+{{< tab "load-stream-basic.md" >}}  
 ```text
-| HOME BASED |  |  |
-| --- | --- | --- |
-|  |  |  |
-| PROFESSIONAL SERVICES |  |  |
-|  | Business Plan |  |
-
-
-
-|  | TABLE OF CONTENTS TOC \o "1-3" \h \z \u  HYPERLINK \l "_Toc9437451" Introduction	 PAGEREF _Toc9437451 \h 3  HYPERLINK \l "_Toc9437452" 1.	Executive Summary	 PAGEREF _Toc9437452 \h 5  HYPERLINK \l "_Toc9437453" 2.	Company Overview	 PAGEREF _Toc9437453 \h 6  HYPERLINK \l "_Toc9437454" 3.	Business Description	 PAGEREF _Toc9437454 \h 7  HYPERLINK \l "_Toc9437
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-from-a-stream/load_from_stream/load-from-stream.txt)
-{{< /tab >}}
-{{< tab "load-from-stream.txt" >}}  
-```text
-| ![Woman with laptop and business documents](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCAHyAqYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIW
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-from-a-stream/load_from_stream/load-from-stream.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-from-a-stream/load_from_stream/load-stream-basic.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -81,7 +66,7 @@ def load_from_stream_with_options():
         # Step 3: Create a converter from the stream with load options
         with MarkdownConverter(stream, load_options=load_options) as converter:
             # Step 4: Convert and save the Markdown output
-            converter.convert("load-from-stream-options.md")
+            converter.convert("load-stream-with-options.md")
 
 if __name__ == "__main__":
     import shutil
@@ -89,26 +74,11 @@ if __name__ == "__main__":
     load_from_stream_with_options()
 ```
 {{< /tab >}}
-{{< tab "load-from-stream-options.txt" >}}  
+{{< tab "load-stream-with-options.md" >}}  
 ```text
-| HOME BASED |  |  |
-| --- | --- | --- |
-|  |  |  |
-| PROFESSIONAL SERVICES |  |  |
-|  | Business Plan |  |
-
-
-
-|  | TABLE OF CONTENTS TOC \o "1-3" \h \z \u  HYPERLINK \l "_Toc9437451" Introduction	 PAGEREF _Toc9437451 \h 3  HYPERLINK \l "_Toc9437452" 1.	Executive Summary	 PAGEREF _Toc9437452 \h 5  HYPERLINK \l "_Toc9437453" 2.	Company Overview	 PAGEREF _Toc9437453 \h 6  HYPERLINK \l "_Toc9437454" 3.	Business Description	 PAGEREF _Toc9437454 \h 7  HYPERLINK \l "_Toc9437
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-from-a-stream/load_from_stream_with_options/load-from-stream-options.txt)
-{{< /tab >}}
-{{< tab "load-from-stream-options.txt" >}}  
-```text
-| ![Woman with laptop and business documents](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCAHyAqYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIW
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-from-a-stream/load_from_stream_with_options/load-from-stream-options.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-from-a-stream/load_from_stream_with_options/load-stream-with-options.md)
 {{< /tab >}}
 {{< /tabs >}}

@@ -37,37 +37,20 @@ if __name__ == "__main__":
 `business-plan.pdf` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/strategy/business-plan.pdf) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "skip-images-static.txt" >}}  
+{{< tab "skip-images-static.md" >}}  
 ```text
-**HOME**** ****BASED**** ****PROFESSIONAL**** **
+**Meridian Outdoor Co. — Business Plan**
 
-**SERVICES**** **
+FY2026 Strategic Plan
 
-***Business****** ******Plan****** ***
+**Table of Contents**
 
-**TABLE**** ****OF**** ****CONTENTS**** **
+Meridian Outdoor Co. — Business Plan .........................................................................................1FY2026 Strategic Plan.................................................................................................................1Table of Contents.............................................................................................................................2
 
-Introduction  3
-
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/image-skip-strategy/skip_images_static/skip-images-static.txt)
-{{< /tab >}}
-{{< tab "skip-images-static.txt" >}}  
-```text
-**HOME BASED PROFESSIONAL SERVICES *Business Plan* TABLE OF CONTENTS** 
-
-Introduction  3
-
-1. Executive Summary  5
-1. Company Overview  6
-1. Business Description  7
-1. Market Analysis  8
-1. Operating Plan  10
-1. Marketing and Sales Plan  11
+1. Ex
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/image-skip-strategy/skip_images_static/skip-images-static.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/image-skip-strategy/skip_images_static/skip-images-static.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -99,36 +82,19 @@ if __name__ == "__main__":
 `business-plan.pdf` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/strategy/business-plan.pdf) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "skip-images-instance.txt" >}}  
+{{< tab "skip-images-instance.md" >}}  
 ```text
-**HOME**** ****BASED**** ****PROFESSIONAL**** **
+**Meridian Outdoor Co. — Business Plan**
 
-**SERVICES**** **
+FY2026 Strategic Plan
 
-***Business****** ******Plan****** ***
+**Table of Contents**
 
-**TABLE**** ****OF**** ****CONTENTS**** **
+Meridian Outdoor Co. — Business Plan .........................................................................................1FY2026 Strategic Plan.................................................................................................................1Table of Contents.............................................................................................................................2
 
-Introduction  3
-
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/image-skip-strategy/skip_images_instance/skip-images-instance.txt)
-{{< /tab >}}
-{{< tab "skip-images-instance.txt" >}}  
-```text
-**HOME BASED PROFESSIONAL SERVICES *Business Plan* TABLE OF CONTENTS** 
-
-Introduction  3
-
-1. Executive Summary  5
-1. Company Overview  6
-1. Business Description  7
-1. Market Analysis  8
-1. Operating Plan  10
-1. Marketing and Sales Plan  11
+1. Ex
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/image-skip-strategy/skip_images_instance/skip-images-instance.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/image-skip-strategy/skip_images_instance/skip-images-instance.md)
 {{< /tab >}}
 {{< /tabs >}}

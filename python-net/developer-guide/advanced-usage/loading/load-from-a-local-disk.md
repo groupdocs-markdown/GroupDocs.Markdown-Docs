@@ -23,11 +23,8 @@ from groupdocs.markdown import MarkdownConverter
 def load_from_disk_static():
     """Load and convert a local file to Markdown using the static API."""
 
-    # Step 1: Convert a local file to a Markdown string in one call
-    markdown = MarkdownConverter.to_markdown("business-plan.docx")
-
-    # Step 2: Or save the result directly to a file on disk
-    MarkdownConverter.to_file("business-plan.docx", "load-from-disk-static.md")
+    # Convert a local file directly to a Markdown file on disk
+    MarkdownConverter.to_file("business-plan.docx", "load-disk-static.md")
 
 if __name__ == "__main__":
     load_from_disk_static()
@@ -38,27 +35,12 @@ if __name__ == "__main__":
 `business-plan.docx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/loading/business-plan.docx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "load-from-disk-static.txt" >}}  
+{{< tab "load-disk-static.md" >}}  
 ```text
-| HOME BASED |  |  |
-| --- | --- | --- |
-|  |  |  |
-| PROFESSIONAL SERVICES |  |  |
-|  | Business Plan |  |
-
-
-
-|  | TABLE OF CONTENTS TOC \o "1-3" \h \z \u  HYPERLINK \l "_Toc9437451" Introduction	 PAGEREF _Toc9437451 \h 3  HYPERLINK \l "_Toc9437452" 1.	Executive Summary	 PAGEREF _Toc9437452 \h 5  HYPERLINK \l "_Toc9437453" 2.	Company Overview	 PAGEREF _Toc9437453 \h 6  HYPERLINK \l "_Toc9437454" 3.	Business Description	 PAGEREF _Toc9437454 \h 7  HYPERLINK \l "_Toc9437
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-from-a-local-disk/load_from_disk_static/load-from-disk-static.txt)
-{{< /tab >}}
-{{< tab "load-from-disk-static.txt" >}}  
-```text
-| ![Woman with laptop and business documents](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCAHyAqYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIW
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-from-a-local-disk/load_from_disk_static/load-from-disk-static.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-from-a-local-disk/load_from_disk_static/load-disk-static.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -72,16 +54,12 @@ When you need more control (e.g., conversion options, document info), create a `
 from groupdocs.markdown import MarkdownConverter
 
 def load_from_disk_instance():
-    """Load a local file with the instance API, inspect metadata, then convert."""
+    """Load a local file with the instance API, then convert it."""
 
     # Step 1: Open the document with a context manager
     with MarkdownConverter("business-plan.docx") as converter:
-        # Step 2: Retrieve document metadata before converting
-        info = converter.get_document_info()
-        print(f"Format: {info.file_format}, Pages: {info.page_count}")
-
-        # Step 3: Convert to Markdown and print the result
-        converter.convert("load-from-disk-instance.md")
+        # Step 2: Convert to Markdown and save the result
+        converter.convert("load-disk-instance.md")
 
 if __name__ == "__main__":
     load_from_disk_instance()
@@ -92,26 +70,11 @@ if __name__ == "__main__":
 `business-plan.docx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/loading/business-plan.docx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "load-from-disk-instance.txt" >}}  
+{{< tab "load-disk-instance.md" >}}  
 ```text
-| HOME BASED |  |  |
-| --- | --- | --- |
-|  |  |  |
-| PROFESSIONAL SERVICES |  |  |
-|  | Business Plan |  |
-
-
-
-|  | TABLE OF CONTENTS TOC \o "1-3" \h \z \u  HYPERLINK \l "_Toc9437451" Introduction	 PAGEREF _Toc9437451 \h 3  HYPERLINK \l "_Toc9437452" 1.	Executive Summary	 PAGEREF _Toc9437452 \h 5  HYPERLINK \l "_Toc9437453" 2.	Company Overview	 PAGEREF _Toc9437453 \h 6  HYPERLINK \l "_Toc9437454" 3.	Business Description	 PAGEREF _Toc9437454 \h 7  HYPERLINK \l "_Toc9437
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-from-a-local-disk/load_from_disk_instance/load-from-disk-instance.txt)
-{{< /tab >}}
-{{< tab "load-from-disk-instance.txt" >}}  
-```text
-| ![Woman with laptop and business documents](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCAHyAqYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIW
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-from-a-local-disk/load_from_disk_instance/load-from-disk-instance.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-from-a-local-disk/load_from_disk_instance/load-disk-instance.md)
 {{< /tab >}}
 {{< /tabs >}}

@@ -28,11 +28,8 @@ def export_word_to_markdown():
     if os.path.exists("GroupDocs.Markdown.lic"):
         License.set_("GroupDocs.Markdown.lic")
 
-    # Step 2: Convert DOCX to a Markdown string in one call
-    markdown = MarkdownConverter.to_markdown("business-plan.docx")
-
-    # Step 3: Or save the conversion result directly to a file
-    MarkdownConverter.to_file("business-plan.docx", "export-word.md")
+    # Step 2: Convert the Word document directly to a Markdown file
+    MarkdownConverter.to_file("business-plan.docx", "export-word-static.md")
 
 if __name__ == "__main__":
     export_word_to_markdown()
@@ -43,27 +40,12 @@ if __name__ == "__main__":
 `business-plan.docx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/basic-usage/convert/business-plan.docx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "export-word.txt" >}}  
+{{< tab "export-word-static.md" >}}  
 ```text
-| HOME BASED |  |  |
-| --- | --- | --- |
-|  |  |  |
-| PROFESSIONAL SERVICES |  |  |
-|  | Business Plan |  |
-
-
-
-|  | TABLE OF CONTENTS TOC \o "1-3" \h \z \u  HYPERLINK \l "_Toc9437451" Introduction	 PAGEREF _Toc9437451 \h 3  HYPERLINK \l "_Toc9437452" 1.	Executive Summary	 PAGEREF _Toc9437452 \h 5  HYPERLINK \l "_Toc9437453" 2.	Company Overview	 PAGEREF _Toc9437453 \h 6  HYPERLINK \l "_Toc9437454" 3.	Business Description	 PAGEREF _Toc9437454 \h 7  HYPERLINK \l "_Toc9437
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-wordprocessing/export_word_to_markdown/export-word.txt)
-{{< /tab >}}
-{{< tab "export-word.txt" >}}  
-```text
-| ![Woman with laptop and business documents](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCAHyAqYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIW
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-wordprocessing/export_word_to_markdown/export-word.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-wordprocessing/export_word_to_markdown/export-word-static.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -95,10 +77,8 @@ def export_word_with_options():
         options.image_export_strategy = strategy
         options.heading_level_offset = 1  # shift all headings down one level
 
-        # Step 
-
         # Step 5: Convert and save the Markdown output
-        converter.convert("export-word-options.md", convert_options=options)
+        converter.convert("export-word-instance.md", convert_options=options)
 
 if __name__ == "__main__":
     export_word_with_options()
@@ -111,14 +91,10 @@ if __name__ == "__main__":
 {{< /tab >}}
 {{< tab "export-word-options.zip" >}}  
 ```text
-export-word-options.txt (21 KB)
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-wordprocessing/export_word_with_options/export-word-options.zip)
-{{< /tab >}}
-{{< tab "export-word-options.zip" >}}  
-```text
-export-word-options.txt (20 KB)
-images/img-001.jpg (56 KB)
+export-word-instance.md (5 KB)
+images/img-001.png (4 KB)
+images/img-002.jpg (41 KB)
+images/img-003.png (14 KB)
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-wordprocessing/export_word_with_options/export-word-options.zip)
 {{< /tab >}}

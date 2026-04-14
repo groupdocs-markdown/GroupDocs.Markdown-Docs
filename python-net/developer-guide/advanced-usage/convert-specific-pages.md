@@ -26,7 +26,7 @@ def convert_specific_pages_static():
     options.page_numbers = [1, 3]  # convert only pages 1 and 3
 
     # Step 2: Convert selected pages using keyword argument for options
-    MarkdownConverter.to_file("business-plan.docx", "convert-specific-pages-static.md", convert_options=options)
+    MarkdownConverter.to_file("business-plan.docx", "convert-pages-static.md", convert_options=options)
 
 if __name__ == "__main__":
     convert_specific_pages_static()
@@ -37,27 +37,12 @@ if __name__ == "__main__":
 `business-plan.docx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/business-plan.docx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "convert-specific-pages-static.txt" >}}  
+{{< tab "convert-pages-static.md" >}}  
 ```text
-| HOME BASED |  |  |
-| --- | --- | --- |
-|  |  |  |
-| PROFESSIONAL SERVICES |  |  |
-|  | Business Plan |  |
-
-
-
-| Introduction |
-| --- |
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/convert-specific-pages/convert_specific_pages_static/convert-specific-pages-static.txt)
-{{< /tab >}}
-{{< tab "convert-specific-pages-static.txt" >}}  
-```text
-| ![Woman with laptop and business documents](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCAHyAqYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIW
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/convert-specific-pages/convert_specific_pages_static/convert-specific-pages-static.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/convert-specific-pages/convert_specific_pages_static/convert-pages-static.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -78,7 +63,7 @@ def convert_specific_pages_instance():
         options.page_numbers = [1, 3]  # convert only pages 1 and 3
 
         # Step 3: Convert and save the result
-        converter.convert("convert-specific-pages-instance.md", convert_options=options)
+        converter.convert("convert-pages-instance.md", convert_options=options)
 
 if __name__ == "__main__":
     convert_specific_pages_instance()
@@ -89,27 +74,12 @@ if __name__ == "__main__":
 `business-plan.docx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/business-plan.docx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "convert-specific-pages-instance.txt" >}}  
+{{< tab "convert-pages-instance.md" >}}  
 ```text
-| HOME BASED |  |  |
-| --- | --- | --- |
-|  |  |  |
-| PROFESSIONAL SERVICES |  |  |
-|  | Business Plan |  |
-
-
-
-| Introduction |
-| --- |
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/convert-specific-pages/convert_specific_pages_instance/convert-specific-pages-instance.txt)
-{{< /tab >}}
-{{< tab "convert-specific-pages-instance.txt" >}}  
-```text
-| ![Woman with laptop and business documents](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCAHyAqYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIW
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/convert-specific-pages/convert_specific_pages_instance/convert-specific-pages-instance.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/convert-specific-pages/convert_specific_pages_instance/convert-pages-instance.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -128,7 +98,7 @@ def convert_specific_pages_to_file():
     options.page_numbers = [2, 4, 5]  # convert pages 2, 4, and 5
 
     # Step 2: Convert and save to file using keyword argument for options
-    MarkdownConverter.to_file("business-plan.pdf", "convert-specific-pages.md", convert_options=options)
+    MarkdownConverter.to_file("business-plan.pdf", "convert-pages-to-file.md", convert_options=options)
 
 if __name__ == "__main__":
     convert_specific_pages_to_file()
@@ -139,18 +109,15 @@ if __name__ == "__main__":
 `business-plan.pdf` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/business-plan.pdf) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "convert-specific-pages.txt" >}}  
+{{< tab "convert-pages-to-file.md" >}}  
 ```text
-**TABLE**** ****OF**** ****CONTENTS**** **![](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAOhAVcDASIAAhEBAxEB/8QAHQAAAgMBAQEBAQAAAAAAAAAAAAQFBgcIAwEJAv/EAGYQAAACBAoHBQUEBAoGBQsBCQMEAAEFEQYTFCExQVFhgfAkcZGhscHhBxUjNNElM0RU8RY1Q2QCRXSCCBJSU1VjZXWEoiZChZTC4jI2laXFFyJGVnJzkqS0tdLWJzdidobV5Ob0/8QAGwEBAQEAAwE
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/convert-specific-pages/convert_specific_pages_to_file/convert-specific-pages.txt)
-{{< /tab >}}
-{{< tab "convert-specific-pages.txt" >}}  
-```text
-**TABLE OF CONTENTS** ![](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAOhAVcDASIAAhEBAxEB/8QAHQAAAgMBAQEBAQAAAAAAAAAAAAQFBgcIAwEJAv/EAGYQAAACBAoHBQUEBAoGBQsBCQMEAAEFEQYTFCExQVFhgfAkcZGhscHhBxUjNNElM0RU8RY1Q2QCRXSCCBJSU1VjZXWEoiZChZTC4jI2laXFFyJGVnJzkqS0tdLWJzdidobV5Ob0/8QAGwEBAQEAAwEBAAAAAAAAAAAAAAQFAQM
+**Table of Contents**
+
+Meridian Outdoor Co. — Business Plan .........................................................................................1FY2026 Strategic Plan.................................................................................................................1Table of Contents.............................................................................................................................2
+
+1. Executive Summary..................................................
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/convert-specific-pages/convert_specific_pages_to_file/convert-specific-pages.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/convert-specific-pages/convert_specific_pages_to_file/convert-pages-to-file.md)
 {{< /tab >}}
 {{< /tabs >}}

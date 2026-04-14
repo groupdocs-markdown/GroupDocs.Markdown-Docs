@@ -36,37 +36,21 @@ if __name__ == "__main__":
 `cost-analysis.xlsx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/loading/cost-analysis.xlsx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "load-specific-format.txt" >}}  
+{{< tab "load-specific-format.md" >}}  
 ```text
-## Cost data and chart
+## Summary
 
-|  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  | Cost Analysis |  |  |  |  |  |
-|  |  | PARETO CHART |  |  |  |  |  |
-|  |  | COST ANALYSIS |  |  |  |  | COST CENTER |
-|  |  | Cost center | Annual cost  | Percent of total | Cumulative percent |  |  |
-|  |  | Parts and materials | $1,325,000.00  | 31.17% | 31.17% |  |  |
-|  |  | Manufacturing equipment | $900,500.00  | 21.19% | 52.36% |  |  |
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-a-file-of-a-specific-format/load_specific_format/load-specific-format.txt)
-{{< /tab >}}
-{{< tab "load-specific-format.txt" >}}  
-```text
-## Cost data and chart
-
-|  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  | Cost Analysis |  |  |  |  |  |
-|  |  | PARETO CHART |  |  |  |  |  |
-|  |  | COST ANALYSIS |  |  |  |  | COST CENTER |
-|  |  | Cost center | Annual cost  | Percent of total | Cumulative percent |  |  |
-|  |  | Parts and materials | $1,325,000.00  | 31.17% | 31.17% |  |  |
-|  |  | Manufacturing equipment | $900,500.00  | 21.19% | 52.36% |  |  |
+| Category | FY2024 | FY2025 | FY2026 |
+| --- | --- | --- | --- |
+| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |
+| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |
+| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |
+| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |
+| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |
+| R&D | $180,000.00 | $230,000.00 | $310,000.00 |
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-a-file-of-a-specific-format/load_specific_format/load-specific-format.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-a-file-of-a-specific-format/load_specific_format/load-specific-format.md)
 {{< /tab >}}
 {{< /tabs >}}
 

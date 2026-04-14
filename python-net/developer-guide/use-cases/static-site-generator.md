@@ -61,13 +61,10 @@ if __name__ == "__main__":
 {{< /tab >}}
 {{< tab "static-site-convert.zip" >}}  
 ```text
-content/posts/annual-report.txt (941 bytes)
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/use-cases/static-site-generator/static_site_convert/static-site-convert.zip)
-{{< /tab >}}
-{{< tab "static-site-convert.zip" >}}  
-```text
-content/posts/annual-report.txt (477 bytes)
+content/posts/annual-report.md (5 KB)
+content/posts/images/img-001.png (4 KB)
+content/posts/images/img-002.png (14 KB)
+content/posts/images/img-003.png (15 KB)
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/use-cases/static-site-generator/static_site_convert/static-site-convert.zip)
 {{< /tab >}}
@@ -95,25 +92,26 @@ def batch_convert_for_hugo():
     options.heading_level_offset = 1             # reserve H1 for Hugo page title
     options.image_export_strategy = SkipImagesStrategy()  # text-only content
 
-    # Step 3: Iterate over all files in the source folder
-    for filename in os.listdir(input_dir):
-        file_path = os.path.join(input_dir, filename)
+    # Step 3: Iterate over all files and write a conversion log
+    with open("batch-convert-for-hugo.txt", "w", encoding="utf-8") as log:
+        for filename in os.listdir(input_dir):
+            file_path = os.path.join(input_dir, filename)
 
-        # Skip directories
-        if not os.path.isfile(file_path):
-            continue
+            # Skip directories
+            if not os.path.isfile(file_path):
+                continue
 
-        # Build output path with .md extension
-        output_path = os.path.join(
-            output_dir,
-            os.path.splitext(filename)[0] + ".md")
+            # Build output path with .md extension
+            output_path = os.path.join(
+                output_dir,
+                os.path.splitext(filename)[0] + ".md")
 
-        try:
-            # Step 4: Convert each file with front matter and heading offset
-            MarkdownConverter.to_file(file_path, output_path, convert_options=options)
-            print(f"  OK: {filename} -> {output_path}")
-        except Exception as ex:
-            print(f"  SKIP: {filename} - {ex}")
+            try:
+                # Step 4: Convert each file with front matter and heading offset
+                MarkdownConverter.to_file(file_path, output_path, convert_options=options)
+                log.write(f"  OK: {filename} -> {output_path}\n")
+            except Exception as ex:
+                log.write(f"  SKIP: {filename} - {ex}\n")
 
 if __name__ == "__main__":
     batch_convert_for_hugo()
@@ -121,15 +119,9 @@ if __name__ == "__main__":
 {{< /tab >}}
 {{< tab "batch-convert-hugo.zip" >}}  
 ```text
-content/posts/business-plan.txt (33 KB)
-content/posts/cost-analysis.txt (1 KB)
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/use-cases/static-site-generator/batch_convert_for_hugo/batch-convert-hugo.zip)
-{{< /tab >}}
-{{< tab "batch-convert-hugo.zip" >}}  
-```text
-content/posts/business-plan.txt (32 KB)
-content/posts/cost-analysis.txt (1 KB)
+batch-convert-for-hugo.txt (179 bytes)
+content/posts/business-plan.md (7 KB)
+content/posts/cost-analysis.md (9 KB)
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/use-cases/static-site-generator/batch_convert_for_hugo/batch-convert-hugo.zip)
 {{< /tab >}}

@@ -28,11 +28,8 @@ def export_ebook_to_markdown():
     if os.path.exists("GroupDocs.Markdown.lic"):
         License.set_("GroupDocs.Markdown.lic")
 
-    # Step 2: Convert EPUB to a Markdown string in one call
-    markdown = MarkdownConverter.to_markdown("business-plan.epub")
-
-    # Step 3: Or save the conversion result directly to a file
-    MarkdownConverter.to_file("business-plan.epub", "export-ebook.md")
+    # Step 2: Convert the EPUB directly to a Markdown file
+    MarkdownConverter.to_file("business-plan.epub", "export-ebook-static.md")
 
 if __name__ == "__main__":
     export_ebook_to_markdown()
@@ -43,23 +40,12 @@ if __name__ == "__main__":
 `business-plan.epub` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/basic-usage/convert/business-plan.epub) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "export-ebook.txt" >}}  
+{{< tab "export-ebook-static.md" >}}  
 ```text
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUoAAAAICAYAAACfzrbWAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAIdJREFUaIHt1KENAkEQRuE3yyVYekHhthQ6wV8TUAod0AECT3AYkh0sF8Q6DsL75CST/OrF7bSvtFJ5ERHLzNwgSf8iuJCcp6e8r9bbcaCVGrCbPGQSH10oSTNr8Ba+jCswlhnmSNJPMZSS1GEoJanDUEpSh6GUpI6B0g4Jx7mHSNK3WRAPgCfpERinQ8MkdQAAAABJRU5ErkJggg==)HOME BASED  
-
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOcAAABFCAYAAACxIPHFAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAASxJREFUeJzt1bFRAlEARdH/EXNLo
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-ebook/export_ebook_to_markdown/export-ebook.txt)
-{{< /tab >}}
-{{< tab "export-ebook.txt" >}}  
-```text
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUoAAAAICAYAAACfzrbWAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAIdJREFUaIHt1KENAkEQRuE3yyVYekHhthQ6wV8TUAod0AECT3AYkh0sF8Q6DsL75CST/OrF7bSvtFJ5ERHLzNwgSf8iuJCcp6e8r9bbcaCVGrCbPGQSH10oSTNr8Ba+jCswlhnmSNJPMZSS1GEoJanDUEpSh6GUpI6B0g4Jx7mHSNK3WRAPgCfpERinQ8MkdQAAAABJRU5ErkJggg==)HOME BASED  
-
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOcAAABFCAYAAACxIPHFAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAASxJREFUeJzt1bFRAlEARdH/EXNLo
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQsAAABQCAYAAAAOa1DSAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAEHlJREFUeJzt3XlwG9d9wPHvLhYncRIA71sUKUqULFqHbR2xlUqx3dxOk0kzzbR2/2hnOnU7STr9r800f6SdTv9Ims60406OiXPUrq1YdeLEhyzLsiRKIi1SFy/xvm+QAHED/QMSKIgADSUZ05J+n7+0j2/3Pexb/bD78N4+ZbLvVBIhhPgAGkAymSQWSxCLx3PnVECv6dB0unRSPJ4gEo3l3EVVVYwGLb2dSCSJxuIkEonsRSgKek2HTqem02LxONFo7nrpdCoG/a1lJG6UkT0GKoqCXq9Dp66WEY3FicVyl6HpVPS3lBFPJIhG4yST2ctQVQW9pqGqCpDf+dU0HXrtTs6tgkGvoSirZURjceLx7OdW2k/a77dpv4
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-ebook/export_ebook_to_markdown/export-ebook.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-ebook/export_ebook_to_markdown/export-ebook-static.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -91,10 +77,8 @@ def export_ebook_with_options():
         options.image_export_strategy = strategy
         options.heading_level_offset = 1  # shift all headings down one level
 
-        # Step 
-
         # Step 5: Convert and save the Markdown output
-        converter.convert("export-ebook-options.md", convert_options=options)
+        converter.convert("export-ebook-instance.md", convert_options=options)
 
 if __name__ == "__main__":
     export_ebook_with_options()
@@ -107,23 +91,10 @@ if __name__ == "__main__":
 {{< /tab >}}
 {{< tab "export-ebook-options.zip" >}}  
 ```text
-export-ebook-options.txt (44 KB)
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-ebook/export_ebook_with_options/export-ebook-options.zip)
-{{< /tab >}}
-{{< tab "export-ebook-options.zip" >}}  
-```text
-export-ebook-options.txt (44 KB)
-images/img-001.png (229 bytes)
-images/img-002.png (394 bytes)
-images/img-003.png (8 KB)
-images/img-004.png (171 bytes)
-images/img-005.png (9 KB)
-images/img-006.png (567 bytes)
-images/img-007.png (151 bytes)
-images/img-008.png (186 bytes)
-images/img-009.png (567 bytes)
-[TRUNCATED] (610 files total)
+export-ebook-instance.md (5 KB)
+images/img-001.png (4 KB)
+images/img-002.jpg (35 KB)
+images/img-003.png (13 KB)
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-ebook/export_ebook_with_options/export-ebook-options.zip)
 {{< /tab >}}

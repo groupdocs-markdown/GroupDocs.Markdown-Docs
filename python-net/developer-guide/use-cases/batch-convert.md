@@ -31,30 +31,31 @@ def batch_convert():
     converted = 0
     skipped = 0
 
-    # Step 2: Iterate over all files in the input folder
-    for filename in os.listdir(input_dir):
-        file_path = os.path.join(input_dir, filename)
+    # Step 2: Iterate over all files and write a conversion log
+    with open("batch-convert-basic.txt", "w", encoding="utf-8") as log:
+        for filename in os.listdir(input_dir):
+            file_path = os.path.join(input_dir, filename)
 
-        # Skip directories
-        if not os.path.isfile(file_path):
-            continue
+            # Skip directories
+            if not os.path.isfile(file_path):
+                continue
 
-        # Build output path with .md extension
-        output_path = os.path.join(
-            output_dir,
-            os.path.splitext(filename)[0] + ".md")
+            # Build output path with .md extension
+            output_path = os.path.join(
+                output_dir,
+                os.path.splitext(filename)[0] + ".md")
 
-        try:
-            # Step 3: Convert each document to Markdown
-            MarkdownConverter.to_file(file_path, output_path)
-            converted += 1
-            print(f"  OK: {filename}")
-        except Exception as ex:
-            skipped += 1
-            print(f"  SKIP: {filename} - {ex}")
+            try:
+                # Step 3: Convert each document to Markdown
+                MarkdownConverter.to_file(file_path, output_path)
+                converted += 1
+                log.write(f"  OK: {filename}\n")
+            except Exception as ex:
+                skipped += 1
+                log.write(f"  SKIP: {filename} - {ex}\n")
 
-    # Step 4: Print summary
-    print(f"Done: {converted} converted, {skipped} skipped")
+        # Step 4: Append a summary line
+        log.write(f"Done: {converted} converted, {skipped} skipped\n")
 
 if __name__ == "__main__":
     batch_convert()
@@ -62,15 +63,9 @@ if __name__ == "__main__":
 {{< /tab >}}
 {{< tab "batch-convert.zip" >}}  
 ```text
-output/business-plan.txt (288 KB)
-output/cost-analysis.txt (1011 bytes)
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/use-cases/batch-convert/batch_convert/batch-convert.zip)
-{{< /tab >}}
-{{< tab "batch-convert.zip" >}}  
-```text
-output/business-plan.txt (287 KB)
-output/cost-analysis.txt (1011 bytes)
+batch-convert-basic.txt (107 bytes)
+output/business-plan.md (210 KB)
+output/cost-analysis.md (9 KB)
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/use-cases/batch-convert/batch_convert/batch-convert.zip)
 {{< /tab >}}

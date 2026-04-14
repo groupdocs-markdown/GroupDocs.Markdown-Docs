@@ -28,11 +28,8 @@ def export_spreadsheet_to_markdown():
     if os.path.exists("GroupDocs.Markdown.lic"):
         License.set_("GroupDocs.Markdown.lic")
 
-    # Step 2: Convert XLSX to a Markdown string in one call
-    markdown = MarkdownConverter.to_markdown("cost-analysis.xlsx")
-
-    # Step 3: Or save the conversion result directly to a file
-    MarkdownConverter.to_file("cost-analysis.xlsx", "export-spreadsheet.md")
+    # Step 2: Convert the spreadsheet directly to a Markdown file
+    MarkdownConverter.to_file("cost-analysis.xlsx", "export-spreadsheet-static.md")
 
 if __name__ == "__main__":
     export_spreadsheet_to_markdown()
@@ -43,37 +40,21 @@ if __name__ == "__main__":
 `cost-analysis.xlsx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/basic-usage/convert/cost-analysis.xlsx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "export-spreadsheet.txt" >}}  
+{{< tab "export-spreadsheet-static.md" >}}  
 ```text
-## Cost data and chart
+## Summary
 
-|  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  | Cost Analysis |  |  |  |  |  |
-|  |  | PARETO CHART |  |  |  |  |  |
-|  |  | COST ANALYSIS |  |  |  |  | COST CENTER |
-|  |  | Cost center | Annual cost  | Percent of total | Cumulative percent |  |  |
-|  |  | Parts and materials | $1,325,000.00  | 31.17% | 31.17% |  |  |
-|  |  | Manufacturing equipment | $900,500.00  | 21.19% | 52.36% |  |  |
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-spreadsheet/export_spreadsheet_to_markdown/export-spreadsheet.txt)
-{{< /tab >}}
-{{< tab "export-spreadsheet.txt" >}}  
-```text
-## Cost data and chart
-
-|  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  | Cost Analysis |  |  |  |  |  |
-|  |  | PARETO CHART |  |  |  |  |  |
-|  |  | COST ANALYSIS |  |  |  |  | COST CENTER |
-|  |  | Cost center | Annual cost  | Percent of total | Cumulative percent |  |  |
-|  |  | Parts and materials | $1,325,000.00  | 31.17% | 31.17% |  |  |
-|  |  | Manufacturing equipment | $900,500.00  | 21.19% | 52.36% |  |  |
+| Category | FY2024 | FY2025 | FY2026 |
+| --- | --- | --- | --- |
+| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |
+| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |
+| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |
+| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |
+| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |
+| R&D | $180,000.00 | $230,000.00 | $310,000.00 |
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-spreadsheet/export_spreadsheet_to_markdown/export-spreadsheet.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-spreadsheet/export_spreadsheet_to_markdown/export-spreadsheet-static.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -102,10 +83,8 @@ def export_spreadsheet_with_options():
         options.max_rows = 100     # limit to first 100 data rows per sheet
         options.heading_level_offset = 1  # shift headings down one level
 
-        # Step 
-
         # Step 4: Convert and save the Markdown output
-        converter.convert("export-spreadsheet-options.md", convert_options=options)
+        converter.convert("export-spreadsheet-instance.md", convert_options=options)
 
 if __name__ == "__main__":
     export_spreadsheet_with_options()
@@ -116,37 +95,21 @@ if __name__ == "__main__":
 `cost-analysis.xlsx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/basic-usage/convert/cost-analysis.xlsx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "export-spreadsheet-options.txt" >}}  
+{{< tab "export-spreadsheet-instance.md" >}}  
 ```text
-## Cost data and chart
+## Summary
 
-|  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  | Cost Analysis |  |  |  |  |  |
-|  |  | PARETO CHART |  |  |  |  |  |
-|  |  | COST ANALYSIS |  |  |  |  | COST CENTER |
-|  |  | Cost center | Annual cost  | Percent of total | Cumulative percent |  |  |
-|  |  | Parts and materials | $1,325,000.00  | 31.17% | 31.17% |  |  |
-|  |  | Manufacturing equipment | $900,500.00  | 21.19% | 52.36% |  |  |
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-spreadsheet/export_spreadsheet_with_options/export-spreadsheet-options.txt)
-{{< /tab >}}
-{{< tab "export-spreadsheet-options.txt" >}}  
-```text
-## Cost data and chart
-
-|  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  | Cost Analysis |  |  |  |  |  |
-|  |  | PARETO CHART |  |  |  |  |  |
-|  |  | COST ANALYSIS |  |  |  |  | COST CENTER |
-|  |  | Cost center | Annual cost  | Percent of total | Cumulative percent |  |  |
-|  |  | Parts and materials | $1,325,000.00  | 31.17% | 31.17% |  |  |
-|  |  | Manufacturing equipment | $900,500.00  | 21.19% | 52.36% |  |  |
+| Category | FY2024 | FY2025 | FY2026 |
+| --- | --- | --- | --- |
+| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |
+| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |
+| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |
+| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |
+| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |
+| R&D | $180,000.00 | $230,000.00 | $310,000.00 |
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-spreadsheet/export_spreadsheet_with_options/export-spreadsheet-options.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-spreadsheet/export_spreadsheet_with_options/export-spreadsheet-instance.md)
 {{< /tab >}}
 {{< /tabs >}}
 

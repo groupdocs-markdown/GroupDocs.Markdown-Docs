@@ -57,14 +57,10 @@ if __name__ == "__main__":
 {{< /tab >}}
 {{< tab "custom-strategy-rename.zip" >}}  
 ```text
-output/document.txt (21 KB)
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/custom-strategy/custom_strategy_rename/custom-strategy-rename.zip)
-{{< /tab >}}
-{{< tab "custom-strategy-rename.zip" >}}  
-```text
-output/document.txt (20 KB)
-output/images/fig-1.png (56 KB)
+output/document.md (5 KB)
+output/images/fig-1.png (4 KB)
+output/images/fig-2.png (41 KB)
+output/images/fig-3.png (14 KB)
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/custom-strategy/custom_strategy_rename/custom-strategy-rename.zip)
 {{< /tab >}}
@@ -110,14 +106,8 @@ if __name__ == "__main__":
 {{< /tab >}}
 {{< tab "custom-strategy-replace.zip" >}}  
 ```text
-output/document.txt (21 KB)
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/custom-strategy/custom_strategy_replace/custom-strategy-replace.zip)
-{{< /tab >}}
-{{< tab "custom-strategy-replace.zip" >}}  
-```text
-output/document.txt (20 KB)
-output/images/placeholder.png (56 KB)
+output/document.md (5 KB)
+output/images/placeholder.png (14 KB)
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/custom-strategy/custom_strategy_replace/custom-strategy-replace.zip)
 {{< /tab >}}

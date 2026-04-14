@@ -21,11 +21,10 @@ from groupdocs.markdown import MarkdownConverter
 def base64_static():
     """Convert a PDF to Markdown with images embedded as Base64 (default behavior)."""
 
-    # Step 1: Convert the document -- images are embedded as Base64 by default
-    markdown = MarkdownConverter.to_markdown("business-plan.pdf")
-
-    # Step 2: Print the self-contained Markdown output
-    print(markdown)
+    # Convert the document and save it to a file --
+    # images are embedded as Base64 data URIs by default,
+    # so the output is a single self-contained Markdown file.
+    MarkdownConverter.to_file("business-plan.pdf", "base64-static.md")
 
 if __name__ == "__main__":
     base64_static()
@@ -36,19 +35,12 @@ if __name__ == "__main__":
 `business-plan.pdf` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/strategy/business-plan.pdf) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "base64-static.txt" >}}  
+{{< tab "base64-static.md" >}}  
 ```text
-![](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAHyAqYDASIAAhEBAxEB/8QAHQAAAgMBAQEBAQAAAAAAAAAABQYABAcIAwEJAv/EAGoQAAACBAoGBwMHBQkNBQYFBQEDAAQFERMhMUFRYXGBofAGFJGxweEHFSMkMzTRQ0TxAhYlNVJUghJFVWR0JjZCU2NldYSiCBciMkZWYmaFkpSy4naGlbTCc5akpcXSN7XE1eZyprbG1P/EABwBAAMAAwEBAQAAAAAAAAAAAAAEBQEDBgIHCP/EAD8RAAIAA
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/as-base64-strategy/base64_static/base64-static.txt)
-{{< /tab >}}
-{{< tab "base64-static.txt" >}}  
-```text
-![](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAHyAqYDASIAAhEBAxEB/8QAHQAAAgMBAQEBAQAAAAAAAAAABQYABAcIAwEJAv/EAGoQAAACBAoGBwMHBQkNBQYFBQEDAAQFERMhMUFRYXGBofAGFJGxweEHFSMkMzTRQ0TxAhYlNVJUghJFVWR0JjZCU2NldYSiCBciMkZWYmaFkpSy4naGlbTCc5akpcXSN7XE1eZyprbG1P/EABwBAAMAAwEBAQAAAAAAAAAAAAAEBQEDBgIHCP/EAD8RAAIAA
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAIAAADHHcVbAAAAA3NCSVQICAjb4U/gAAAMWElEQVR4nO3dUWzV130H8L+nSnsgxYTa5kbEnhJgJpJ98aQseTAxUaoiW1RDSiseykoCNE9boyoIZEWLVImosoZSpeve0Ighax4iDRRpky02oWKbh2aVCralhGBANSAu4Lq5NJ60tz0c8t/lf6/h2jjg/M/nIz8c7v/v3z345atz/v9zTkNpaiwBgFj92aPuAAA8SoIQgKgJQgCiJggBiNo3Mv/+53/9r4tXbi6u1t/v/Pa6tjXzXV1cZTXVVFNNNdVc2poZ2SCcmr4xfv7KQr8y+NPc/97j6uIqq6mmmmqqqebS1szIBuH6tjUNDQ0Xp2988T8LqAIAX1NLOSIEgK+dhsyC+p/87FdpEP7dzm+va613jjVJkvVtax5b8efzXb04fWNBY1U11VRTTTXVXJ
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/as-base64-strategy/base64_static/base64-static.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/as-base64-strategy/base64_static/base64-static.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -82,18 +74,11 @@ if __name__ == "__main__":
 `business-plan.pdf` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/strategy/business-plan.pdf) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "base64-explicit.txt" >}}  
+{{< tab "base64-explicit.md" >}}  
 ```text
-![](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAHyAqYDASIAAhEBAxEB/8QAHQAAAgMBAQEBAQAAAAAAAAAABQYABAcIAwEJAv/EAGoQAAACBAoGBwMHBQkNBQYFBQEDAAQFERMhMUFRYXGBofAGFJGxweEHFSMkMzTRQ0TxAhYlNVJUghJFVWR0JjZCU2NldYSiCBciMkZWYmaFkpSy4naGlbTCc5akpcXSN7XE1eZyprbG1P/EABwBAAMAAwEBAQAAAAAAAAAAAAAEBQEDBgIHCP/EAD8RAAIAA
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/as-base64-strategy/base64_explicit/base64-explicit.txt)
-{{< /tab >}}
-{{< tab "base64-explicit.txt" >}}  
-```text
-![](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAHyAqYDASIAAhEBAxEB/8QAHQAAAgMBAQEBAQAAAAAAAAAABQYABAcIAwEJAv/EAGoQAAACBAoGBwMHBQkNBQYFBQEDAAQFERMhMUFRYXGBofAGFJGxweEHFSMkMzTRQ0TxAhYlNVJUghJFVWR0JjZCU2NldYSiCBciMkZWYmaFkpSy4naGlbTCc5akpcXSN7XE1eZyprbG1P/EABwBAAMAAwEBAQAAAAAAAAAAAAAEBQEDBgIHCP/EAD8RAAIAA
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAIAAADHHcVbAAAAA3NCSVQICAjb4U/gAAAMWElEQVR4nO3dUWzV130H8L+nSnsgxYTa5kbEnhJgJpJ98aQseTAxUaoiW1RDSiseykoCNE9boyoIZEWLVImosoZSpeve0Ighax4iDRRpky02oWKbh2aVCralhGBANSAu4Lq5NJ60tz0c8t/lf6/h2jjg/M/nIz8c7v/v3z345atz/v9zTkNpaiwBgFj92aPuAAA8SoIQgKgJQgCiJggBiNo3Mv/+53/9r4tXbi6u1t/v/Pa6tjXzXV1cZTXVVFNNNdVc2poZ2SCcmr4xfv7KQr8y+NPc/97j6uIqq6mmmmqqqebS1szIBuH6tjUNDQ0Xp2988T8LqAIAX1NLOSIEgK+dhsyC+p/87FdpEP7dzm+va613jjVJkvVtax5b8efzXb04fWNBY1U11VRTTTXVXJ
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/as-base64-strategy/base64_explicit/base64-explicit.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/strategy/as-base64-strategy/base64_explicit/base64-explicit.md)
 {{< /tab >}}
 {{< /tabs >}}

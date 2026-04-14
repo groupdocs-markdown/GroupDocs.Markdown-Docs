@@ -39,16 +39,18 @@ def convert_for_rag():
     options.image_export_strategy = SkipImagesStrategy()
     options.flavor = MarkdownFlavor.COMMON_MARK
 
-    # Step 2: Convert the document using keyword argument for options
-    markdown = MarkdownConverter.to_markdown("business-plan.pdf", convert_options=options)
+    # Step 2: Convert the document and save it to a Markdown file
+    MarkdownConverter.to_file("business-plan.pdf", "convert-for-rag-basic.md", convert_options=options)
 
-    # Step 3: Split the Markdown into chunks by heading markers
-    chunks = re.split(r"\n#{1,2} ", markdown)
+    # Step 3: Read the result back and split it into chunks by heading markers
+    with open("convert-for-rag-basic.md", "r", encoding="utf-8") as f:
+        markdown = f.read()
+    chunks = [c for c in re.split(r"\n#{1,2} ", markdown) if c.strip()]
 
-    # Step 4: Process each chunk (e.g., send to an embedding model)
-    for chunk in chunks:
-        if chunk.strip():
-            print(f"Chunk ({len(chunk)} chars): {chunk[:80]}...")
+    # Step 4: Write a chunk summary to a text file (ready to feed an embedding model)
+    with open("convert-for-rag-basic.txt", "w", encoding="utf-8") as f:
+        for i, chunk in enumerate(chunks, 1):
+            f.write(f"Chunk {i} ({len(chunk)} chars): {chunk[:80]}...\n")
 
 if __name__ == "__main__":
     convert_for_rag()
@@ -59,33 +61,20 @@ if __name__ == "__main__":
 `business-plan.pdf` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/use-cases/business-plan.pdf) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "convert-rag.txt" >}}  
+{{< tab "convert-for-rag-basic.md" >}}  
 ```text
-Chunk (36184 chars): 
+**Meridian Outdoor Co. — Business Plan**
 
+FY2026 Strategic Plan
 
+**Table of Contents**
 
-**HOME**** ****BASED**** ****PROFESSIONAL**** **
+Meridian Outdoor Co. — Business Plan .........................................................................................1FY2026 Strategic Plan.................................................................................................................1Table of Contents.............................................................................................................................2
 
-
-
-**SERVICES**** **
-
-
-
-***...
+1. Ex
+[TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/use-cases/convert-for-rag/convert_for_rag/convert-rag.txt)
-{{< /tab >}}
-{{< tab "convert-rag.txt" >}}  
-```text
-Chunk (34602 chars): 
-
-**HOME BASED PROFESSIONAL SERVICES *Business Plan* TABLE OF CONTENTS** 
-
-I...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/use-cases/convert-for-rag/convert_for_rag/convert-rag.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/use-cases/convert-for-rag/convert_for_rag/convert-for-rag-basic.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -108,30 +97,24 @@ def batch_convert_for_rag():
     # Step 2: Find all PDF files in the documents folder
     files = glob.glob("documents/*.pdf")
 
-    # Step 3: Convert each file, handling errors gracefully
-    for file in files:
-        try:
-            markdown = MarkdownConverter.to_markdown(file, convert_options=options)
+    # Step 3: Convert each file, handling errors gracefully, and write a log
+    with open("batch-convert-for-rag.txt", "w", encoding="utf-8") as log:
+        for file in files:
             output_path = os.path.splitext(file)[0] + ".md"
-            with open(output_path, "w", encoding="utf-8") as f:
-                f.write(markdown)
-            print(f"Converted: {file}")
-        except GroupDocsMarkdownException as ex:
-            print(f"Skipped {file}: {ex}")
+            try:
+                MarkdownConverter.to_file(file, output_path, convert_options=options)
+                log.write(f"Converted: {file}\n")
+            except GroupDocsMarkdownException as ex:
+                log.write(f"Skipped {file}: {ex}\n")
 
 if __name__ == "__main__":
     batch_convert_for_rag()
 ```
 {{< /tab >}}
-{{< tab "batch-convert-rag.txt" >}}  
-```text
-Converted: documents\business-plan.pdf
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/use-cases/convert-for-rag/batch_convert_for_rag/batch-convert-rag.txt)
-{{< /tab >}}
 {{< tab "batch-convert-rag.zip" >}}  
 ```text
-documents/business-plan.txt (32 KB)
+batch-convert-for-rag.txt (40 bytes)
+documents/business-plan.md (7 KB)
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/use-cases/convert-for-rag/batch_convert_for_rag/batch-convert-rag.zip)
 {{< /tab >}}

@@ -64,14 +64,10 @@ if __name__ == "__main__":
 {{< /tab >}}
 {{< tab "uri-rewriting-cdn.zip" >}}  
 ```text
-output/report.txt (21 KB)
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/uri-rewriting/uri_rewriting_cdn/uri-rewriting-cdn.zip)
-{{< /tab >}}
-{{< tab "uri-rewriting-cdn.zip" >}}  
-```text
-output/images/img-001.jpg (56 KB)
-output/report.txt (20 KB)
+output/images/img-001.png (4 KB)
+output/images/img-002.jpg (41 KB)
+output/images/img-003.png (14 KB)
+output/report.md (5 KB)
 ```
 [Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/uri-rewriting/uri_rewriting_cdn/uri-rewriting-cdn.zip)
 {{< /tab >}}

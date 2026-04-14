@@ -28,11 +28,8 @@ def export_text_to_markdown():
     if os.path.exists("GroupDocs.Markdown.lic"):
         License.set_("GroupDocs.Markdown.lic")
 
-    # Step 2: Convert XML to a Markdown string in one call
-    markdown = MarkdownConverter.to_markdown("llms-tech.xml")
-
-    # Step 3: Or save the conversion result directly to a file
-    MarkdownConverter.to_file("llms-tech.xml", "export-text.md")
+    # Step 2: Convert the XML/text file directly to Markdown
+    MarkdownConverter.to_file("llms-tech.xml", "export-text-static.md")
 
 if __name__ == "__main__":
     export_text_to_markdown()
@@ -43,37 +40,21 @@ if __name__ == "__main__":
 `llms-tech.xml` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/basic-usage/convert/llms-tech.xml) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "export-text.txt" >}}  
+{{< tab "export-text-static.md" >}}  
 ```text
-`<Technologies>`
+Attention-based neural architecture that underpins most modern large language models.
 
-`<Category name="Model Architectures">`
+2017
 
-`<Technology>`
+Attention Is All You Need
 
-`<Name>Transformer</Name>`
 
-`<Description>Attention-based neural architecture used by most modern LLMs.</Description>`
+Language modeling
 
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-text/export_text_to_markdown/export-text.txt)
-{{< /tab >}}
-{{< tab "export-text.txt" >}}  
-```text
-`<Technologies>`
-
-`<Category name="Model Architectures">`
-
-`<Technology>`
-
-`<Name>Transformer</Name>`
-
-`<Description>Attention-based neural architecture used by most modern LLMs.</Description>`
-
+Machine translation
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-text/export_text_to_markdown/export-text.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-text/export_text_to_markdown/export-text-static.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -100,10 +81,8 @@ def export_text_with_options():
         options = ConvertOptions()
         options.heading_level_offset = 1  # shift all headings down one level
 
-        # Step 
-
         # Step 4: Convert and save the Markdown output
-        converter.convert("export-text-options.md", convert_options=options)
+        converter.convert("export-text-instance.md", convert_options=options)
 
 if __name__ == "__main__":
     export_text_with_options()
@@ -114,37 +93,21 @@ if __name__ == "__main__":
 `llms-tech.xml` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/basic-usage/convert/llms-tech.xml) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "export-text-options.txt" >}}  
+{{< tab "export-text-instance.md" >}}  
 ```text
-`<Technologies>`
+Attention-based neural architecture that underpins most modern large language models.
 
-`<Category name="Model Architectures">`
+2017
 
-`<Technology>`
+Attention Is All You Need
 
-`<Name>Transformer</Name>`
 
-`<Description>Attention-based neural architecture used by most modern LLMs.</Description>`
+Language modeling
 
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-text/export_text_with_options/export-text-options.txt)
-{{< /tab >}}
-{{< tab "export-text-options.txt" >}}  
-```text
-`<Technologies>`
-
-`<Category name="Model Architectures">`
-
-`<Technology>`
-
-`<Name>Transformer</Name>`
-
-`<Description>Attention-based neural architecture used by most modern LLMs.</Description>`
-
+Machine translation
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-text/export_text_with_options/export-text-options.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/basic-usage/convert/export-text/export_text_with_options/export-text-instance.md)
 {{< /tab >}}
 {{< /tabs >}}
 

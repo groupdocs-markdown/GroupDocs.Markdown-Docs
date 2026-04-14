@@ -23,7 +23,7 @@ def error_handling_example():
 
     try:
         # Step 1: Attempt to convert the document
-        MarkdownConverter.to_file("annual-report.docx", "error-handling.md")
+        MarkdownConverter.to_file("annual-report.docx", "error-handling-example.md")
     except DocumentProtectedException:
         # Step 2a: Handle password-protected documents
         print("Wrong or missing password.")
@@ -43,71 +43,12 @@ if __name__ == "__main__":
 `annual-report.docx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/annual-report.docx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "error-handling.txt" >}}  
-{{< tab-text >}}
-Output produced by this example ([download](/markdown/python-net/_output_files/developer-guide/advanced-usage/error-handling/error_handling_example/error-handling.txt)):
-````
-[queryEmployees]
-
-Employee Information for Employee [EmployeeID]: [FirstName] [LastName]
-
-
-# Employee Information
-
-
-| Job Title |  AUTOTEXTLIST  \t "<wr:out select='${varName1.Title}'/>" [Title] |
-| --- | --- |
-...
-````
-{{< /tab-text >}}
-{{< /tab >}}
-{{< tab "error-handling.txt" >}}  
-{{< tab-text >}}
-Output produced by this example ([download](/markdown/python-net/_output_files/developer-guide/advanced-usage/error-handling/error_handling_example/error-handling.txt)):
-<pre><code>[queryEmployees]
-
-Employee Information for Employee [EmployeeID]: [FirstName] [LastName]
-
-
-# Employee Information
-
-
-| Job Title |  AUTOTEXTLIST  \t &quot;&lt;wr:out select='${varName1.Title}'/&gt;&quot; [Title] |
-| --- | --- |
-...</code></pre>
-{{< /tab-text >}}
-{{< /tab >}}
-{{< tab "error-handling.txt" >}}  
+{{< tab "error-handling-example.md" >}}  
 ```text
-[queryEmployees]
-
-Employee Information for Employee [EmployeeID]: [FirstName] [LastName]
-
-
-# Employee Information
-
-
-| Job Title |  AUTOTEXTLIST  \t "<wr:out select='${varName1.Title}'/>" [Title] |
-| --- | --- |
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/error-handling/error_handling_example/error-handling.txt)
-{{< /tab >}}
-{{< tab "error-handling.txt" >}}  
-```text
-[queryEmployees]
-
-Employee Information for Employee [EmployeeID]: [FirstName] [LastName]
-
-
-# Employee Information
-
-
-| **Job Title** | **[Title]** |
-| --- | --- |
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6+mfqnqqqeeeuqpp5566i1XvSKFAWvL5jti3bp1cXbyYvzpf+v/cACAtWhZZrAAANaSdUUHjf7sF7+eE7D+/qkfxL2t9a1BRszOiN12658v2O
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/error-handling/error_handling_example/error-handling.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/error-handling/error_handling_example/error-handling-example.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -137,12 +78,13 @@ def warnings_example():
         options = ConvertOptions()
         options.max_rows = 10  # limit to first 10 data rows per sheet
 
-        # Step 3: Convert using keyword argument for options
-        result = converter.convert("warnings.md", convert_options=options)
+        # Step 3: Convert and capture the result for inspection
+        result = converter.convert("warnings-example.md", convert_options=options)
 
-        # Step 4: Inspect non-fatal warnings (e.g., truncation notices)
-        for warning in result.warnings:
-            print(f"Warning: {warning}")
+        # Step 4: Write any non-fatal warnings to a separate text file
+        with open("warnings-example.txt", "w", encoding="utf-8") as f:
+            for warning in result.warnings:
+                f.write(f"Warning: {warning}\n")
 
 if __name__ == "__main__":
     warnings_example()
@@ -153,36 +95,20 @@ if __name__ == "__main__":
 `cost-analysis.xlsx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/cost-analysis.xlsx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "warnings.txt" >}}  
+{{< tab "warnings-example.md" >}}  
 ```text
-## Cost data and chart
+## Summary
 
-|  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  | Cost Analysis |  |  |  |  |  |
-|  |  | PARETO CHART |  |  |  |  |  |
-|  |  | COST ANALYSIS |  |  |  |  | COST CENTER |
-|  |  | Cost center | Annual cost  | Percent of total | Cumulative percent |  |  |
-|  |  | Parts and materials | $1,325,000.00  | 31.17% | 31.17% |  |  |
-|  |  | Manufacturing equipment | $900,500.00  | 21.19% | 52.36% |  |  |
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/error-handling/warnings_example/warnings.txt)
-{{< /tab >}}
-{{< tab "warnings.txt" >}}  
-```text
-## Cost data and chart
-
-|  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  | Cost Analysis |  |  |  |  |  |
-|  |  | PARETO CHART |  |  |  |  |  |
-|  |  | COST ANALYSIS |  |  |  |  | COST CENTER |
-|  |  | Cost center | Annual cost  | Percent of total | Cumulative percent |  |  |
-|  |  | Parts and materials | $1,325,000.00  | 31.17% | 31.17% |  |  |
-|  |  | Manufacturing equipment | $900,500.00  | 21.19% | 52.36% |  |  |
+| Category | FY2024 | FY2025 | FY2026 |
+| --- | --- | --- | --- |
+| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |
+| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |
+| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |
+| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |
+| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |
+| R&D | $180,000.00 | $230,000.00 | $310,000.00 |
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/error-handling/warnings_example/warnings.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/error-handling/warnings_example/warnings-example.md)
 {{< /tab >}}
 {{< /tabs >}}

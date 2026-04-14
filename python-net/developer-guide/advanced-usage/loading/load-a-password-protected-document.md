@@ -35,29 +35,21 @@ if __name__ == "__main__":
 `protected.docx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/loading/protected.docx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "load-password-static.txt" >}}  
+{{< tab "load-password-static.md" >}}  
 ```text
-# **Title of the document**
+**Confidential Memo**
+
+From: Meridian Outdoor Co. — Strategy Team
+
+Date: 2026-01-15
+
+Subject: FY2026 M&A Targets
 
 
-## **Subtitle #1**
 
-Text is normal, then **bold**, then *italic*, then underscore, and finally normal again. Now ~~strikethrough~~, then double strikethrough, and underscore differently - with dashes. Another underscore is marked with yellow wave line. And then – underscore and strikethrough ~~together~~! Here we have a superscript123 and a subscript456. This part of text has a red background. These words are shadowed to right side, these – shadowed (red) to top sid
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-a-password-protected-document/load_password_static/load-password-static.txt)
-{{< /tab >}}
-{{< tab "load-password-static.txt" >}}  
-```text
-# **Title of the document**
-
-
-## **Subtitle #1**
-
-Text is normal, then **bold**, then *italic*, then underscore, and finally normal again. Now ~~strikethrough~~, then double strikethrough, and underscore differently - with dashes. Another underscore is marked with yellow wave line. And then – underscore and strikethrough ~~together~~! Here we have a superscript123 and a subscript456. This part of text has a red background. These words are shadowed to right side, these – shadowed (red) to top sid
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-a-password-protected-document/load_password_static/load-password-static.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-a-password-protected-document/load_password_static/load-password-static.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -89,37 +81,21 @@ if __name__ == "__main__":
 `protected.xlsx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/loading/protected.xlsx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "load-password-instance.txt" >}}  
+{{< tab "load-password-instance.md" >}}  
 ```text
-## Cost data and chart
+## Expenses
 
-|  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  | Cost Analysis |  |  |  |  |  |
-|  |  | PARETO CHART |  |  |  |  |  |
-|  |  | COST ANALYSIS |  |  |  |  | COST CENTER |
-|  |  | Cost center | Annual cost  | Percent of total | Cumulative percent |  |  |
-|  |  | Parts and materials | $1,325,000.00  | 31.17% | 31.17% |  |  |
-|  |  | Manufacturing equipment | $900,500.00  | 21.19% | 52.36% |  |  |
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-a-password-protected-document/load_password_instance/load-password-instance.txt)
-{{< /tab >}}
-{{< tab "load-password-instance.txt" >}}  
-```text
-## Cost data and chart
-
-|  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  | Cost Analysis |  |  |  |  |  |
-|  |  | PARETO CHART |  |  |  |  |  |
-|  |  | COST ANALYSIS |  |  |  |  | COST CENTER |
-|  |  | Cost center | Annual cost  | Percent of total | Cumulative percent |  |  |
-|  |  | Parts and materials | $1,325,000.00  | 31.17% | 31.17% |  |  |
-|  |  | Manufacturing equipment | $900,500.00  | 21.19% | 52.36% |  |  |
+| Date | Vendor | Category | Amount |
+| --- | --- | --- | --- |
+| 2026-01-02 | Pacific Freight | Shipping | $2,450.00 |
+| 2026-01-05 | Cedar Packaging | Materials | $1,320.50 |
+| 2026-01-08 | Highline Textiles | Materials | $8,940.00 |
+| 2026-01-12 | Portland Electric | Utilities | $680.25 |
+| 2026-01-14 | Backcountry Co-op | Events | $1,200.00 |
+| 2026-01-17 | Ridge Media | Marketing | $5,400.00 |
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-a-password-protected-document/load_password_instance/load-password-instance.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-a-password-protected-document/load_password_instance/load-password-instance.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -137,10 +113,11 @@ def load_password_exception():
 
     try:
         # Step 1: Attempt to convert without providing a password
-        markdown = MarkdownConverter.to_markdown("protected.docx")
+        MarkdownConverter.to_file("protected.docx", "load-password-exception.md")
     except DocumentProtectedException as ex:
-        # Step 2: Catch the exception and display a user-friendly message
-        print(f"Cannot open document: {ex}")
+        # Step 2: Catch the exception and write a user-friendly message to a file
+        with open("load-password-exception.txt", "w", encoding="utf-8") as f:
+            f.write(f"Cannot open document: {ex}\n")
 
 if __name__ == "__main__":
     load_password_exception()
@@ -151,34 +128,9 @@ if __name__ == "__main__":
 `protected.docx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/loading/protected.docx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "load-password-exception.txt" >}}  
-```text
-Cannot open document: The document password is incorrect.
-[.NET GroupDocs.Markdown.DocumentProtectedException]
-   at .(Stream , LoadOptions )
-
-   at .(Stream , LoadOptions , ConvertOptions , Stream )
-
-   at GroupDocs.Markdown.MarkdownConverter.(ConvertOptions , Stream , Boolean )
-
-   at GroupDocs.Markdown.MarkdownConverter.Convert(ConvertOptions convertOptions)
-
-   at GroupDocs.Markdown.MarkdownConverter.ToMarkdown(String sourcePath, LoadOptions loadOptions, ConvertOptions
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-a-password-protected-document/load_password_exception/load-password-exception.txt)
-{{< /tab >}}
-{{< tab "load-password-exception.txt" >}}  
-```text
-Cannot open document: The document password is incorrect.
-[.NET GroupDocs.Markdown.DocumentProtectedException]
-   at .(Stream , LoadOptions )
-   at .(Stream , LoadOptions , ConvertOptions , Stream )
-   at GroupDocs.Markdown.MarkdownConverter.(ConvertOptions , Stream , Boolean )
-   at GroupDocs.Markdown.MarkdownConverter.Convert(ConvertOptions convertOptions)
-   at GroupDocs.Markdown.MarkdownConverter.ToMarkdown(String sourcePath, LoadOptions loadOptions, ConvertOptions
-[TRUNCATED]
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-a-password-protected-document/load_password_exception/load-password-exception.txt)
+{{< tab "load-password-exception.md" >}}  
+{{< tab-text >}}
+`load-password-exception.md` is the output produced by this example. Click [here](/markdown/python-net/_output_files/developer-guide/advanced-usage/loading/load-a-password-protected-document/load_password_exception/load-password-exception.md) to download it.
+{{< /tab-text >}}
 {{< /tab >}}
 {{< /tabs >}}

@@ -26,11 +26,8 @@ def front_matter_example():
     options = ConvertOptions()
     options.include_front_matter = True
 
-    # Step 2: Convert the document with front matter enabled
-    md = MarkdownConverter.to_markdown("business-plan.docx", convert_options=options)
-
-    # Step 3: Print the result -- YAML front matter appears at the top
-    print(md)
+    # Step 2: Convert the document and save it to a Markdown file
+    MarkdownConverter.to_file("business-plan.docx", "front-matter-example.md", convert_options=options)
     # Output:
     # ---
     # title: "Q3 Report"
@@ -51,44 +48,19 @@ if __name__ == "__main__":
 `business-plan.docx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/business-plan.docx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "front-matter.txt" >}}  
+{{< tab "front-matter-example.md" >}}  
 ```text
 ---
-
+title: "Meridian Outdoor Co. — Business Plan"
+author: "Meridian Outdoor Co."
 format: Docx
-
-pages: 18
-
+pages: 5
 ---
 
-
-
-
-
-| HOME BASED |  |  |
-
-| --- | --- | --- |
-
-|  |  |  |
-
-| PROFESSIONAL SERVICES |  |  |
-
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/front-matter/front_matter_example/front-matter.txt)
-{{< /tab >}}
-{{< tab "front-matter.txt" >}}  
-```text
----
-format: Docx
-pages: 18
----
-
-
-| ![Woman with laptop and business documents](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCAHyAqYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdI
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1LdX/6
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/front-matter/front_matter_example/front-matter.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/front-matter/front_matter_example/front-matter-example.md)
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -119,37 +91,19 @@ if __name__ == "__main__":
 `annual-report.docx` is sample file used in this example. Click [here](/markdown/python-net/_sample_files/developer-guide/advanced-usage/annual-report.docx) to download it.
 {{< /tab-text >}}
 {{< /tab >}}
-{{< tab "front-matter-combined.txt" >}}  
+{{< tab "front-matter-combined.md" >}}  
 ```text
 ---
-author: "Brianna Thielen"
+title: "Meridian Outdoor Co. — Annual Report 2025"
+author: "Elena Márquez, CFO"
 format: Docx
-pages: 1
+pages: 6
 ---
 
-[queryEmployees]
-
-Employee Information for Employee [EmployeeID]: [FirstName] [LastName]
-
-...
-```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/front-matter/front_matter_combined/front-matter-combined.txt)
-{{< /tab >}}
-{{< tab "front-matter-combined.txt" >}}  
-```text
----
-author: "Brianna Thielen"
-format: Docx
-pages: 1
----
-
-[queryEmployees]
-
-Employee Information for Employee [EmployeeID]: [FirstName] [LastName]
-
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAC0CAYAAABIf1IMAAAABHNCSVQICAgIfAhkiAAADcJJREFUeJzt3VFo3VWeB/BfF2EfdJraSWKkpovabiokaRZcfWiM4jCS0mELjvgwzlZt16fdlUFpKbLCgDKELQ7Oum+yNdYdH4StCLMkdBexSfow7sC0SUA7TZVJW0zbWI1OF/ap+xD+/97k/u/Nze1JbJLPBwo9/3vu/Z1/L5Qv55x7/uumJkauBQAAyfzZdz0AAIDVRsACAEhMwAIASEzAAgBI7Jaii//67/8dZ89dSlbkH576Qdy7+Y4F+6Wqq5566qmnnnrqqbdc9YoUBqyJyYsxevrcDQ2q1Ld
 [TRUNCATED]
 ```
-[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/front-matter/front_matter_combined/front-matter-combined.txt)
+[Download full output](/markdown/python-net/_output_files/developer-guide/advanced-usage/front-matter/front_matter_combined/front-matter-combined.md)
 {{< /tab >}}
 {{< /tabs >}}
 
