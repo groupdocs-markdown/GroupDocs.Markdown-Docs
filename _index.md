@@ -22,6 +22,7 @@ indexPage: true
 <div class="gdoc-platform-links">
     <ul>
         <li><a href="#markdown_net">.NET</a></li>
+        <li><a href="#markdown_java">Java</a></li>
         <li><a href="#markdown_python_net">Python</a></li>
     </ul>
 </div>
@@ -76,6 +77,57 @@ indexPage: true
         </div>
         <div class="gdoc-platform__footer">
             <a class="gdoc-platform__footer-btn" href='/markdown/net/'>More</a>
+        </div>
+    </div>
+    <div class="gdoc-platform">
+        <a id="markdown_java"></a>
+        <div class="gdoc-platform__header">
+            <svg class="gdoc-platform__header-icon"><use xlink:href="/img/groupdocs-stack.svg#java"></use></svg>
+            <a class="gdoc-platform__header-title" href='/markdown/java/'>GroupDocs.Markdown for Java</a>
+            <a class="gdoc-platform__header-btn" href='/markdown/java/'>More</a>
+        </div>
+        <div class="gdoc-platform__cols">
+            <div class="gdoc-platform__col">
+                <div class="gdoc-platform__col-title">
+                    <svg class="gdoc-platform__col-icon"><use xlink:href="/img/groupdocs-stack.svg#time"></use></svg>
+                    <div>Getting started</div>
+				</div>
+				<div class="gdoc-platform__col-descr">Start quickly with our getting started documentation</div>
+				<ul class="gdoc-platform__col-links">
+				<li><a href='/markdown/java/features-overview/'>Features overview</a></li>
+				<li><a href='/markdown/java/supported-file-formats/'>Supported Document Formats</a></li>
+				<li><a href='/markdown/java/system-requirements/'>System requirements</a></li>
+				<li><a href='/markdown/java/installation/'>Installation</a></li>
+                </ul>
+            </div>
+            <div class="gdoc-platform__col">
+                <div class="gdoc-platform__col-title">
+                    <svg class="gdoc-platform__col-icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg>
+                    <div>Developer Guide</div>
+                </div>
+                <div class="gdoc-platform__col-descr">Articles and guidelines for document export</div>
+                <ul class="gdoc-platform__col-links">
+                    <li><a href='/markdown/java/convert/export-pdf/'>Export PDF Documents</a></li>
+                    <li><a href='/markdown/java/convert/export-wordprocessing/'>Export Word Documents</a></li>
+                    <li><a href='/markdown/java/convert/export-spreadsheet/'>Export Excel Spreadsheets</a></li>
+                    <li><a href='/markdown/java/convert/export-ebook/'>Export eBooks</a></li>
+                    <li><a href='/markdown/java/get-document-info/'>Get Document Info</a></li>
+                </ul>
+            </div>
+            <div class="gdoc-platform__col">
+                <div class="gdoc-platform__col-title">
+                    <svg class="gdoc-platform__col-icon"><use xlink:href="/img/groupdocs-stack.svg#git-big"></use></svg>
+                    <div>Java code examples</div>
+                </div>
+                <div class="gdoc-platform__col-descr">Code Examples</div>
+                <ul class="gdoc-platform__col-links gdoc-platform__col-links--alt">
+                    <li> <a href='https://github.com/groupdocs-markdown/GroupDocs.Markdown-for-Java'>GroupDocs.Markdown for
+                            Java</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="gdoc-platform__footer">
+            <a class="gdoc-platform__footer-btn" href='/markdown/java/'>More</a>
         </div>
     </div>
     <div class="gdoc-platform">

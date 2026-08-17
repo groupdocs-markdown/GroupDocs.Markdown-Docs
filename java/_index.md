@@ -1,0 +1,101 @@
+---
+id: home
+url: markdown/java
+title: "GroupDocs.Markdown for Java Documentation"
+linkTitle: "GroupDocs.Markdown for Java"
+description: "Convert PDF, Word, Excel, and other documents to clean Markdown with full control over output flavor, image handling, and formatting."
+weight: 1
+keywords: "GroupDocs.Markdown Java, Markdown API, document to Markdown, AI, RAG, LLM"
+productName: "GroupDocs.Markdown for Java"
+hideChildren: true
+fullWidth: true
+---
+<img src="/markdown/java/images/home.png" alt="groupdocs-markdown-java-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
+
+Current release: <i class="release-version-number">latest-version</i> &mdash; `com.groupdocs:groupdocs-markdown`
+
+{{< button style="primary" link="https://releases.groupdocs.com/markdown/java/release-notes/" >}} <svg class="gdoc-icon gdoc-product-doc__btn-icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg> Release notes {{< /button >}}
+{{< button style="primary" link="https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-markdown/" >}} {{< icon "gdoc_download" >}} Download JAR {{< /button >}}
+
+**GroupDocs.Markdown for Java** converts documents from 20+ formats into clean, structured Markdown. Built for AI/LLM pipelines, static site generators, and document processing workflows.
+
+<div style="clear:left"></div>
+
+### Quick example
+
+```java
+// Import the package
+import com.groupdocs.markdown.*;
+
+// Convert document to Markdown
+String md = MarkdownConverter.toMarkdown("business-plan.docx");
+
+// # Quarterly Report
+// ## Executive Summary
+// This report covers the key initiatives...
+```
+
+### Why GroupDocs.Markdown?
+
+- **20+ input formats** — PDF, Word, Excel, EPUB, MOBI, TXT, CHM, and more
+- **Markdown flavor control** — GitHub Flavored Markdown or strict CommonMark
+- **Flexible image handling** — Base64, file system with relative paths, skip, or custom
+- **YAML front matter** — auto-extract metadata for Jekyll, Hugo, Docusaurus
+- **Document inspection** — read page count, title, author without converting
+- **Async API** — `CompletableFuture`-based, for web apps and serverless
+- **Custom DOM renderer** — full control over every aspect of the output
+- **No external dependencies** — no Microsoft Office, no Adobe Acrobat
+- **Cross-platform** — one JAR for Windows, Linux, and macOS on Java SE 8+
+
+{{< columns >}}
+<p><b>Get Started</b></p>
+<hr></hr>
+<ul>
+    <li><a href='{{< ref "markdown/java/getting-started/quick-start-guide" >}}'>Quick start guide</a></li>
+    <li><a href='{{< ref "markdown/java/getting-started/features-overview" >}}'>Features overview</a></li>
+    <li><a href='{{< ref "markdown/java/getting-started/supported-document-formats.md" >}}'>Supported formats</a></li>
+    <li><a href='{{< ref "markdown/java/getting-started/system-requirements.md" >}}'>System requirements</a></li>
+    <li><a href='{{< ref "markdown/java/getting-started/installation.md" >}}'>Installation</a></li>
+    <li><a href='{{< ref "markdown/java/getting-started/licensing-and-subscription.md" >}}'>Licensing</a></li>
+</ul>
+<--->
+<p><b>Developer Guide</b></p>
+<hr></hr>
+<p>CONVERT DOCUMENTS</p>
+<ul>
+    <li><a href='{{< ref "markdown/java/developer-guide/basic-usage/convert/export-pdf" >}}'>PDF to Markdown</a></li>
+    <li><a href='{{< ref "markdown/java/developer-guide/basic-usage/convert/export-wordprocessing" >}}'>Word to Markdown</a></li>
+    <li><a href='{{< ref "markdown/java/developer-guide/basic-usage/convert/export-spreadsheet" >}}'>Excel to Markdown</a></li>
+    <li><a href='{{< ref "markdown/java/developer-guide/basic-usage/convert/export-ebook" >}}'>Ebook to Markdown</a></li>
+    <li><a href='{{< ref "markdown/java/developer-guide/basic-usage/get-document-info" >}}'>Get document info</a></li>
+</ul>
+<p>CUSTOMIZE OUTPUT</p>
+<ul>
+    <li><a href='{{< ref "markdown/java/developer-guide/advanced-usage/markdown-flavor" >}}'>Markdown flavor</a></li>
+    <li><a href='{{< ref "markdown/java/developer-guide/advanced-usage/front-matter" >}}'>YAML front matter</a></li>
+    <li><a href='{{< ref "markdown/java/developer-guide/advanced-usage/heading-offset" >}}'>Heading level offset</a></li>
+    <li><a href='{{< ref "markdown/java/developer-guide/advanced-usage/spreadsheet-options" >}}'>Spreadsheet options</a></li>
+    <li><a href='{{< ref "markdown/java/developer-guide/advanced-usage/strategy/" >}}'>Image strategies</a></li>
+    <li><a href='{{< ref "markdown/java/developer-guide/advanced-usage/uri-rewriting" >}}'>URI rewriting</a></li>
+</ul>
+<--->
+<p><b>Resources</b></p>
+<hr></hr>
+<p>USE CASES</p>
+<ul>
+    <li><a href='{{< ref "markdown/java/developer-guide/use-cases/convert-for-rag" >}}'>Convert for RAG pipelines</a></li>
+    <li><a href='{{< ref "markdown/java/developer-guide/use-cases/static-site-generator" >}}'>Static site generators</a></li>
+    <li><a href='{{< ref "markdown/java/developer-guide/use-cases/batch-convert" >}}'>Batch-convert a folder</a></li>
+</ul>
+<p>REFERENCE</p>
+<ul>
+    <li><a href="https://reference.groupdocs.com/markdown/java">API Reference</a></li>
+    <li><a href="https://github.com/groupdocs-markdown/GroupDocs.Markdown-for-Java/">Examples on GitHub</a></li>
+    <li><a href="https://releases.groupdocs.com/markdown/java/release-notes/">Release Notes</a></li>
+</ul>
+<p>SUPPORT</p>
+<ul>
+    <li><a href="https://forum.groupdocs.com">Free Support Forum</a></li>
+    <li><a href="https://helpdesk.groupdocs.com">Paid Support Helpdesk</a></li>
+</ul>
+{{< /columns >}}

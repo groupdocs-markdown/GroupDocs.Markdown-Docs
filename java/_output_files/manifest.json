@@ -1,0 +1,443 @@
+{
+  "async-static": {
+    "type": "file",
+    "file": "report.md",
+    "path": "developer-guide/advanced-usage/async-api/AsyncStatic/report.md",
+    "preview": "![](data:...;base64,[elided])\n\n**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\n# **Table of Contents**\n\nFY2026 Strategic Plan\t1\n[TRUNCATED]",
+    "function": "AsyncStatic"
+  },
+  "async-concurrent": {
+    "type": "file",
+    "file": "async-pdf.md",
+    "path": "developer-guide/advanced-usage/async-api/AsyncConcurrent/async-pdf.md",
+    "preview": "**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n![](data:...;base64,[elided])\n\n\n**Table of Contents**\n\nMeridianOutdoorCo.—BusinessPlan.........................................................................................1\n[TRUNCATED]",
+    "function": "AsyncConcurrent"
+  },
+  "async-cancellation": {
+    "type": "file",
+    "file": "async-cancellation.md",
+    "path": "developer-guide/advanced-usage/async-api/AsyncCancellation/async-cancellation.md",
+    "preview": "**Professional Services**\n\nA catalog of engagements offered by Meridian Outdoor Co.\n\n![](data:...;base64,[elided])![](data:...;base64,[elided])\n\n\n**Overview**\n\nThis catalog describes the six professional services that Meridian offers to partners, wholesalers,\n[TRUNCATED]",
+    "function": "AsyncCancellation"
+  },
+  "specific-pages-static": {
+    "type": "file",
+    "file": "specific-pages-static.md",
+    "path": "developer-guide/advanced-usage/convert-specific-pages/SpecificPagesStatic/specific-pages-static.md",
+    "preview": "![](data:...;base64,[elided])\n\n**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\n# **1. Executive Summary**\n\nMeridian Outdoor Co. is a direct-to-consumer outdoor apparel and gear brand serving thru-hikers, backcountry travelers, and weekend adventurers. This plan outlines our strategy for fiscal year 2026, a year in which we expect to grow revenue by forty percent, expand into three new retail categories, and launch our sustainability certification program.\n[TRUNCATED]",
+    "function": "SpecificPagesStatic"
+  },
+  "specific-pages-instance": {
+    "type": "file",
+    "file": "specific-pages-instance.md",
+    "path": "developer-guide/advanced-usage/convert-specific-pages/SpecificPagesInstance/specific-pages-instance.md",
+    "preview": "![](data:...;base64,[elided])\n\n**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\n# **1. Executive Summary**\n\nMeridian Outdoor Co. is a direct-to-consumer outdoor apparel and gear brand serving thru-hikers, backcountry travelers, and weekend adventurers. This plan outlines our strategy for fiscal year 2026, a year in which we expect to grow revenue by forty percent, expand into three new retail categories, and launch our sustainability certification program.\n[TRUNCATED]",
+    "function": "SpecificPagesInstance"
+  },
+  "specific-pages-file": {
+    "type": "file",
+    "file": "specific-pages-file.md",
+    "path": "developer-guide/advanced-usage/convert-specific-pages/SpecificPagesFile/specific-pages-file.md",
+    "preview": "**Table of Contents**\n\nMeridianOutdoorCo.—BusinessPlan.........................................................................................1\n\nFY2026StrategicPlan.................................................................................................................1\n\nTableofContents.............................................................................................................................2\n\n1.ExecutiveSummary..........................................................\n[TRUNCATED]",
+    "function": "SpecificPagesFile"
+  },
+  "error-handling-example": {
+    "type": "file",
+    "file": "error-handling-example.md",
+    "path": "developer-guide/advanced-usage/error-handling/ErrorHandlingExample/error-handling-example.md",
+    "preview": "![](data:...;base64,[elided])\n\n**Annual Report 2025**\n\nMeridian Outdoor Co.\n\n\n# **Table of Contents**\n\nMeridian Outdoor Co.\t1\n[TRUNCATED]",
+    "function": "ErrorHandlingExample"
+  },
+  "warnings-example": {
+    "type": "file",
+    "file": "warnings-example.md",
+    "path": "developer-guide/advanced-usage/error-handling/WarningsExample/warnings-example.md",
+    "preview": "## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |\n| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |\n| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |\n| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |\n| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |\n| R&D | $180,000.00 | $230,000.00 | $310,000.00 |\n[TRUNCATED]",
+    "function": "WarningsExample"
+  },
+  "front-matter-example": {
+    "type": "file",
+    "file": "front-matter-example.md",
+    "path": "developer-guide/advanced-usage/front-matter/FrontMatterExample/front-matter-example.md",
+    "preview": "---\ntitle: \"Meridian Outdoor Co. — Business Plan\"\nauthor: \"Meridian Outdoor Co.\"\nformat: DOCX\npages: 5\n---\n\n![](data:...;base64,[elided])\n\n**Meridian Outdoor Co. — Business Plan**\n[TRUNCATED]",
+    "function": "FrontMatterExample"
+  },
+  "front-matter-combined": {
+    "type": "file",
+    "file": "front-matter-combined.md",
+    "path": "developer-guide/advanced-usage/front-matter/FrontMatterCombined/front-matter-combined.md",
+    "preview": "---\ntitle: \"Meridian Outdoor Co. — Annual Report 2025\"\nauthor: \"Elena Márquez, CFO\"\nformat: DOCX\npages: 6\n---\n\n![](data:...;base64,[elided])\n\n**Annual Report 2025**\n[TRUNCATED]",
+    "function": "FrontMatterCombined"
+  },
+  "heading-offset-example": {
+    "type": "file",
+    "file": "heading-offset-example.md",
+    "path": "developer-guide/advanced-usage/heading-offset/HeadingOffsetExample/heading-offset-example.md",
+    "preview": "![](data:...;base64,[elided])\n\n**Annual Report 2025**\n\nMeridian Outdoor Co.\n\n\n### **Table of Contents**\n\nMeridian Outdoor Co.\t1\n[TRUNCATED]",
+    "function": "HeadingOffsetExample"
+  },
+  "load-specific-format": {
+    "type": "file",
+    "file": "load-specific-format.md",
+    "path": "developer-guide/advanced-usage/loading/load-a-file-of-a-specific-format/LoadSpecificFormat/load-specific-format.md",
+    "preview": "## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |\n| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |\n| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |\n| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |\n| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |\n| R&D | $180,000.00 | $230,000.00 | $310,000.00 |\n[TRUNCATED]",
+    "function": "LoadSpecificFormat"
+  },
+  "load-supported-formats": {
+    "type": "text",
+    "file": "load-supported-formats.txt",
+    "path": "developer-guide/advanced-usage/loading/load-a-file-of-a-specific-format/LoadSupportedFormats/load-supported-formats.txt",
+    "preview": "DOC\nDOCX\nDOCM\nDOT\nDOTX\nDOTM\nRTF\nODT\nOTT\nXLSX\n[TRUNCATED]",
+    "function": "LoadSupportedFormats"
+  },
+  "load-password-static": {
+    "type": "file",
+    "file": "load-password-static.md",
+    "path": "developer-guide/advanced-usage/loading/load-a-password-protected-document/LoadPasswordStatic/load-password-static.md",
+    "preview": "**Confidential Memo**\n\nFrom: Meridian Outdoor Co. — Strategy Team\n\nDate: 2026-01-15\n\nSubject: FY2026 M&A Targets\n\n\n\n[TRUNCATED]",
+    "function": "LoadPasswordStatic"
+  },
+  "load-password-exception": {
+    "type": "text",
+    "file": "load-password-exception.txt",
+    "path": "developer-guide/advanced-usage/loading/load-a-password-protected-document/LoadPasswordException/load-password-exception.txt",
+    "preview": "Cannot open document: com.groupdocs.markdown.DocumentProtectedException: The document password is incorrect.",
+    "function": "LoadPasswordException"
+  },
+  "load-disk-static": {
+    "type": "file",
+    "file": "load-disk-static.md",
+    "path": "developer-guide/advanced-usage/loading/load-from-a-local-disk/LoadDiskStatic/load-disk-static.md",
+    "preview": "![](data:...;base64,[elided])\n\n**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\n# **Table of Contents**\n\nFY2026 Strategic Plan\t1\n[TRUNCATED]",
+    "function": "LoadDiskStatic"
+  },
+  "load-disk-instance": {
+    "type": "file",
+    "file": "load-disk-instance.md",
+    "path": "developer-guide/advanced-usage/loading/load-from-a-local-disk/LoadDiskInstance/load-disk-instance.md",
+    "preview": "![](data:...;base64,[elided])\n\n**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\n# **Table of Contents**\n\nFY2026 Strategic Plan\t1\n[TRUNCATED]",
+    "function": "LoadDiskInstance"
+  },
+  "load-stream-example": {
+    "type": "file",
+    "file": "load-stream-example.md",
+    "path": "developer-guide/advanced-usage/loading/load-from-a-stream/LoadStreamExample/load-stream-example.md",
+    "preview": "![](data:...;base64,[elided])\n\n**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\n# **Table of Contents**\n\nFY2026 Strategic Plan\t1\n[TRUNCATED]",
+    "function": "LoadStreamExample"
+  },
+  "load-stream-options": {
+    "type": "file",
+    "file": "load-stream-options.md",
+    "path": "developer-guide/advanced-usage/loading/load-from-a-stream/LoadStreamOptions/load-stream-options.md",
+    "preview": "| ![Woman with laptop and business documents](data:...;base64,[elided])**HOME BASED** |  |  |\n| --- | --- | --- |\n|  |  |  |\n| **PROFESSIONAL SERVICES** |  |  |\n|  | ***Business Plan*** |  |\n\n\n\n- Introduction\n- 1.\tExecutive Summary\n[TRUNCATED]",
+    "function": "LoadStreamOptions"
+  },
+  "flavor-gfm": {
+    "type": "file",
+    "file": "flavor-gfm.md",
+    "path": "developer-guide/advanced-usage/markdown-flavor/FlavorGfm/flavor-gfm.md",
+    "preview": "![](data:...;base64,[elided])\n\n**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\n# **Table of Contents**\n\nFY2026 Strategic Plan\t1\n[TRUNCATED]",
+    "function": "FlavorGfm"
+  },
+  "flavor-commonmark": {
+    "type": "file",
+    "file": "flavor-commonmark.md",
+    "path": "developer-guide/advanced-usage/markdown-flavor/FlavorCommonmark/flavor-commonmark.md",
+    "preview": "![](data:...;base64,[elided])\n\n**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\n# **Table of Contents**\n\nFY2026 Strategic Plan\t1\n[TRUNCATED]",
+    "function": "FlavorCommonmark"
+  },
+  "spreadsheet-truncation": {
+    "type": "file",
+    "file": "spreadsheet-truncation.md",
+    "path": "developer-guide/advanced-usage/spreadsheet-options/SpreadsheetTruncation/spreadsheet-truncation.md",
+    "preview": "## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |\n| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |\n| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |\n| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |\n| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |\n| R&D | $180,000.00 | $230,000.00 | $310,000.00 |\n[TRUNCATED]",
+    "function": "SpreadsheetTruncation"
+  },
+  "spreadsheet-sheets": {
+    "type": "file",
+    "file": "spreadsheet-sheets.md",
+    "path": "developer-guide/advanced-usage/spreadsheet-options/SpreadsheetSheets/spreadsheet-sheets.md",
+    "preview": "## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |\n| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |\n| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |\n| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |\n| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |\n| R&D | $180,000.00 | $230,000.00 | $310,000.00 |\n[TRUNCATED]",
+    "function": "SpreadsheetSheets"
+  },
+  "base64-static": {
+    "type": "file",
+    "file": "base64-static.md",
+    "path": "developer-guide/advanced-usage/strategy/as-base64-strategy/Base64Static/base64-static.md",
+    "preview": "**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n![](data:...;base64,[elided])\n\n\n**Table of Contents**\n\nMeridianOutdoorCo.—BusinessPlan.........................................................................................1\n[TRUNCATED]",
+    "function": "Base64Static"
+  },
+  "base64-explicit": {
+    "type": "file",
+    "file": "base64-explicit.md",
+    "path": "developer-guide/advanced-usage/strategy/as-base64-strategy/Base64Explicit/base64-explicit.md",
+    "preview": "**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n![](data:...;base64,[elided])\n\n\n**Table of Contents**\n\nMeridianOutdoorCo.—BusinessPlan.........................................................................................1\n[TRUNCATED]",
+    "function": "Base64Explicit"
+  },
+  "custom-strategy-rename": {
+    "type": "zip",
+    "file": "custom-strategy-rename.zip",
+    "path": "developer-guide/advanced-usage/strategy/custom-strategy/CustomStrategyRename/custom-strategy-rename.zip",
+    "contents": [
+      "output\\document.md",
+      "output\\images\\img_0_img-001.png",
+      "output\\images\\img_1_img-002.jpg",
+      "output\\images\\img_2_img-003.png"
+    ],
+    "preview": "output/document.md (5 KB)\noutput/images/img_0_img-001.png (4 KB)\noutput/images/img_1_img-002.jpg (41 KB)\noutput/images/img_2_img-003.png (14 KB)",
+    "function": "CustomStrategyRename"
+  },
+  "custom-strategy-replace": {
+    "type": "zip",
+    "file": "custom-strategy-replace.zip",
+    "path": "developer-guide/advanced-usage/strategy/custom-strategy/CustomStrategyReplace/custom-strategy-replace.zip",
+    "contents": [
+      "output\\document.md",
+      "output\\images\\placeholder.png"
+    ],
+    "preview": "output/document.md (5 KB)\noutput/images/placeholder.png (14 KB)",
+    "function": "CustomStrategyReplace"
+  },
+  "image-file-basic": {
+    "type": "zip",
+    "file": "image-file-basic.zip",
+    "path": "developer-guide/advanced-usage/strategy/image-file-strategy/ImageFileBasic/image-file-basic.zip",
+    "contents": [
+      "output\\document.md",
+      "output\\images\\img-001.jpg",
+      "output\\images\\img-002.jpg",
+      "output\\images\\img-003.jpg",
+      "output\\images\\img-004.jpg",
+      "output\\images\\img-005.jpg",
+      "output\\images\\img-006.jpg",
+      "output\\images\\img-007.jpg",
+      "output\\images\\img-008.jpg"
+    ],
+    "preview": "output/document.md (7 KB)\noutput/images/img-001.jpg (10 KB)\noutput/images/img-002.jpg (39 KB)\noutput/images/img-003.jpg (25 KB)\noutput/images/img-004.jpg (16 KB)\noutput/images/img-005.jpg (44 KB)\noutput/images/img-006.jpg (20 KB)\noutput/images/img-007.jpg (648 bytes)\noutput/images/img-008.jpg (48 KB)",
+    "function": "ImageFileBasic"
+  },
+  "image-file-relative": {
+    "type": "zip",
+    "file": "image-file-relative.zip",
+    "path": "developer-guide/advanced-usage/strategy/image-file-strategy/ImageFileRelative/image-file-relative.zip",
+    "contents": [
+      "output\\document.md",
+      "output\\images\\img-001.jpg",
+      "output\\images\\img-002.jpg",
+      "output\\images\\img-003.jpg",
+      "output\\images\\img-004.jpg",
+      "output\\images\\img-005.jpg",
+      "output\\images\\img-006.jpg",
+      "output\\images\\img-007.jpg",
+      "output\\images\\img-008.jpg"
+    ],
+    "preview": "output/document.md (7 KB)\noutput/images/img-001.jpg (10 KB)\noutput/images/img-002.jpg (39 KB)\noutput/images/img-003.jpg (25 KB)\noutput/images/img-004.jpg (16 KB)\noutput/images/img-005.jpg (44 KB)\noutput/images/img-006.jpg (20 KB)\noutput/images/img-007.jpg (648 bytes)\noutput/images/img-008.jpg (48 KB)",
+    "function": "ImageFileRelative"
+  },
+  "skip-images-static": {
+    "type": "file",
+    "file": "skip-images-static.md",
+    "path": "developer-guide/advanced-usage/strategy/image-skip-strategy/SkipImagesStatic/skip-images-static.md",
+    "preview": "**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\n\n\n**Table of Contents**\n\nMeridianOutdoorCo.—BusinessPlan.........................................................................................1\n[TRUNCATED]",
+    "function": "SkipImagesStatic"
+  },
+  "skip-images-instance": {
+    "type": "file",
+    "file": "skip-images-instance.md",
+    "path": "developer-guide/advanced-usage/strategy/image-skip-strategy/SkipImagesInstance/skip-images-instance.md",
+    "preview": "**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\n\n\n**Table of Contents**\n\nMeridianOutdoorCo.—BusinessPlan.........................................................................................1\n[TRUNCATED]",
+    "function": "SkipImagesInstance"
+  },
+  "export-ebook-static": {
+    "type": "file",
+    "file": "export-ebook-static.md",
+    "path": "developer-guide/basic-usage/convert/export-ebook/ExportEbookStatic/export-ebook-static.md",
+    "preview": "![](data:...;base64,[elided])\n\n**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\n# **Table of Contents**\n\n\n[TRUNCATED]",
+    "function": "ExportEbookStatic"
+  },
+  "export-ebook-instance": {
+    "type": "zip",
+    "file": "export-ebook-instance.zip",
+    "path": "developer-guide/basic-usage/convert/export-ebook/ExportEbookInstance/export-ebook-instance.zip",
+    "contents": [
+      "export-ebook-instance.md"
+    ],
+    "preview": "export-ebook-instance.md (5 KB)",
+    "function": "ExportEbookInstance"
+  },
+  "export-pdf-static": {
+    "type": "file",
+    "file": "export-pdf-static.md",
+    "path": "developer-guide/basic-usage/convert/export-pdf/ExportPdfStatic/export-pdf-static.md",
+    "preview": "**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n![](data:...;base64,[elided])\n\n\n**Table of Contents**\n\nMeridianOutdoorCo.—BusinessPlan.........................................................................................1\n[TRUNCATED]",
+    "function": "ExportPdfStatic"
+  },
+  "export-pdf-instance": {
+    "type": "zip",
+    "file": "export-pdf-instance.zip",
+    "path": "developer-guide/basic-usage/convert/export-pdf/ExportPdfInstance/export-pdf-instance.zip",
+    "contents": [
+      "export-pdf-instance.md"
+    ],
+    "preview": "export-pdf-instance.md (7 KB)",
+    "function": "ExportPdfInstance"
+  },
+  "export-spreadsheet-static": {
+    "type": "file",
+    "file": "export-spreadsheet-static.md",
+    "path": "developer-guide/basic-usage/convert/export-spreadsheet/ExportSpreadsheetStatic/export-spreadsheet-static.md",
+    "preview": "## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |\n| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |\n| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |\n| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |\n| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |\n| R&D | $180,000.00 | $230,000.00 | $310,000.00 |\n[TRUNCATED]",
+    "function": "ExportSpreadsheetStatic"
+  },
+  "export-spreadsheet-instance": {
+    "type": "file",
+    "file": "export-spreadsheet-instance.md",
+    "path": "developer-guide/basic-usage/convert/export-spreadsheet/ExportSpreadsheetInstance/export-spreadsheet-instance.md",
+    "preview": "## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n| Parts and materials | $1,325,000.00 | $1,480,000.00 | $1,620,000.00 |\n| Manufacturing equipment | $900,500.00 | $980,000.00 | $1,050,000.00 |\n| Warehousing | $420,000.00 | $510,000.00 | $590,000.00 |\n| Shipping | $380,000.00 | $445,000.00 | $520,000.00 |\n| Marketing | $250,000.00 | $340,000.00 | $480,000.00 |\n| R&D | $180,000.00 | $230,000.00 | $310,000.00 |\n[TRUNCATED]",
+    "function": "ExportSpreadsheetInstance"
+  },
+  "export-text-static": {
+    "type": "file",
+    "file": "export-text-static.md",
+    "path": "developer-guide/basic-usage/convert/export-text/ExportTextStatic/export-text-static.md",
+    "preview": "Attention-based neural architecture that underpins most modern large language models.\n\n2017\n\nAttention Is All You Need\n\n\nLanguage modeling\n\nMachine translation\n[TRUNCATED]",
+    "function": "ExportTextStatic"
+  },
+  "export-text-instance": {
+    "type": "file",
+    "file": "export-text-instance.md",
+    "path": "developer-guide/basic-usage/convert/export-text/ExportTextInstance/export-text-instance.md",
+    "preview": "Attention-based neural architecture that underpins most modern large language models.\n\n2017\n\nAttention Is All You Need\n\n\nLanguage modeling\n\nMachine translation\n[TRUNCATED]",
+    "function": "ExportTextInstance"
+  },
+  "export-word-static": {
+    "type": "file",
+    "file": "export-word-static.md",
+    "path": "developer-guide/basic-usage/convert/export-wordprocessing/ExportWordStatic/export-word-static.md",
+    "preview": "![](data:...;base64,[elided])\n\n**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\n# **Table of Contents**\n\nFY2026 Strategic Plan\t1\n[TRUNCATED]",
+    "function": "ExportWordStatic"
+  },
+  "export-word-instance": {
+    "type": "zip",
+    "file": "export-word-instance.zip",
+    "path": "developer-guide/basic-usage/convert/export-wordprocessing/ExportWordInstance/export-word-instance.zip",
+    "contents": [
+      "export-word-instance.md"
+    ],
+    "preview": "export-word-instance.md (5 KB)",
+    "function": "ExportWordInstance"
+  },
+  "get-info-static": {
+    "type": "text",
+    "file": "get-info-static.txt",
+    "path": "developer-guide/basic-usage/get-document-info/GetInfoStatic/get-info-static.txt",
+    "preview": "Format:    DOCX\nPages:     5\nTitle:     Meridian Outdoor Co. — Business Plan\nAuthor:    Meridian Outdoor Co.\nEncrypted: false",
+    "function": "GetInfoStatic"
+  },
+  "get-info-instance": {
+    "type": "text",
+    "file": "get-info-instance.txt",
+    "path": "developer-guide/basic-usage/get-document-info/GetInfoInstance/get-info-instance.txt",
+    "preview": "Format:    XLSX\nPages:     4\nTitle:     \nAuthor:    \nEncrypted: false",
+    "function": "GetInfoInstance"
+  },
+  "batch-basic": {
+    "type": "zip",
+    "file": "batch-basic.zip",
+    "path": "developer-guide/use-cases/batch-convert/BatchBasic/batch-basic.zip",
+    "contents": [
+      "output\\business-plan.md",
+      "output\\cost-analysis.md"
+    ],
+    "preview": "output/business-plan.md (278 KB)\noutput/cost-analysis.md (9 KB)",
+    "function": "BatchBasic"
+  },
+  "batch-async": {
+    "type": "zip",
+    "file": "batch-async.zip",
+    "path": "developer-guide/use-cases/batch-convert/BatchAsync/batch-async.zip",
+    "contents": [
+      "output\\business-plan.md",
+      "output\\cost-analysis.md"
+    ],
+    "preview": "output/business-plan.md (7 KB)\noutput/cost-analysis.md (9 KB)",
+    "function": "BatchAsync"
+  },
+  "rag-basic": {
+    "type": "text",
+    "file": "rag-basic.txt",
+    "path": "developer-guide/use-cases/convert-for-rag/RagBasic/rag-basic.txt",
+    "preview": "Chunk (8065 chars): \n**Professional Services**\n\nA catalog of engagements offered by Meridian Outd...",
+    "function": "RagBasic"
+  },
+  "rag-batch": {
+    "type": "text",
+    "file": "rag-batch.txt",
+    "path": "developer-guide/use-cases/convert-for-rag/RagBatch/rag-batch.txt",
+    "preview": "Converted: documents\\business-plan.pdf",
+    "function": "RagBatch"
+  },
+  "ssg-example": {
+    "type": "zip",
+    "file": "ssg.zip",
+    "path": "developer-guide/use-cases/static-site-generator/SsgExample/ssg.zip",
+    "contents": [
+      "content\\posts\\annual-report.md",
+      "content\\posts\\images\\img-001.png",
+      "content\\posts\\images\\img-002.png",
+      "content\\posts\\images\\img-003.png"
+    ],
+    "preview": "content/posts/annual-report.md (5 KB)\ncontent/posts/images/img-001.png (4 KB)\ncontent/posts/images/img-002.png (14 KB)\ncontent/posts/images/img-003.png (15 KB)",
+    "function": "SsgExample"
+  },
+  "ssg-batch-hugo": {
+    "type": "zip",
+    "file": "ssg-batch-hugo.zip",
+    "path": "developer-guide/use-cases/static-site-generator/SsgBatchHugo/ssg-batch-hugo.zip",
+    "contents": [
+      "content\\docs\\business-plan.md",
+      "content\\docs\\cost-analysis.md"
+    ],
+    "preview": "content/docs/business-plan.md (0 bytes)\ncontent/docs/cost-analysis.md (9 KB)",
+    "function": "SsgBatchHugo"
+  },
+  "qs-word-to-md": {
+    "type": "file",
+    "file": "qs-word-to-md.md",
+    "path": "getting-started/quick-start-guide/QsWordToMd/qs-word-to-md.md",
+    "preview": "![](data:...;base64,[elided])\n\n**Meridian Outdoor Co. — Business Plan**\n\nFY2026 Strategic Plan\n\n\n# **Table of Contents**\n\nFY2026 Strategic Plan\t1\n[TRUNCATED]",
+    "function": "QsWordToMd"
+  },
+  "qs-pdf-with-images": {
+    "type": "zip",
+    "file": "qs-pdf-with-images.zip",
+    "path": "getting-started/quick-start-guide/QsPdfWithImages/qs-pdf-with-images.zip",
+    "contents": [
+      "output\\images\\img-001.jpg",
+      "output\\images\\img-002.jpg",
+      "output\\images\\img-003.jpg",
+      "output\\images\\img-004.jpg",
+      "output\\images\\img-005.jpg",
+      "output\\images\\img-006.jpg",
+      "output\\images\\img-007.jpg",
+      "output\\images\\img-008.jpg",
+      "output\\report.md"
+    ],
+    "preview": "output/images/img-001.jpg (10 KB)\noutput/images/img-002.jpg (39 KB)\noutput/images/img-003.jpg (25 KB)\noutput/images/img-004.jpg (16 KB)\noutput/images/img-005.jpg (44 KB)\noutput/images/img-006.jpg (20 KB)\noutput/images/img-007.jpg (648 bytes)\noutput/images/img-008.jpg (48 KB)\noutput/report.md (7 KB)",
+    "function": "QsPdfWithImages"
+  },
+  "qs-excel-options": {
+    "type": "file",
+    "file": "qs-excel-options.md",
+    "path": "getting-started/quick-start-guide/QsExcelOptions/qs-excel-options.md",
+    "preview": "---\nformat: XLSX\npages: 4\n---\n\n\n## Summary\n\n| Category | FY2024 | FY2025 | FY2026 |\n| --- | --- | --- | --- |\n[TRUNCATED]",
+    "function": "QsExcelOptions"
+  },
+  "quick-example": {
+    "type": "file",
+    "file": "quick-example.md",
+    "path": "product-overview/QuickExample/quick-example.md",
+    "preview": "---\ntitle: \"Meridian Outdoor Co. — Business Plan\"\nauthor: \"Meridian Outdoor Co.\"\nformat: DOCX\npages: 5\n---\n\n![](data:...;base64,[elided])\n\n**Meridian Outdoor Co. — Business Plan**\n[TRUNCATED]",
+    "function": "QuickExample"
+  }
+}

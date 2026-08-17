@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Technologies>
+  <Category name="Architectures">
+    <Technology name="Transformer">
+      <Summary>Attention-based neural architecture that underpins most modern large language models.</Summary>
+      <YearIntroduced>2017</YearIntroduced>
+      <KeyPaper>Attention Is All You Need</KeyPaper>
+      <CommonUses>
+        <Use>Language modeling</Use>
+        <Use>Machine translation</Use>
+        <Use>Text summarization</Use>
+      </CommonUses>
+    </Technology>
+    <Technology name="Mixture of Experts">
+      <Summary>Architecture that routes each input through a small subset of specialized sub-networks, enabling much larger total parameter counts at manageable inference cost.</Summary>
+      <YearIntroduced>2017</YearIntroduced>
+      <CommonUses>
+        <Use>Scaling model capacity</Use>
+        <Use>Reducing per-token compute</Use>
+      </CommonUses>
+    </Technology>
+  </Category>
+
+  <Category name="Training Techniques">
+    <Technology name="Supervised Fine-Tuning">
+      <Summary>Training a pre-trained model on labelled input-output pairs to adapt it to a specific task or style.</Summary>
+      <CommonUses>
+        <Use>Task specialization</Use>
+        <Use>Instruction following</Use>
+      </CommonUses>
+    </Technology>
+    <Technology name="Reinforcement Learning from Human Feedback">
+      <Summary>Training method that uses human preference data to shape a reward model, then optimizes the language model against it.</Summary>
+      <YearIntroduced>2017</YearIntroduced>
+      <CommonUses>
+        <Use>Alignment</Use>
+        <Use>Reducing harmful outputs</Use>
+      </CommonUses>
+    </Technology>
+    <Technology name="Direct Preference Optimization">
+      <Summary>An alternative to reward-model-based RLHF that learns directly from preference pairs without training a separate reward model.</Summary>
+      <YearIntroduced>2023</YearIntroduced>
+    </Technology>
+  </Category>
+
+  <Category name="Inference Techniques">
+    <Technology name="Retrieval-Augmented Generation">
+      <Summary>Pattern that retrieves relevant documents at query time and provides them as context to a language model, improving accuracy on knowledge-intensive tasks.</Summary>
+      <YearIntroduced>2020</YearIntroduced>
+      <CommonUses>
+        <Use>Question answering</Use>
+        <Use>Enterprise search</Use>
+        <Use>Documentation assistants</Use>
+      </CommonUses>
+    </Technology>
+    <Technology name="Speculative Decoding">
+      <Summary>Inference acceleration technique where a small draft model proposes tokens that a larger model then verifies in parallel.</Summary>
+      <YearIntroduced>2022</YearIntroduced>
+    </Technology>
+  </Category>
+
+  <Category name="Representation">
+    <Technology name="Embedding">
+      <Summary>A dense vector representation of text, images, or other data that preserves semantic similarity under geometric operations.</Summary>
+      <CommonUses>
+        <Use>Semantic search</Use>
+        <Use>Clustering</Use>
+        <Use>Classification</Use>
+      </CommonUses>
+    </Technology>
+    <Technology name="Tokenizer">
+      <Summary>A component that splits raw text into discrete units (tokens) that a model can process, typically using byte-pair encoding or similar schemes.</Summary>
+      <CommonUses>
+        <Use>Input preparation</Use>
+        <Use>Compression of vocabulary</Use>
+      </CommonUses>
+    </Technology>
+  </Category>
+</Technologies>
