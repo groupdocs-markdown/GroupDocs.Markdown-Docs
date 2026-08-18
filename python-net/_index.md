@@ -11,7 +11,7 @@ hideChildren: true
 fullWidth: true
 ---
 
-<img src="/markdown/python-net/images/home.png" alt="groupdocs-markdown-python-net-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
+<img src="/logo/128x128/groupdocs-markdown-python.png" alt="groupdocs-markdown-python-net-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
 <img src="https://img.shields.io/pypi/v/groupdocs-markdown-net?label=GroupDocs.Markdown%20PyPI" alt="PyPI package">
 <img src="https://img.shields.io/pypi/dm/groupdocs-markdown-net?label=pypi%20downloads" alt="PyPI downloads">

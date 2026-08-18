@@ -10,7 +10,7 @@ productName: "GroupDocs.Markdown for Java"
 hideChildren: true
 fullWidth: true
 ---
-<img src="/markdown/java/images/home.png" alt="groupdocs-markdown-java-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
+<img src="/logo/128x128/groupdocs-markdown-java.png" alt="groupdocs-markdown-java-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
 Current release: <i class="release-version-number">latest-version</i> &mdash; `com.groupdocs:groupdocs-markdown`
 

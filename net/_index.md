@@ -10,7 +10,7 @@ productName: "GroupDocs.Markdown for .NET"
 hideChildren: true
 fullWidth: true
 ---
-<img src="/markdown/net/images/home.png" alt="groupdocs-markdown-net-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
+<img src="/logo/128x128/groupdocs-markdown-net.png" alt="groupdocs-markdown-net-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
 <img src="https://img.shields.io/nuget/v/groupdocs.markdown?label=GroupDocs.Markdown%20NuGet" alt="Nuget package">
 <img src="https://img.shields.io/nuget/dt/GroupDocs.Markdown?label=nuget%20downloads" alt="Nuget downloads">
