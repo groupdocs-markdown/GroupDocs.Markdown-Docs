@@ -49,7 +49,7 @@ Evaluation mode processes **only the first three pages**. This is the single mos
 
 ## Is this the same as the Conversion server's Markdown output?
 
-They overlap. [GroupDocs.Conversion]({{< ref "conversion/mcp/_index.md" >}}) converts between 100+ formats, Markdown among them. This server is **specialised for Markdown**: it exposes the dialect (`github` or `commonmark`), image handling, page selection, and YAML front matter as first-class options. If Markdown is the destination and the details matter, use this one.
+They overlap. [GroupDocs.Conversion](/conversion/mcp/) converts between 100+ formats, Markdown among them. This server is **specialised for Markdown**: it exposes the dialect (`github` or `commonmark`), image handling, page selection, and YAML front matter as first-class options. If Markdown is the destination and the details matter, use this one.
 
 ## Does it OCR scanned PDFs?
 

@@ -94,7 +94,7 @@ The server uses MCP's **local stdio transport**: your AI client starts the serve
 
 ## Markdown here, or in the Conversion server?
 
-Both can produce Markdown. [GroupDocs.Conversion]({{< ref "conversion/mcp/_index.md" >}}) is the general converter across 100+ formats in both directions. **This** server is specialised: dialect selection, image strategy, page ranges, and front matter are first-class parameters. If Markdown is the destination and you care how it looks, this is the one; if you need DOCX → XLSX → PDF as well, use Conversion.
+Both can produce Markdown. [GroupDocs.Conversion](/conversion/mcp/) is the general converter across 100+ formats in both directions. **This** server is specialised: dialect selection, image strategy, page ranges, and front matter are first-class parameters. If Markdown is the destination and you care how it looks, this is the one; if you need DOCX → XLSX → PDF as well, use Conversion.
 
 ## Resources
 
