@@ -5,6 +5,7 @@ git submodule foreach git pull origin master
 mkdir -p common/content/$PRODUCT/net && cp -r net common/content/$PRODUCT/
 mkdir -p common/content/$PRODUCT/java && cp -r java common/content/$PRODUCT/
 mkdir -p common/content/$PRODUCT/python-net && cp -r python-net common/content/$PRODUCT/
+mkdir -p common/content/$PRODUCT/mcp && cp -r mcp common/content/$PRODUCT/
 cp -r _index.md common/content/$PRODUCT
 cd common
 hugo server

@@ -1,0 +1,135 @@
+{
+  "serverVersion": "26.9.0",
+  "capturedFrom": "GroupDocs.Markdown.Mcp@26.9.0",
+  "tools": [
+    {
+      "name": "convert_to_markdown",
+      "description": "Converts a document to clean, structured Markdown (.md). Supports PDF, DOCX/DOC/RTF/ODT, XLSX/XLS/ODS/CSV/TSV, EPUB, MOBI, TXT, CHM and 20+ more formats. By default, images are embedded as base64 data URIs so the output is fully self-contained. Use 'images' to control image handling: 'base64' (default), 'file' (save images alongside the .md and reference by path), or 'skip' (omit images — text-only). Use 'pages' to limit output to specific 1-based pages or worksheets. The generated Markdown is saved to storage AND the content is returned inline. Returns the saved file path followed by the Markdown content (long output is truncated inline — the saved .md holds the full text). Call this tool immediately whenever the user asks to convert a document to Markdown, export as MD, or extract as Markdown. Do NOT pre-check whether files exist — just pass the filename the user provided. The tool resolves files from storage and returns an error with available files if a name is not found. On failure, the response text starts with 'Conversion to Markdown failed for' followed by the underlying exception type, message, and inner chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "images": {
+            "description": "Image handling: 'base64' (default — embed as data URIs, self-contained), 'file' (save images alongside .md), or 'skip' (text-only, no images)",
+            "type": "string",
+            "default": "base64"
+          },
+          "pages": {
+            "description": "Comma-separated 1-based page or worksheet numbers to convert, e.g. '1,3,5'. Omit for the whole document.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "frontMatter": {
+            "description": "Include YAML front matter (title, author, format, page count) at the top of the output",
+            "type": "boolean",
+            "default": false
+          },
+          "flavor": {
+            "description": "Markdown dialect: 'github' (default) or 'commonmark'",
+            "type": "string",
+            "default": "github"
+          },
+          "password": {
+            "description": "Password for protected documents",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "file"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "get_document_info",
+      "description": "Returns document information (file format, page count, title, author, encryption flag) as JSON, without performing a full Markdown conversion. Supports PDF, DOCX, XLSX, EPUB, MOBI, and 20+ more formats recognized by GroupDocs.Markdown. Useful as a precondition check before ConvertToMarkdown — e.g. 'how many pages does this PDF have?' or to decide which pages to request or whether a password is needed. Returns a JSON object with `fileName`, `fileFormat`, `pageCount` (worksheet count for spreadsheets), `title`, `author`, and `isEncrypted`. Do NOT pre-check whether files exist — just pass the filename the user provided. The tool resolves files from storage and returns an error with available files if a name is not found. On failure, the response text starts with 'Document-info lookup failed for' followed by the underlying exception type, message, and inner chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "password": {
+            "description": "Password for protected documents",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "file"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "get_license_status",
+      "description": "Returns how this MCP server is licensed, and — under metered licensing — how much has been consumed. Call this when the user asks about licensing, evaluation limitations, metered usage, remaining credit, or which product engine version is running. Returns a JSON object with `mode` (\"evaluation\", \"licensed\" or \"metered\"), `licensed` (true for both licensed and metered), `consumption` (null unless metered; otherwise `quantity` and `credit`, or `error` if the reading failed), and `server` / `engine` name and version. Takes no arguments and never modifies anything.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}
