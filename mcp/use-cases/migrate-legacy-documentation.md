@@ -62,3 +62,8 @@ Three pages per document in evaluation mode. A migration run unlicensed produces
 ## Why local matters for an archive
 
 The archive is the whole corpus — every internal procedure, price list, and post-mortem in one folder. Uploading it to a conversion service to migrate it is a larger disclosure than any single document would be. Here it is read by a local process, and only what the agent says travels. See [On-premise architecture]({{< ref "markdown/mcp/use-cases/on-premise-markdown-conversion.md" >}}).
+
+## Read more
+
+* [Automate a docs-as-code migration: the agent runs the conversion, you review](https://blog.groupdocs.com/markdown/migrate-legacy-documentation-docs-as-code-ai-agent/) — the same scenario on the GroupDocs blog, with worked examples and the trade-offs.
+

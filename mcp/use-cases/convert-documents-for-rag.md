@@ -75,3 +75,8 @@ with `GROUPDOCS_MCP_STORAGE_PATH` pointing at the corpus — [per-client config]
 * [Convert a section, not a book]({{< ref "markdown/mcp/use-cases/convert-a-section-not-a-book.md" >}}) — page ranges and worksheets.
 * [Migrate legacy documentation]({{< ref "markdown/mcp/use-cases/migrate-legacy-documentation.md" >}}) — CHM, EPUB, and old Word archives.
 * [On-premise architecture]({{< ref "markdown/mcp/use-cases/on-premise-markdown-conversion.md" >}}) — the corpus never leaves.
+
+## Read more
+
+* [Your RAG pipeline starts with Markdown — keep that step local](https://blog.groupdocs.com/markdown/documents-to-markdown-for-rag-3-ways-mcp/) — the same scenario on the GroupDocs blog, with worked examples and the trade-offs.
+

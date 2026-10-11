@@ -59,3 +59,8 @@ That is how you get one table into a document without carrying the other fourtee
 ## The evaluation-mode overlap
 
 Unlicensed, only the first three pages are processed **regardless of what you ask for**. Requesting pages 40-52 unlicensed gets you pages 1-3, quietly. If the output does not start where you expected, that is the reason — [`get_license_status`]({{< ref "markdown/mcp/tools-reference/get-license-status.md" >}}).
+
+## Read more
+
+* [3 ways to pull just the section you need into Markdown with MCP](https://blog.groupdocs.com/markdown/convert-one-section-to-markdown-token-budget-mcp/) — the same scenario on the GroupDocs blog, with worked examples and the trade-offs.
+

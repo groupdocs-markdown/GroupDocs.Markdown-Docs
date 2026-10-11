@@ -64,3 +64,8 @@ Spot-check the messiest source before running a batch of two hundred.
 ## Then the site build
 
 At this point Markdown is Markdown — commit it, run your generator, and the documents are pages. The conversion stayed on your machine, which matters when the archive being published contains material that is public *after* review but not before.
+
+## Read more
+
+* [From documents to a static site: Hugo, Docusaurus or MkDocs via an AI agent](https://blog.groupdocs.com/markdown/documents-to-static-site-hugo-docusaurus-ai-agent/) — the same scenario on the GroupDocs blog, with worked examples and the trade-offs.
+
