@@ -32,7 +32,6 @@ These are properties of the build you run rather than of MCP, so the fixes live 
 | Symptom | Where the fix is |
 |---|---|
 | `dnx: command not found` | [.NET troubleshooting]({{< ref "markdown/net/mcp/troubleshooting.md" >}}#dnx-command-not-found) — `dnx` ships inside the .NET 10 SDK |
-| `DllNotFoundException: libgdiplus` on Linux/macOS | [.NET troubleshooting]({{< ref "markdown/net/mcp/troubleshooting.md" >}}#dllnotfoundexception-libgdiplus) — install the native graphics libraries, or use the Docker image |
 | "docker daemon not reachable" | [.NET troubleshooting]({{< ref "markdown/net/mcp/troubleshooting.md" >}}#docker-daemon-not-reachable) — start Docker Desktop or `dockerd` |
 
 ## The agent says a file does not exist
@@ -65,4 +64,4 @@ Ask your agent *"list your GroupDocs Markdown conversion tools and the license s
 
 ## Still stuck?
 
-Post your config (redact license paths) and the client name in the [Markdown forum](https://forum.groupdocs.com/c/markdown/) — we answer MCP questions daily. Bugs: [GitHub issues](https://github.com/groupdocs-markdown/GroupDocs.Markdown.Mcp/issues).
+Post your config (redact license paths) and the client name in the [Markdown forum](https://forum.groupdocs.com/c/markdown/). Bugs: [GitHub issues](https://github.com/groupdocs-markdown/GroupDocs.Markdown.Mcp/issues).

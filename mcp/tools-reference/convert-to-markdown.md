@@ -21,7 +21,7 @@ toc: True
 
 | Name | Type | Required | Description |
 |---|---|---|---|
-| `file` | object | yes |  — [FileInput shape]({{< ref "markdown/mcp/tools-reference/_index.md#the-fileinput-shape" >}}) |
+| `file` | object | yes | The document — see [FileInput shape]({{< ref "markdown/mcp/tools-reference/_index.md#the-fileinput-shape" >}}) |
 | `images` | string | no | Image handling: 'base64' (default — embed as data URIs, self-contained), 'file' (save images alongside .md), or 'skip' (text-only, no images) |
 | `pages` | string | no | Comma-separated 1-based page or worksheet numbers to convert, e.g. '1,3,5'. Omit for the whole document. |
 | `frontMatter` | boolean | no | Include YAML front matter (title, author, format, page count) at the top of the output |

@@ -52,7 +52,7 @@ Converting locally removes that step entirely. The corpus is read by a process o
 ## Docker deployment inside the perimeter
 
 ```bash
-docker run --rm -i \
+docker run --rm -i --user "$(id -u):$(id -g)" \
   -v /srv/corpus:/data \
   -v /srv/licenses:/license:ro \
   -e GROUPDOCS_MCP_STORAGE_PATH=/data \
@@ -62,6 +62,7 @@ docker run --rm -i \
 ```
 
 * Pin the tag (`:26.9.0`, not `:latest`).
+* `--user "$(id -u):$(id -g)"` (Linux) lets the container, which runs as a non-root user, write into a folder you own. A JSON client config runs no shell to expand it — write the numbers: `"--user", "1000:1000"`.
 * A separate output path keeps generated Markdown out of the source corpus.
 * Licence read-only; mount only the folders the agent should reach.
 

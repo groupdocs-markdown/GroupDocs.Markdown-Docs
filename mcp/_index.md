@@ -15,9 +15,12 @@ toc: True
 Run it with one command. The Docker image is self-contained — the runtime and every native dependency the engine needs are inside it:
 
 ```bash
-docker run --rm -i -v $(pwd)/documents:/data \
+docker run --rm -i --user "$(id -u):$(id -g)" \
+  -v $(pwd)/documents:/data \
   ghcr.io/groupdocs-markdown/markdown-net-mcp:latest
 ```
+
+`--user` runs the container as you, so on Linux it can write into a folder you own (the image runs as a non-root user otherwise). Docker Desktop on Windows and macOS does not need it.
 
 With the .NET 10 SDK installed, the same server also runs without Docker:
 
@@ -83,8 +86,8 @@ Exact config blocks for every client: [Register in AI clients]({{< ref "markdown
 
 | | Docker (recommended) | NuGet (`dnx`) |
 |---|---|---|
-| Prerequisites | Docker only | .NET 10 SDK (+ `libgdiplus` on Linux/macOS) |
-| Native dependencies | bundled in the image | installed by you (or the setup script) |
+| Prerequisites | Docker only | .NET 10 SDK |
+| Native dependencies | bundled in the image | none — the native code ships inside the package |
 | Package | `ghcr.io/groupdocs-markdown/markdown-net-mcp` | `GroupDocs.Markdown.Mcp` on NuGet |
 | Architectures | linux/amd64 + linux/arm64 (Apple Silicon native) | any OS with .NET 10 |
 
